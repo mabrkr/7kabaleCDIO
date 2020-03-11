@@ -19,6 +19,7 @@ public class SnapshotCapturer {
 
         // Argumentet angiver hvilket kamera (0 = standardkameraet)
         VideoCapture capture = new VideoCapture(0);
+
         Mat frame = new Mat();
 
         if (!capture.isOpened()) {
@@ -32,8 +33,8 @@ public class SnapshotCapturer {
                     BufferedImage.TYPE_3BYTE_BGR);
 
             WritableRaster raster = bufferedImage.getRaster();
-            DataBuffer dataBuffer = (DataBufferByte) raster.getDataBuffer();
-            byte[] data = ((DataBufferByte) dataBuffer).getData();
+            DataBufferByte dataBuffer = (DataBufferByte) raster.getDataBuffer();
+            byte[] data = dataBuffer.getData();
             frame.get(0, 0, data);
 
             try {
