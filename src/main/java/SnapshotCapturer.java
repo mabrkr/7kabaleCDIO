@@ -17,8 +17,6 @@ public class SnapshotCapturer {
     // Ref: https://www.tutorialspoint.com/opencv/opencv_using_camera.htm
     public void captureSnapshot() throws IOException {
 
-//        WritableImage writableImage;
-
         // Argumentet angiver hvilket kamera (0 = standardkameraet)
         VideoCapture capture = new VideoCapture(0);
         Mat frame = new Mat();
@@ -38,8 +36,6 @@ public class SnapshotCapturer {
             byte[] data = ((DataBufferByte) dataBuffer).getData();
             frame.get(0, 0, data);
 
-//            writableImage = SwingFXUtils.toFXImage(bufferedImage, null);
-
             try {
                 File file = new File(
                         "resources"
@@ -53,20 +49,5 @@ public class SnapshotCapturer {
                 e.printStackTrace();
             }
         }
-
-//        try {
-//            File file = new File(
-//                    "resources"
-//                            + File.separator
-//                            + "snapshots"
-//                            + File.separator
-//                            + "snapshot.png");
-//
-//            BufferedImage output = SwingFXUtils.fromFXImage(writableImage, null);
-//
-//            ImageIO.write(output, "png", file);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
     }
 }
