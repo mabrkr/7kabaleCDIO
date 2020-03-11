@@ -22,7 +22,7 @@ public class SnapshotCapturer {
         Mat frame = new Mat();
 
         if (!capture.isOpened()) {
-            throw new IOException("Kamerafejl. Tjek om evt. om det rigtige kamera anvendes.");
+            throw new IOException("Kamerafejl. Tjek evt. om det rigtige kamera anvendes.");
         } else {
             capture.read(frame);
 
