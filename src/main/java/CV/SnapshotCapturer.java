@@ -1,3 +1,5 @@
+package CV;
+
 import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.image.WritableImage;
 import nu.pattern.OpenCV;

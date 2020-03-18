@@ -1,3 +1,4 @@
+import CV.SnapshotCapturer;
 import nu.pattern.OpenCV;
 
 public class Main {
