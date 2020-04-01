@@ -36,7 +36,9 @@ public class SnapshotCapturer {
             throw new IOException("Kamerafejl. Tjek evt. om det rigtige kamera anvendes.");
         } else {
             capture.read(frame);
-            detectAndDisplay(frame, faceCascade);
+            //detectAndDisplay(frame, faceCascade);
+            detectAndDisplayDigit(frame);
+
 
         }
     }
@@ -60,9 +62,21 @@ public class SnapshotCapturer {
         showResult(frame);
     }
 
+    public void detectAndDisplayDigit(Mat frame) {
+        Mat frameGray = new Mat();
+        Mat frameBlurred = new Mat();
+        Mat frameEdged = new Mat();
+
+        Imgproc.cvtColor(frame, frameGray, Imgproc.COLOR_BGR2GRAY);
+        Imgproc.GaussianBlur(frameGray, frameBlurred, new Size(5, 5), 0);
+        Imgproc.Canny(frameBlurred, frameEdged, 50, 100);
+
+        showResult(frameEdged);
+    }
+
 
     public void showResult(Mat img) {
-        Imgproc.resize(img, img, new Size(640, 480));
+        Imgproc.resize(img, img, new Size(1280, 720));
         MatOfByte matOfByte = new MatOfByte();
         Imgcodecs.imencode(".jpg", img, matOfByte);
         byte[] byteArray = matOfByte.toArray();
