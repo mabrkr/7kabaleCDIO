@@ -21,26 +21,30 @@ public class SnapshotCapturer {
 
     // Ref: https://www.tutorialspoint.com/opencv/opencv_using_camera.htm
     public void captureSnapshot() throws IOException {
-
-        String filenameFaceCascade = "/home/Jeppe/IdeaProjects/7kabaleCDIO/src/main/java/haarcascade_frontalface_alt.xml";
-
-        CascadeClassifier faceCascade = new CascadeClassifier();
-        faceCascade.load(filenameFaceCascade);
+//
+//        String filenameFaceCascade = "C:\\Users\\hemer\\IdeaProjects\\7kabaleCDIO\\src\\main\\java\\haarcascade_frontalface_alt.xml";
+//
+//        CascadeClassifier faceCascade = new CascadeClassifier();
+//        faceCascade.load(filenameFaceCascade);
 
         // Argumentet angiver hvilket kamera (0 = standardkameraet)
-        VideoCapture capture = new VideoCapture(0);
+//        VideoCapture capture = new VideoCapture(1);
+//
+//        Mat frame = new Mat();
+//
+//        if (!capture.isOpened()) {
+//            throw new IOException("Kamerafejl. Tjek evt. om det rigtige kamera anvendes.");
+//        } else {
+//            capture.read(frame);
+//            //detectAndDisplay(frame, faceCascade);
+//            detectAndDisplayDigit(frame);
+//
+//
+//        }
 
         Mat frame = new Mat();
-
-        if (!capture.isOpened()) {
-            throw new IOException("Kamerafejl. Tjek evt. om det rigtige kamera anvendes.");
-        } else {
-            capture.read(frame);
-            //detectAndDisplay(frame, faceCascade);
-            detectAndDisplayDigit(frame);
-
-
-        }
+        frame = Imgcodecs.imread("C:\\Users\\hemer\\IdeaProjects\\7kabaleCDIO\\resources\\snapshots\\Joe.png");
+        detectAndDisplayDigit(frame);
     }
 
 
@@ -68,8 +72,8 @@ public class SnapshotCapturer {
         Mat frameEdged = new Mat();
 
         Imgproc.cvtColor(frame, frameGray, Imgproc.COLOR_BGR2GRAY);
-        Imgproc.GaussianBlur(frameGray, frameBlurred, new Size(5, 5), 0);
-        Imgproc.Canny(frameBlurred, frameEdged, 50, 100);
+//        Imgproc.GaussianBlur(frameGray, frameBlurred, new Size(5, 5), 0);
+        Imgproc.Canny(frameGray, frameEdged, 20, 20);
 
         showResult(frameEdged);
     }
