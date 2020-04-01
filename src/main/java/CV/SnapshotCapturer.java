@@ -12,6 +12,7 @@ import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
@@ -43,7 +44,7 @@ public class SnapshotCapturer {
 //        }
 
         Mat frame = new Mat();
-        frame = Imgcodecs.imread("C:\\Users\\hemer\\IdeaProjects\\7kabaleCDIO\\resources\\snapshots\\Joe.png");
+        frame = Imgcodecs.imread("resources/snapshots/Joe2.jpg");
         detectAndDisplayDigit(frame);
     }
 
@@ -69,18 +70,34 @@ public class SnapshotCapturer {
     public void detectAndDisplayDigit(Mat frame) {
         Mat frameGray = new Mat();
         Mat frameBlurred = new Mat();
-        Mat frameEdged = new Mat();
+        Mat frameThresh = new Mat();
 
         Imgproc.cvtColor(frame, frameGray, Imgproc.COLOR_BGR2GRAY);
-//        Imgproc.GaussianBlur(frameGray, frameBlurred, new Size(5, 5), 0);
-        Imgproc.Canny(frameGray, frameEdged, 20, 20);
+        Imgproc.GaussianBlur(frameGray, frameBlurred, new Size(5, 5), 0);
+        Imgproc.threshold(frameBlurred, frameThresh, 160, 255, Imgproc.THRESH_BINARY);
 
-        showResult(frameEdged);
+        //Imgproc.Canny(frameThresh, frameEdged, 20, 20);
+
+        List<MatOfPoint> cnts = new ArrayList<MatOfPoint>();
+        List<MatOfPoint> cardCnts = new ArrayList<MatOfPoint>();
+
+        Imgproc.findContours(frameThresh, cnts, new Mat(), Imgproc.RETR_EXTERNAL, Imgproc.CHAIN_APPROX_SIMPLE);
+
+        for (MatOfPoint p : cnts) {
+            Rect rect = Imgproc.boundingRect(p);
+
+            if (rect.width >= 0 && (rect.height >= 0)) {
+                cardCnts.add(p);
+                Imgproc.rectangle(frame, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0,255,0), 3);
+            }
+        }
+
+        showResult(frame);
     }
 
 
     public void showResult(Mat img) {
-        Imgproc.resize(img, img, new Size(1280, 720));
+        Imgproc.resize(img, img, new Size(1000, 800));
         MatOfByte matOfByte = new MatOfByte();
         Imgcodecs.imencode(".jpg", img, matOfByte);
         byte[] byteArray = matOfByte.toArray();
