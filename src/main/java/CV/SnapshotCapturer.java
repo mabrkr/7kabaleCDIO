@@ -68,31 +68,44 @@ public class SnapshotCapturer {
     }
 
     public void detectAndDisplayDigit(Mat frame) {
+        Mat orgFrame = frame.clone();
         Mat frameGray = new Mat();
         Mat frameBlurred = new Mat();
         Mat frameThresh = new Mat();
 
+
         Imgproc.cvtColor(frame, frameGray, Imgproc.COLOR_BGR2GRAY);
         Imgproc.GaussianBlur(frameGray, frameBlurred, new Size(5, 5), 0);
         Imgproc.threshold(frameBlurred, frameThresh, 160, 255, Imgproc.THRESH_BINARY);
+        //Imgproc.adaptiveThreshold(frameBlurred, frameThresh, 255, Imgproc.ADAPTIVE_THRESH_MEAN_C, Imgproc.THRESH_BINARY, 11,2);
 
         //Imgproc.Canny(frameThresh, frameEdged, 20, 20);
 
         List<MatOfPoint> cnts = new ArrayList<MatOfPoint>();
-        List<MatOfPoint> cardCnts = new ArrayList<MatOfPoint>();
+        List<Rect> cardCnts = new ArrayList<Rect>();
 
+        //Use Imgproc.RETR_EXTERNAL for cards and Imgproc.RETR_TREE for all contours.
         Imgproc.findContours(frameThresh, cnts, new Mat(), Imgproc.RETR_EXTERNAL, Imgproc.CHAIN_APPROX_SIMPLE);
 
         for (MatOfPoint p : cnts) {
             Rect rect = Imgproc.boundingRect(p);
 
-            if (rect.width >= 0 && (rect.height >= 0)) {
-                cardCnts.add(p);
-                Imgproc.rectangle(frame, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0,255,0), 3);
+            if ((rect.width >= 100 && rect.height >= 100) && (rect.width <= 500 && rect.height <= 500)) {
+                cardCnts.add(rect);
+                Imgproc.rectangle(orgFrame, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 3);
             }
         }
 
-        showResult(frame);
+        System.out.println("Der er " + cardCnts.size() + " spillekort på bordet!");
+        //showResult(frameThresh);
+        //showResult(frame);
+
+        for (int i = 0; i < 10; i++)
+        {
+            Mat cropped = new Mat(frame, cardCnts.get(i));
+            Mat ultraCropped = new Mat(cropped, new Rect(0,0,50,150));
+            showResult(ultraCropped);
+        }
     }
 
 
