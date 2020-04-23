@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Joe3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Joe4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CV/SnapshotCapturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CV/SnapshotCapturer.java" afterDir="false" />
     </list>
@@ -44,13 +59,6 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="1ZIZgpjvsQNDjhw6aVGLBKQ75Yl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
@@ -58,7 +66,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -66,17 +73,18 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585730864208" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/snapshots" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.22413793" />
     <property name="project.structure.side.proportion" value="0.33162394" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -129,6 +137,15 @@
       <workItem from="1585731183703" duration="7493000" />
       <workItem from="1585901289628" duration="298000" />
       <workItem from="1585905131125" duration="7411000" />
+      <workItem from="1585937726565" duration="205000" />
+      <workItem from="1585940652015" duration="79000" />
+      <workItem from="1586000465936" duration="4553000" />
+      <workItem from="1586856355131" duration="214000" />
+      <workItem from="1586857629956" duration="1073000" />
+      <workItem from="1586935710345" duration="505000" />
+      <workItem from="1586976615704" duration="11000" />
+      <workItem from="1587548732927" duration="866000" />
+      <workItem from="1587556796672" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="imagecapture v 1.0">
       <created>1583954545433</created>
@@ -183,7 +200,19 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -197,7 +226,10 @@
   <component name="WindowStateProjectService">
     <state x="626" y="240" width="657" height="629" key="#Main" timestamp="1585731209473" />
     <state x="626" y="240" width="657" height="629" key="#Main/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state x="555" y="215" width="825" height="679" key="#Project_Structure" timestamp="1585731209473" />
+    <state x="555" y="215" width="825" height="679" key="#Project_Structure" timestamp="1585937766674">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="555" y="215" key="#Project_Structure/0.0.2194.1194@0.0.2194.1194" timestamp="1585937766674" />
     <state x="555" y="215" width="825" height="679" key="#Project_Structure/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
     <state x="418" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585731209473" />
     <state x="418" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
@@ -209,25 +241,39 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="543" y="117" width="824" height="875" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1585739846420" />
-    <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl" timestamp="1585731209473" />
+    <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl" timestamp="1585940706876">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="738" y="312" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585940706876" />
     <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state width="1872" height="139" key="GridCell.Tab.0.bottom" timestamp="1585912694822">
-      <screen x="0" y="28" width="1920" height="1052" />
+    <state width="1878" height="145" key="GridCell.Tab.0.bottom" timestamp="1587549599384">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1878" height="145" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587549599384" />
+    <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="1872" height="139" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694822" />
-    <state width="1872" height="139" key="GridCell.Tab.0.center" timestamp="1585912694821">
-      <screen x="0" y="28" width="1920" height="1052" />
+    <state width="1878" height="145" key="GridCell.Tab.0.center" timestamp="1587549599384">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1878" height="145" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587549599384" />
+    <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="1872" height="139" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1872" height="139" key="GridCell.Tab.0.left" timestamp="1585912694821">
-      <screen x="0" y="28" width="1920" height="1052" />
+    <state width="1878" height="145" key="GridCell.Tab.0.left" timestamp="1587549599384">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1878" height="145" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587549599384" />
+    <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="1872" height="139" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1872" height="139" key="GridCell.Tab.0.right" timestamp="1585912694821">
-      <screen x="0" y="28" width="1920" height="1052" />
+    <state width="1878" height="145" key="GridCell.Tab.0.right" timestamp="1587549599384">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1878" height="145" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587549599384" />
+    <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="1872" height="139" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state x="443" y="131" width="1024" height="847" key="SettingsEditor" timestamp="1585731209473" />
+    <state x="443" y="131" width="1024" height="847" key="SettingsEditor" timestamp="1585940730267">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="443" y="131" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585940730267" />
     <state x="443" y="131" width="1024" height="847" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
     <state x="555" y="290" width="800" height="530" key="Vcs.Push.Dialog.v2" timestamp="1585739851016">
       <screen x="0" y="28" width="1920" height="1052" />
@@ -241,81 +287,13 @@
     <state x="740" y="473" width="429" height="164" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
     <state x="626" y="129" width="668" height="849" key="find.popup" timestamp="1585731209473" />
     <state x="626" y="129" width="668" height="849" key="find.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>10</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>7kabaleCDIO</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.33162394" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: org.openjfx:javafx-base:11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <state x="385" y="140" key="new project wizard" timestamp="1585940689504">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="385" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1585940689504" />
+    <state x="619" y="243" key="run.anything.popup" timestamp="1586001011986">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="619" y="243" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586001011986" />
   </component>
 </project>

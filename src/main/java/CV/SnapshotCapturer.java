@@ -19,6 +19,8 @@ import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 
 public class SnapshotCapturer {
     private JFrame jframe;
+    private final int WIDTH = 1000;
+    private final int HEIGHT = 800;
 
     // Ref: https://www.tutorialspoint.com/opencv/opencv_using_camera.htm
     public void captureSnapshot() throws IOException {
@@ -90,7 +92,7 @@ public class SnapshotCapturer {
         for (MatOfPoint p : cnts) {
             Rect rect = Imgproc.boundingRect(p);
 
-            if ((rect.width >= 100 && rect.height >= 100) && (rect.width <= 500 && rect.height <= 500)) {
+            if ((rect.width >= 100 && rect.height >= 100) && (rect.width <= 350 && rect.height <= 500)) {
                 cardCnts.add(rect);
                 Imgproc.rectangle(orgFrame, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 3);
             }
@@ -98,19 +100,21 @@ public class SnapshotCapturer {
 
         System.out.println("Der er " + cardCnts.size() + " spillekort på bordet!");
         //showResult(frameThresh);
-        //showResult(frame);
+        showResult(orgFrame);
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 52; i++)
         {
             Mat cropped = new Mat(frame, cardCnts.get(i));
-            Mat ultraCropped = new Mat(cropped, new Rect(0,0,50,150));
+            Mat ultraCropped = new Mat(cropped, new Rect(0,0,cropped.width()/4,cropped.height()/3));
             showResult(ultraCropped);
+
+
         }
     }
 
 
     public void showResult(Mat img) {
-        Imgproc.resize(img, img, new Size(1000, 800));
+        Imgproc.resize(img, img, new Size(WIDTH, HEIGHT));
         MatOfByte matOfByte = new MatOfByte();
         Imgcodecs.imencode(".jpg", img, matOfByte);
         byte[] byteArray = matOfByte.toArray();
