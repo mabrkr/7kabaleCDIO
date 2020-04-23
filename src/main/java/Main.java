@@ -1,5 +1,8 @@
-import CV.SnapshotCapturer;
 import nu.pattern.OpenCV;
+import org.opencv.core.Mat;
+import org.opencv.core.Rect;
+
+import java.util.List;
 
 public class Main {
 
@@ -7,7 +10,12 @@ public class Main {
         OpenCV.loadShared();
 
         SnapshotCapturer snapshotCapturer = new SnapshotCapturer();
-        snapshotCapturer.captureSnapshot();
+        Mat snapshot = snapshotCapturer.captureSnapshot();
+
+        CardProcessor cp = new CardProcessor();
+        List<Rect> listOfCards = cp.detectCards(snapshot);
+        cp.findCornerContours(snapshot, listOfCards);
+
     }
 
 
