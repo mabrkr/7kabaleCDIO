@@ -20,7 +20,6 @@ public class GUI {
     private JFrame jframe;
 
     private GUI() {
-
     }
 
     public static GUI getInstance() {

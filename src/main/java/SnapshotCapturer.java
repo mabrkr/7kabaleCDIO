@@ -16,8 +16,6 @@ import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 
 public class SnapshotCapturer {
 
-
-
     // Ref: https://www.tutorialspoint.com/opencv/opencv_using_camera.htm
     public Mat captureSnapshot() throws IOException {
 //
@@ -45,6 +43,5 @@ public class SnapshotCapturer {
         frame = Imgcodecs.imread("resources/snapshots/Joe2.jpg");
         return frame;
     }
-
 
 }

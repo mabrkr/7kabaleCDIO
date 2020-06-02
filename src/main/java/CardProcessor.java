@@ -42,6 +42,7 @@ public class CardProcessor {
 
     public void findCornerContours(Mat frame, List<Rect> listOfCards) {
         List<Mat> listOfCorners = new ArrayList<Mat>();
+        List<Rect> listOfFigures = new ArrayList<Rect>();
 
         //Crops the corners of each of the cards
         for (int i = 0; i < 52; i++) {
@@ -54,23 +55,39 @@ public class CardProcessor {
         int cntscount = 0;
         for (Mat m : listOfCorners) {
             List<MatOfPoint> croppedCnts = new ArrayList<MatOfPoint>();
+            Mat mGray = new Mat();
 
             //Image processing
-            Imgproc.cvtColor(m, m, Imgproc.COLOR_BGR2GRAY);
-            Imgproc.threshold(m, m, THRESHOLD, 255, Imgproc.THRESH_BINARY);
-            Imgproc.findContours(m, croppedCnts, new Mat(), Imgproc.RETR_TREE, Imgproc.CHAIN_APPROX_SIMPLE);
+            Imgproc.cvtColor(m, mGray, Imgproc.COLOR_BGR2GRAY);
+            Imgproc.threshold(mGray, mGray, THRESHOLD, 255, Imgproc.THRESH_BINARY);
+            Imgproc.findContours(mGray, croppedCnts, new Mat(), Imgproc.RETR_TREE, Imgproc.CHAIN_APPROX_SIMPLE);
 
             for (MatOfPoint point : croppedCnts) {
                 Rect rect = Imgproc.boundingRect(point);
 
                 //Filter out small and large contours by size
                 if ((rect.width >= 8 && rect.height >= 31) && (rect.width <= 100 && rect.height <= 100)) {
+                    listOfFigures.add(rect);
+                    reqFigure(m, rect);
                     Imgproc.rectangle(m, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 1);
                     cntscount++;
                 }
             }
-            GUI.getInstance().showResult(m);
+            //GUI.getInstance().showResult(m);
         }
         System.out.println(cntscount);
+    }
+
+    public void reqFigure(Mat frame, Rect figure) {
+        Mat figureCropped = new Mat(frame, figure);
+        double[] centerPixel = figureCropped.get(figureCropped.height()/2, figureCropped.width()/2);
+
+        GUI.getInstance().showResult(figureCropped);
+
+        if(centerPixel[2]<100) System.out.println("Sort");
+        if(centerPixel[2]>100) System.out.println("Rød");
+
+        System.out.println(centerPixel[2] + " " + centerPixel[1] + " " + centerPixel[0]);
+
     }
 }
