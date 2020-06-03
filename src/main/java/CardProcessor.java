@@ -35,6 +35,7 @@ public class CardProcessor {
             }
         }
 
+        GUI.getInstance().showResult(orgFrame, "");
         System.out.println(cards.size() + " cards found!");
 
         return cards;
@@ -45,7 +46,7 @@ public class CardProcessor {
         List<Rect> listOfFigures = new ArrayList<Rect>();
 
         //Crops the corners of each of the cards
-        for (int i = 0; i < 52; i++) {
+        for (int i = 0; i < listOfCards.size(); i++) {
             Mat cardsCropped = new Mat(frame, listOfCards.get(i));
             Mat cornersCropped = new Mat(cardsCropped, new Rect(0, 0, cardsCropped.width() / 4, cardsCropped.height() / 3));
             listOfCorners.add(cornersCropped);
@@ -68,26 +69,53 @@ public class CardProcessor {
                 //Filter out small and large contours by size
                 if ((rect.width >= 8 && rect.height >= 31) && (rect.width <= 100 && rect.height <= 100)) {
                     listOfFigures.add(rect);
-                    reqFigure(m, rect);
+                    reqFigure(m, rect, cntscount + 1);
                     Imgproc.rectangle(m, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 1);
                     cntscount++;
                 }
             }
-            //GUI.getInstance().showResult(m);
+            GUI.getInstance().showResult(m, "");
         }
         System.out.println(cntscount);
     }
 
-    public void reqFigure(Mat frame, Rect figure) {
+    public void reqFigure(Mat frame, Rect figure, int count) {
+
+
         Mat figureCropped = new Mat(frame, figure);
-        double[] centerPixel = figureCropped.get(figureCropped.height()/2, figureCropped.width()/2);
+        Mat grayCropped = new Mat(frame, figure);
 
-        GUI.getInstance().showResult(figureCropped);
+        int fjolleH = (int) (figureCropped.height() * 0.11);
+        int fjolleW = (int) (figureCropped.width() * 0.2);
 
-        if(centerPixel[2]<100) System.out.println("Sort");
-        if(centerPixel[2]>100) System.out.println("Rød");
+        Imgproc.cvtColor(figureCropped, grayCropped, Imgproc.COLOR_BGR2GRAY);
+        Imgproc.threshold(grayCropped, grayCropped, THRESHOLD, 255, Imgproc.THRESH_BINARY);
 
-        System.out.println(centerPixel[2] + " " + centerPixel[1] + " " + centerPixel[0]);
+        double[] centerPixel = figureCropped.get(figureCropped.height() / 2, figureCropped.width() / 2);
+        double[] clubsPixel = grayCropped.get((int) (figureCropped.height() * 0.33), (int) (figureCropped.width() * 0.27));
+
+        double[] diamondsPixel = grayCropped.get(fjolleH, fjolleW);
+
+        figureCropped.put(fjolleH, fjolleW, new double[]{129.0, 215.0, 66.0});
+
+
+        String output = "";
+
+        //If center pixel is black
+        if (centerPixel[2] < 100) {
+            if (clubsPixel[0] < 100) output = "Spades ";
+            if (clubsPixel[0] > 100) output = "Clubs ";
+        }
+
+        //If center pixel is red
+        if (centerPixel[2] > 100) {
+            if (diamondsPixel[0] < 100) output = "Hearts ";
+            if (diamondsPixel[0] > 100) output = "Diamonds ";
+        }
+
+
+        GUI.getInstance().showResult(figureCropped, output + count);
 
     }
+
 }

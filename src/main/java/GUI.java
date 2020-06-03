@@ -29,7 +29,7 @@ public class GUI {
         return single_instance;
     }
 
-    public void showResult(Mat img) {
+    public void showResult(Mat img, String title) {
         Imgproc.resize(img, img, new Size(WIDTH, HEIGHT));
         MatOfByte matOfByte = new MatOfByte();
         Imgcodecs.imencode(".jpg", img, matOfByte);
@@ -40,7 +40,7 @@ public class GUI {
             bufImage = ImageIO.read(in);
 
             jframe = new JFrame();
-
+            if(title != null) jframe.setTitle(title);
             jframe.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
             jframe.getContentPane().add(new JLabel(new ImageIcon(bufImage)));
             jframe.pack();

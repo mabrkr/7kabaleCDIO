@@ -19,12 +19,62 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Stor oprydning i kode, klasser og mapper udført.">
+    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Arbejde med at finde farver.">
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111734.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111802.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111819.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111836.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111856.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111920.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111937.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111946.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112009.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112021.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112037.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112051.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112103.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112117.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112129.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112143.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112151.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112220.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112244.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112258.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112317.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112326.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112356.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112452.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112503.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112515.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112605.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112633.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112701.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112735.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112742.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112753.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112803.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112837.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112903.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112912.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112921.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112933.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112950.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112958.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113021.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113030.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113038.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113050.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113058.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113549.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113925.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113936.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CardProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CardProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SnapshotCapturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SnapshotCapturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +112,13 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\Jeppe Kaare Larsen\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.4357.23\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1ZIZgpjvsQNDjhw6aVGLBKQ75Yl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
@@ -82,7 +139,13 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1585730864208" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/snapshots/Testbilleder" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -91,12 +154,13 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/snapshots" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\hemer\IdeaProjects\7kabaleCDIO\resources\snapshots" />
       <recent name="C:\Users\Fars\IdeaProjects\OpenCVTest2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\7kabaleCDIO\resources\snapshots\Testbilleder" />
+      <recent name="$PROJECT_DIR$/resources/snapshots" />
     </key>
   </component>
   <component name="RunManager">
@@ -155,6 +219,8 @@
       <workItem from="1587713615744" duration="3000" />
       <workItem from="1588139793065" duration="1316000" />
       <workItem from="1588577394653" duration="2140000" />
+      <workItem from="1591083797115" duration="705000" />
+      <workItem from="1591170201622" duration="9741000" />
     </task>
     <task id="LOCAL-00001" summary="imagecapture v 1.0">
       <created>1583954545433</created>
@@ -219,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587635906719</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Arbejde med at finde farver.">
+      <created>1591083875678</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1591083875678</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,7 +319,8 @@
     <MESSAGE value="Kan nu finde og markere kort." />
     <MESSAGE value="Konstanter til højde og bredde introduceret." />
     <MESSAGE value="Stor oprydning i kode, klasser og mapper udført." />
-    <option name="LAST_COMMIT_MESSAGE" value="Stor oprydning i kode, klasser og mapper udført." />
+    <MESSAGE value="Arbejde med at finde farver." />
+    <option name="LAST_COMMIT_MESSAGE" value="Arbejde med at finde farver." />
   </component>
   <component name="WindowStateProjectService">
     <state x="626" y="240" width="657" height="629" key="#Main" timestamp="1585731209473" />
@@ -266,33 +340,33 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="543" y="117" width="824" height="875" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1585739846420" />
-    <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl" timestamp="1585940706876">
+    <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl" timestamp="1591177742409">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="738" y="312" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1585940706876" />
+    <state x="738" y="312" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591177742409" />
     <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state width="1878" height="105" key="GridCell.Tab.0.bottom" timestamp="1588582226147">
+    <state width="1878" height="207" key="GridCell.Tab.0.bottom" timestamp="1591179318643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="105" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588582226147" />
+    <state width="1878" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591179318643" />
     <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="1872" height="139" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694822" />
-    <state width="1878" height="105" key="GridCell.Tab.0.center" timestamp="1588582226147">
+    <state width="1878" height="207" key="GridCell.Tab.0.center" timestamp="1591179318643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="105" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588582226147" />
+    <state width="1878" height="207" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591179318643" />
     <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="1872" height="139" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="105" key="GridCell.Tab.0.left" timestamp="1588582226147">
+    <state width="1878" height="207" key="GridCell.Tab.0.left" timestamp="1591179318642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="105" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588582226147" />
+    <state width="1878" height="207" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591179318642" />
     <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="1872" height="139" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="105" key="GridCell.Tab.0.right" timestamp="1588582226147">
+    <state width="1878" height="207" key="GridCell.Tab.0.right" timestamp="1591179318643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="105" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588582226147" />
+    <state width="1878" height="207" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591179318643" />
     <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="1872" height="139" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
     <state x="443" y="131" width="1024" height="847" key="SettingsEditor" timestamp="1585940730267">
@@ -300,10 +374,10 @@
     </state>
     <state x="443" y="131" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585940730267" />
     <state x="443" y="131" width="1024" height="847" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state x="555" y="259" width="800" height="530" key="Vcs.Push.Dialog.v2" timestamp="1587635908502">
+    <state x="555" y="259" width="800" height="530" key="Vcs.Push.Dialog.v2" timestamp="1591083878470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="555" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1587635908502" />
+    <state x="555" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591083878470" />
     <state x="555" y="290" width="800" height="530" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1585739851016" />
     <state x="628" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1585905144086">
       <screen x="0" y="28" width="1920" height="1052" />

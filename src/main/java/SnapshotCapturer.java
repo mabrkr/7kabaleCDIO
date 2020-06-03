@@ -40,7 +40,7 @@ public class SnapshotCapturer {
 //        }
 
         Mat frame;
-        frame = Imgcodecs.imread("resources/snapshots/Joe2.jpg");
+        frame = Imgcodecs.imread("resources/test_images/AllCards.jpg");
         return frame;
     }
 
