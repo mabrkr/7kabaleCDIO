@@ -20,61 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Arbejde med at finde farver.">
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111734.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111802.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111819.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111836.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111856.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111920.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111937.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_111946.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112009.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112021.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112037.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112051.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112103.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112117.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112129.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112143.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112151.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112220.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112244.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112258.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112317.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112326.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112356.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112452.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112503.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112515.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112605.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112633.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112701.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112735.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112742.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112753.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112803.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112837.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112903.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112912.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112921.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112933.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112950.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_112958.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113008.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113021.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113030.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113038.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113050.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113058.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113549.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113925.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/snapshots/Testbilleder/IMG_20200422_113936.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CardProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CardProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SnapshotCapturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SnapshotCapturer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -345,29 +292,33 @@
     </state>
     <state x="738" y="312" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591177742409" />
     <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state width="1878" height="207" key="GridCell.Tab.0.bottom" timestamp="1591179318643">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="320" key="GridCell.Tab.0.bottom" timestamp="1591188893131">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591179318643" />
     <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
+    <state width="2517" height="320" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591188893131" />
     <state width="1872" height="139" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694822" />
-    <state width="1878" height="207" key="GridCell.Tab.0.center" timestamp="1591179318643">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="320" key="GridCell.Tab.0.center" timestamp="1591188893131">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="207" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591179318643" />
     <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
+    <state width="2517" height="320" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591188893131" />
     <state width="1872" height="139" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="207" key="GridCell.Tab.0.left" timestamp="1591179318642">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="320" key="GridCell.Tab.0.left" timestamp="1591188893131">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="207" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591179318642" />
     <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
+    <state width="2517" height="320" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591188893131" />
     <state width="1872" height="139" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="207" key="GridCell.Tab.0.right" timestamp="1591179318643">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="320" key="GridCell.Tab.0.right" timestamp="1591188893131">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="207" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591179318643" />
     <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
+    <state width="2517" height="320" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591188893131" />
     <state width="1872" height="139" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
     <state x="443" y="131" width="1024" height="847" key="SettingsEditor" timestamp="1585940730267">
       <screen x="0" y="0" width="1920" height="1040" />

@@ -69,12 +69,13 @@ public class CardProcessor {
                 //Filter out small and large contours by size
                 if ((rect.width >= 8 && rect.height >= 31) && (rect.width <= 100 && rect.height <= 100)) {
                     listOfFigures.add(rect);
-                    reqFigure(m, rect, cntscount + 1);
+                   // reqFigure(m, rect, cntscount + 1);
+                    reqNumbers(m, rect, cntscount + 1);
                     Imgproc.rectangle(m, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 1);
                     cntscount++;
                 }
             }
-            GUI.getInstance().showResult(m, "");
+            //GUI.getInstance().showResult(m, "");
         }
         System.out.println(cntscount);
     }
@@ -85,33 +86,80 @@ public class CardProcessor {
         Mat figureCropped = new Mat(frame, figure);
         Mat grayCropped = new Mat(frame, figure);
 
-        int fjolleH = (int) (figureCropped.height() * 0.11);
-        int fjolleW = (int) (figureCropped.width() * 0.2);
 
         Imgproc.cvtColor(figureCropped, grayCropped, Imgproc.COLOR_BGR2GRAY);
         Imgproc.threshold(grayCropped, grayCropped, THRESHOLD, 255, Imgproc.THRESH_BINARY);
 
         double[] centerPixel = figureCropped.get(figureCropped.height() / 2, figureCropped.width() / 2);
+
         double[] clubsPixel = grayCropped.get((int) (figureCropped.height() * 0.33), (int) (figureCropped.width() * 0.27));
+        double[] clubsPixel2 = grayCropped.get((int) (figureCropped.height() * 0.33), (int) (figureCropped.width() * 0.73));
+        double[] clubsPixel3 = grayCropped.get((int) (figureCropped.height() * 0.15), (int) (figureCropped.width() * 0.25));
 
-        double[] diamondsPixel = grayCropped.get(fjolleH, fjolleW);
-
-        figureCropped.put(fjolleH, fjolleW, new double[]{129.0, 215.0, 66.0});
-
+        double[] diamondsPixel = grayCropped.get((int) (figureCropped.height() * 0.11), (int) (figureCropped.width() * 0.2));
+        double[] diamondsPixel2 = grayCropped.get((int) (figureCropped.height() * 0.11), (int) (figureCropped.width() * 0.8));
+        double[] diamondsPixel3 = grayCropped.get((int) (figureCropped.height() * 0.8), (int) (figureCropped.width() * 0.5));
+        double[] diamondsPixel4 = grayCropped.get((int) (figureCropped.height() * 0.2), (int) (figureCropped.width() * 0.5));
 
         String output = "";
 
         //If center pixel is black
-        if (centerPixel[2] < 100) {
-            if (clubsPixel[0] < 100) output = "Spades ";
-            if (clubsPixel[0] > 100) output = "Clubs ";
+        if (centerPixel[2] < 100 && clubsPixel3[0] > 100) {
+            if (clubsPixel[0] < 100 && clubsPixel2[0] < 100) {
+                output = "Spades ";
+                GUI.getInstance().showResult(figureCropped, output + count);
+            }
+            if (clubsPixel[0] > 100 && clubsPixel2[0] > 100) {
+                output = "Clubs ";
+                GUI.getInstance().showResult(figureCropped, output + count);
+            }
+
         }
 
         //If center pixel is red
-        if (centerPixel[2] > 100) {
-            if (diamondsPixel[0] < 100) output = "Hearts ";
-            if (diamondsPixel[0] > 100) output = "Diamonds ";
+        else if (centerPixel[2] > 100 && diamondsPixel3[0] < 100 && diamondsPixel4[0] < 100) {
+            if (diamondsPixel[0] < 100 && diamondsPixel2[0] < 100) {
+                output = "Hearts ";
+                GUI.getInstance().showResult(figureCropped, output + count);
+            }
+
+            if (diamondsPixel[0] > 100 && diamondsPixel2[0] > 100) {
+                output = "Diamonds ";
+                GUI.getInstance().showResult(figureCropped, output + count);
+            }
+
         }
+
+
+
+
+    }
+
+    public void reqNumbers(Mat frame, Rect figure, int count) {
+        Mat figureCropped = new Mat(frame, figure);
+        Mat grayCropped = new Mat(frame, figure);
+
+        int bottom = (int) (figureCropped.height() * 0.9);
+        int left = (int) (figureCropped.width() * 0.2);
+        int right = (int) (figureCropped.width() * 0.8);
+        int top = (int) (figureCropped.height() * 0.1);
+
+        Imgproc.cvtColor(figureCropped, grayCropped, Imgproc.COLOR_BGR2GRAY);
+        Imgproc.threshold(grayCropped, grayCropped, THRESHOLD, 255, Imgproc.THRESH_BINARY);
+
+        double[] centerPixel = figureCropped.get(figureCropped.height() / 2, figureCropped.width() / 2);
+
+        double[] numberPixel1 = grayCropped.get(top, left);
+        double[] numberPixel2 = grayCropped.get(bottom, left);
+        double[] numberPixel3 = grayCropped.get(top, right);
+        double[] numberPixel4 = grayCropped.get(bottom, right);
+
+        figureCropped.put(top, left, new double[]{0.0, 255.0, 0.0});
+        figureCropped.put(bottom, left, new double[]{0.0, 255.0, 0.0});
+        figureCropped.put(top, right, new double[]{0.0, 255.0, 0.0});
+        figureCropped.put(bottom, right, new double[]{0.0, 255.0, 0.0});
+
+        String output = "tal";
 
 
         GUI.getInstance().showResult(figureCropped, output + count);
