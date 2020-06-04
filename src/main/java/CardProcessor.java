@@ -69,8 +69,15 @@ public class CardProcessor {
                 //Filter out small and large contours by size
                 if ((rect.width >= 8 && rect.height >= 31) && (rect.width <= 100 && rect.height <= 100)) {
                     listOfFigures.add(rect);
-                   // reqFigure(m, rect, cntscount + 1);
-                    reqNumbers(m, rect, cntscount + 1);
+
+
+//                     reqFigure(m, rect, cntscount + 1);
+
+//                    recNumbers(m, rect, cntscount + 1);
+
+                    NumberDetector numberDetector = new NumberDetector();
+                    numberDetector.recNumber(m, rect, THRESHOLD);
+
                     Imgproc.rectangle(m, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 1);
                     cntscount++;
                 }
@@ -80,7 +87,7 @@ public class CardProcessor {
         System.out.println(cntscount);
     }
 
-    public void reqFigure(Mat frame, Rect figure, int count) {
+    public void recFigure(Mat frame, Rect figure, int count) {
 
 
         Mat figureCropped = new Mat(frame, figure);
@@ -131,11 +138,9 @@ public class CardProcessor {
         }
 
 
-
-
     }
 
-    public void reqNumbers(Mat frame, Rect figure, int count) {
+    public void recNumbers(Mat frame, Rect figure, int count) {
         Mat figureCropped = new Mat(frame, figure);
         Mat grayCropped = new Mat(frame, figure);
 
@@ -143,26 +148,75 @@ public class CardProcessor {
         int left = (int) (figureCropped.width() * 0.2);
         int right = (int) (figureCropped.width() * 0.8);
         int top = (int) (figureCropped.height() * 0.1);
+        int center = (int) (figureCropped.height() * 0.5);
 
         Imgproc.cvtColor(figureCropped, grayCropped, Imgproc.COLOR_BGR2GRAY);
         Imgproc.threshold(grayCropped, grayCropped, THRESHOLD, 255, Imgproc.THRESH_BINARY);
 
-        double[] centerPixel = figureCropped.get(figureCropped.height() / 2, figureCropped.width() / 2);
+        boolean centerPixel = isPixelAreaColorBlack(grayCropped, figureCropped.height() / 2, figureCropped.width() / 2, 2);
+        boolean tlPixel = isPixelAreaColorBlack(grayCropped, top, left, 2);
+        boolean blPixel = isPixelAreaColorBlack(grayCropped, bottom, left, 2);
+        boolean trPixel = isPixelAreaColorBlack(grayCropped, top, right, 2);
+        boolean brPixel = isPixelAreaColorBlack(grayCropped, bottom, right, 2);
+        boolean crPixel = isPixelAreaColorBlack(grayCropped, center, right, 2);
+        boolean clPixel = isPixelAreaColorBlack(grayCropped, center, left, 2);
 
-        double[] numberPixel1 = grayCropped.get(top, left);
-        double[] numberPixel2 = grayCropped.get(bottom, left);
-        double[] numberPixel3 = grayCropped.get(top, right);
-        double[] numberPixel4 = grayCropped.get(bottom, right);
-
+        figureCropped.put(figureCropped.height() / 2, figureCropped.width() / 2, new double[]{0.0, 255.0, 0.0});
         figureCropped.put(top, left, new double[]{0.0, 255.0, 0.0});
         figureCropped.put(bottom, left, new double[]{0.0, 255.0, 0.0});
         figureCropped.put(top, right, new double[]{0.0, 255.0, 0.0});
         figureCropped.put(bottom, right, new double[]{0.0, 255.0, 0.0});
+        figureCropped.put(center, right, new double[]{0.0, 255.0, 0.0});
+        figureCropped.put(center, left, new double[]{0.0, 255.0, 0.0});
 
         String output = "tal";
 
+        if (centerPixel && tlPixel && blPixel && trPixel && brPixel && crPixel && clPixel) {
+            output = "OTTE ";
+        }
+        if (!centerPixel && !tlPixel && !blPixel && trPixel && brPixel && crPixel && clPixel) {
+            output = "FIRE ";
+        }
+//        if (centerPixel[0] > 100 && numberPixel1[0] < 100 && numberPixel2[0] < 100 && numberPixel3[0] < 100 && numberPixel4[0] < 100 && numberPixel5[0] < 100 && numberPixel6[0] < 100) {
+//            output = "TI ";
+//        }
+//        if (centerPixel[0] < 100 && numberPixel1[0] < 100 && numberPixel2[0] < 100 && numberPixel3[0] < 100 && numberPixel4[0] < 100 && numberPixel5[0] > 100 && numberPixel6[0] > 100) {
+//            output = "TO ";
+//        }
+//        if (centerPixel[0] > 100 && numberPixel1[0] > 100 && numberPixel2[0] > 100 && numberPixel3[0] < 100 && numberPixel4[0] < 100 && numberPixel5[0] < 100 && numberPixel6[0] < 100) {
+//            output = "FIRE ";
+//        }
 
-        GUI.getInstance().showResult(figureCropped, output + count);
+        GUI.getInstance().showResult(grayCropped, output + count);
+
+    }
+
+
+    public boolean isPixelAreaColorBlack(Mat image, int row, int col, int area) {
+        if (area == 1) {
+            image.put(row, col, new double[]{255.0, 0.0, 0.0});
+            if (image.get(row, col)[0] > 100) {
+                return false;
+            } else {
+                return true;
+            }
+
+
+        }
+
+        int whitecounter = 0;
+        int blackcounter = 0;
+        for (int i = -(area / 2); i < area / 2; i++) {
+            for (int j = -(area / 2); j < area / 2; j++) {
+                if (image.get(row + j, col + i)[0] > 100) {
+                    whitecounter++;
+                } else {
+                    blackcounter++;
+                }
+                image.put(row + j, col + i, new double[]{0.0, 255.0, 0.0});
+            }
+        }
+        return whitecounter > blackcounter ? false : true;
 
     }
 

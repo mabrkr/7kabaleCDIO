@@ -20,6 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Arbejde med at finde farver.">
+      <change afterPath="$PROJECT_DIR$/hs_err_pid1720.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NumberDetector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CardProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CardProcessor.java" afterDir="false" />
     </list>
@@ -52,6 +54,10 @@
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Integer.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/NullPointerException.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -98,6 +104,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.22413793" />
     <property name="project.structure.side.proportion" value="0.33162394" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
@@ -168,6 +175,7 @@
       <workItem from="1588577394653" duration="2140000" />
       <workItem from="1591083797115" duration="705000" />
       <workItem from="1591170201622" duration="9741000" />
+      <workItem from="1591259036437" duration="13699000" />
     </task>
     <task id="LOCAL-00001" summary="imagecapture v 1.0">
       <created>1583954545433</created>
@@ -292,31 +300,31 @@
     </state>
     <state x="738" y="312" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591177742409" />
     <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state width="2517" height="320" key="GridCell.Tab.0.bottom" timestamp="1591188893131">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1878" height="186" key="GridCell.Tab.0.bottom" timestamp="1591278137983">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="207" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591179318643" />
+    <state width="1878" height="186" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591278137983" />
     <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="320" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591188893131" />
     <state width="1872" height="139" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694822" />
-    <state width="2517" height="320" key="GridCell.Tab.0.center" timestamp="1591188893131">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1878" height="186" key="GridCell.Tab.0.center" timestamp="1591278137983">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="207" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591179318643" />
+    <state width="1878" height="186" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591278137983" />
     <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="320" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591188893131" />
     <state width="1872" height="139" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="2517" height="320" key="GridCell.Tab.0.left" timestamp="1591188893131">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1878" height="186" key="GridCell.Tab.0.left" timestamp="1591278137983">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="207" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591179318642" />
+    <state width="1878" height="186" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591278137983" />
     <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="320" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591188893131" />
     <state width="1872" height="139" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="2517" height="320" key="GridCell.Tab.0.right" timestamp="1591188893131">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1878" height="186" key="GridCell.Tab.0.right" timestamp="1591278137983">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="207" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591179318643" />
+    <state width="1878" height="186" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591278137983" />
     <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="320" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591188893131" />
     <state width="1872" height="139" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
@@ -346,9 +354,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="385" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1585940689504" />
-    <state x="621" y="245" key="run.anything.popup" timestamp="1587638474972">
+    <state x="622" y="246" key="run.anything.popup" timestamp="1591265946891">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="621" y="245" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587638474972" />
+    <state x="622" y="246" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1591265946891" />
   </component>
 </project>
