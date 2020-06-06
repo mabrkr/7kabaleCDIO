@@ -82,7 +82,7 @@ public class CardProcessor {
                     cntscount++;
                 }
             }
-            //GUI.getInstance().showResult(m, "");
+            GUI.getInstance().showResult(m, "");
         }
         System.out.println(cntscount);
     }
