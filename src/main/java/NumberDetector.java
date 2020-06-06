@@ -216,6 +216,84 @@ public class NumberDetector {
                         new Coordinates(0.5, 0.5)
                 }
                 , 'K');
+        numbers.put(
+                new Coordinates[]{
+                        new Coordinates(0.2, 0.15),
+                        new Coordinates(0.4, 0.15),
+                        new Coordinates(0.1, 0.3),
+                        new Coordinates(0.175, 0.4),
+                        new Coordinates(0.25, 0.5),
+                        new Coordinates(0.175, 0.6),
+                        new Coordinates(0.1, 0.7),
+                        new Coordinates(0.4, 0.85),
+                        new Coordinates(0.2, 0.85),
+                        new Coordinates(0.7, 0.4),
+                        new Coordinates(0.8, 0.5),
+                        new Coordinates(0.6, 0.75),
+                        new Coordinates(0.6, 0.25),
+                        new Coordinates(0.7, 0.6)
+
+                }
+                , 'H'); //hearts
+        numbers.put(
+                new Coordinates[]{
+                        new Coordinates(0.5, 0.1),
+                        new Coordinates(0.5, 0.9),
+                        new Coordinates(0.1, 0.5),
+                        new Coordinates(0.9, 0.5),
+                        new Coordinates(0.4, 0.225),
+                        new Coordinates(0.4, 0.775),
+                        new Coordinates(0.275, 0.35),
+                        new Coordinates(0.275, 0.65),
+                        new Coordinates(0.8, 0.35),
+                        new Coordinates(0.8, 0.6),
+                        new Coordinates(0.65, 0.275),
+                        new Coordinates(0.7, 0.7),
+                        new Coordinates(0.6, 0.8),
+                        new Coordinates(0.0785, 0.5)
+
+                }
+                , 'D');//Diamonds
+
+        numbers.put(
+                new Coordinates[]{
+                        new Coordinates(0.1, 0.4),
+                        new Coordinates(0.25, 0.35),
+                        new Coordinates(0.85, 0.5),
+                        new Coordinates(0.5, 0.1),
+                        new Coordinates(0.5, 0.9),
+                        new Coordinates(0.1, 0.6),
+                        new Coordinates(0.7, 0.9),
+                        new Coordinates(0.75, 0.75),
+                        new Coordinates(0.45, 0.8),
+                        new Coordinates(0.45, 0.2),
+                        new Coordinates(0.7, 0.1),
+                        new Coordinates(0.25, 0.65),
+                        new Coordinates(0.75, 0.25)
+
+
+                }
+                , 'C');//Clubs
+        numbers.put(
+                new Coordinates[]{
+                        new Coordinates(0.1, 0.5),
+                        new Coordinates(0.25, 0.35),
+                        new Coordinates(0.85, 0.5),
+                        new Coordinates(0.5, 0.1),
+                        new Coordinates(0.5, 0.9),
+                        new Coordinates(0.1, 0.5),
+                        new Coordinates(0.7, 0.9),
+                        new Coordinates(0.75, 0.75),
+                        new Coordinates(0.32, 0.725),
+                        new Coordinates(0.32, 0.275),
+                        new Coordinates(0.7, 0.1),
+                        new Coordinates(0.25, 0.65),
+                        new Coordinates(0.75, 0.25)
+
+
+                }
+                , 'S');//SPARE
+
     }
 
 

@@ -82,7 +82,7 @@ public class CardProcessor {
                     cntscount++;
                 }
             }
-            GUI.getInstance().showResult(m, "");
+//            GUI.getInstance().showResult(m, "");
         }
         System.out.println(cntscount);
     }
@@ -139,7 +139,7 @@ public class CardProcessor {
 
 
     }
-
+//Method for recognizing Numbers
     public void recNumbers(Mat frame, Rect figure, int count) {
         Mat figureCropped = new Mat(frame, figure);
         Mat grayCropped = new Mat(frame, figure);
