@@ -8,7 +8,7 @@ public class CardProcessor {
 
     private final int THRESHOLD = 165;
 
-    public List<Rect> detectCards(Mat frame) {
+    public List<Card> detectCards(Mat frame) {
         Mat orgFrame = frame.clone();
         Mat frameGray = new Mat();
         Mat frameBlurred = new Mat();
@@ -20,7 +20,7 @@ public class CardProcessor {
         Imgproc.threshold(frameBlurred, frameThresh, THRESHOLD, 255, Imgproc.THRESH_BINARY);
 
         List<MatOfPoint> cnts = new ArrayList<MatOfPoint>();
-        List<Rect> cards = new ArrayList<Rect>();
+        List<Card> cards = new ArrayList<Card>();
 
         //Use Imgproc.RETR_EXTERNAL for cards and Imgproc.RETR_TREE for all contours.
         Imgproc.findContours(frameThresh, cnts, new Mat(), Imgproc.RETR_EXTERNAL, Imgproc.CHAIN_APPROX_SIMPLE);
@@ -30,7 +30,7 @@ public class CardProcessor {
 
             //Filter out small and large contours by size
             if ((rect.width >= 100 && rect.height >= 100) && (rect.width <= 350 && rect.height <= 500)) {
-                cards.add(rect);
+                cards.add(new Card(rect.x, rect.y, ' ', ' ', rect));
                 Imgproc.rectangle(orgFrame, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 3);
             }
         }
@@ -41,16 +41,15 @@ public class CardProcessor {
         return cards;
     }
 
-    public void findCornerContours(Mat frame, List<Rect> listOfCards) {
+    public void findCornerContours(Mat frame, Card card) {
         List<Mat> listOfCorners = new ArrayList<Mat>();
         List<Rect> listOfFigures = new ArrayList<Rect>();
 
-        //Crops the corners of each of the cards
-        for (int i = 0; i < listOfCards.size(); i++) {
-            Mat cardsCropped = new Mat(frame, listOfCards.get(i));
-            Mat cornersCropped = new Mat(cardsCropped, new Rect(0, 0, cardsCropped.width() / 4, cardsCropped.height() / 3));
-            listOfCorners.add(cornersCropped);
-        }
+        //Crops the corner of the card
+        Mat cardsCropped = new Mat(frame, card.rectangle);
+        Mat cornersCropped = new Mat(cardsCropped, new Rect(0, 0, cardsCropped.width() / 4, cardsCropped.height() / 3));
+        listOfCorners.add(cornersCropped);
+
 
         //Find the contours (figures and numbers) on each corner
         int cntscount = 0;
@@ -69,25 +68,31 @@ public class CardProcessor {
                 //Filter out small and large contours by size
                 if ((rect.width >= 8 && rect.height >= 31) && (rect.width <= 100 && rect.height <= 100)) {
                     listOfFigures.add(rect);
+                    NumberDetector numberDetector = new NumberDetector();
+
+                    if (rect.y < m.height() * 0.5) {
+                        card.number = numberDetector.recNumber(m, rect, THRESHOLD);
+                    }
+                    if (rect.y > m.height() * 0.5) {
+                        card.suit = recFigure(m, rect);
+                    }
 
 
 //                     reqFigure(m, rect, cntscount + 1);
 
 //                    recNumbers(m, rect, cntscount + 1);
 
-                    NumberDetector numberDetector = new NumberDetector();
-                    numberDetector.recNumber(m, rect, THRESHOLD);
 
                     Imgproc.rectangle(m, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 1);
                     cntscount++;
                 }
             }
-//            GUI.getInstance().showResult(m, "");
+            GUI.getInstance().showResult(m, "" + card.number + card.suit);
         }
         System.out.println(cntscount);
     }
 
-    public void recFigure(Mat frame, Rect figure, int count) {
+    public char recFigure(Mat frame, Rect figure) {
 
 
         Mat figureCropped = new Mat(frame, figure);
@@ -108,17 +113,17 @@ public class CardProcessor {
         double[] diamondsPixel3 = grayCropped.get((int) (figureCropped.height() * 0.8), (int) (figureCropped.width() * 0.5));
         double[] diamondsPixel4 = grayCropped.get((int) (figureCropped.height() * 0.2), (int) (figureCropped.width() * 0.5));
 
-        String output = "";
+        char output = ' ';
 
         //If center pixel is black
         if (centerPixel[2] < 100 && clubsPixel3[0] > 100) {
             if (clubsPixel[0] < 100 && clubsPixel2[0] < 100) {
-                output = "Spades ";
-                GUI.getInstance().showResult(figureCropped, output + count);
+                output = 'S';
+
             }
             if (clubsPixel[0] > 100 && clubsPixel2[0] > 100) {
-                output = "Clubs ";
-                GUI.getInstance().showResult(figureCropped, output + count);
+                output = 'C';
+
             }
 
         }
@@ -126,20 +131,21 @@ public class CardProcessor {
         //If center pixel is red
         else if (centerPixel[2] > 100 && diamondsPixel3[0] < 100 && diamondsPixel4[0] < 100) {
             if (diamondsPixel[0] < 100 && diamondsPixel2[0] < 100) {
-                output = "Hearts ";
-                GUI.getInstance().showResult(figureCropped, output + count);
+                output = 'H';
+
             }
 
             if (diamondsPixel[0] > 100 && diamondsPixel2[0] > 100) {
-                output = "Diamonds ";
-                GUI.getInstance().showResult(figureCropped, output + count);
+                output = 'D';
+
             }
 
         }
-
+        return output;
 
     }
-//Method for recognizing Numbers
+
+    //Method for recognizing Numbers
     public void recNumbers(Mat frame, Rect figure, int count) {
         Mat figureCropped = new Mat(frame, figure);
         Mat grayCropped = new Mat(frame, figure);

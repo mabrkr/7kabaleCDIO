@@ -13,8 +13,12 @@ public class Main {
         Mat snapshot = snapshotCapturer.captureSnapshot();
 
         CardProcessor cp = new CardProcessor();
-        List<Rect> listOfCards = cp.detectCards(snapshot);
-        cp.findCornerContours(snapshot, listOfCards);
+        List<Card> listOfCards = cp.detectCards(snapshot);
+        for (Card card : listOfCards) {
+            cp.findCornerContours(snapshot, card);
+        }
+
+
 
     }
 
