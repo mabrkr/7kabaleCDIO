@@ -2,6 +2,7 @@ import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.objdetect.CascadeClassifier;
+import org.opencv.videoio.VideoCapture;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -18,29 +19,22 @@ public class SnapshotCapturer {
 
     // Ref: https://www.tutorialspoint.com/opencv/opencv_using_camera.htm
     public Mat captureSnapshot() throws IOException {
-//
-//        String filenameFaceCascade = "C:\\Users\\hemer\\IdeaProjects\\7kabaleCDIO\\src\\main\\java\\haarcascade_frontalface_alt.xml";
-//
-//        CascadeClassifier faceCascade = new CascadeClassifier();
-//        faceCascade.load(filenameFaceCascade);
 
-        // Argumentet angiver hvilket kamera (0 = standardkameraet)
-//        VideoCapture capture = new VideoCapture(1);
-//
-//        Mat frame = new Mat();
-//
-//        if (!capture.isOpened()) {
-//            throw new IOException("Kamerafejl. Tjek evt. om det rigtige kamera anvendes.");
-//        } else {
-//            capture.read(frame);
-//            //detectAndDisplay(frame, faceCascade);
-//            detectAndDisplayDigit(frame);
-//
-//
-//        }
 
-        Mat frame;
-        frame = Imgcodecs.imread("resources/test_images/AllCards.jpg");
+
+//        Argumentet angiver hvilket kamera (0 = standardkameraet)
+        VideoCapture capture = new VideoCapture(1);
+
+        Mat frame = new Mat();
+
+        if (!capture.isOpened()) {
+            throw new IOException("Kamerafejl. Tjek evt. om det rigtige kamera anvendes.");
+        } else {
+            capture.read(frame);
+        }
+
+//        Mat frame;
+//        frame = Imgcodecs.imread("resources/test_images/AllCards.jpg");
         return frame;
     }
 

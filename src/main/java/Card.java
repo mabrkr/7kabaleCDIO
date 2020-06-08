@@ -18,4 +18,14 @@ public class Card {
         this.rectangle = rectangle;
     }
 
+    @Override
+    public String toString() {
+        return "Card{" +
+                "x=" + x +
+                ", y=" + y +
+                ", number=" + number +
+                ", suit=" + suit +
+                ", rectangle=" + rectangle +
+                '}';
+    }
 }

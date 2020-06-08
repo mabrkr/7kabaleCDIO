@@ -4,11 +4,13 @@ import org.opencv.imgproc.Imgproc;
 
 import java.util.*;
 
-public class NumberDetector {
+public class Detector {
+
+    private static Detector single_instance = null;
 
     Map<Coordinates[], Character> numbers = new HashMap<Coordinates[], Character>();
 
-    public NumberDetector() {
+    private Detector() {
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.15, 0.25),
@@ -80,7 +82,7 @@ public class NumberDetector {
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.15, 0.25),
-                        new Coordinates(0.15, 0.75),
+                        new Coordinates(0.225, 0.85),
                         new Coordinates(0.85, 0.25),
                         new Coordinates(0.85, 0.75),
                         new Coordinates(0.4, 0.5),
@@ -97,7 +99,7 @@ public class NumberDetector {
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.075, 0.5),
-                        new Coordinates(0.075, 0.25),
+                        new Coordinates(0.075, 0.15),
                         new Coordinates(0.075, 0.75),
                         new Coordinates(0.3, 0.2),
                         new Coordinates(0.5, 0.2),
@@ -216,86 +218,49 @@ public class NumberDetector {
                         new Coordinates(0.5, 0.5)
                 }
                 , 'K');
-        numbers.put(
-                new Coordinates[]{
-                        new Coordinates(0.2, 0.15),
-                        new Coordinates(0.4, 0.15),
-                        new Coordinates(0.1, 0.3),
-                        new Coordinates(0.175, 0.4),
-                        new Coordinates(0.25, 0.5),
-                        new Coordinates(0.175, 0.6),
-                        new Coordinates(0.1, 0.7),
-                        new Coordinates(0.4, 0.85),
-                        new Coordinates(0.2, 0.85),
-                        new Coordinates(0.7, 0.4),
-                        new Coordinates(0.8, 0.5),
-                        new Coordinates(0.6, 0.75),
-                        new Coordinates(0.6, 0.25),
-                        new Coordinates(0.7, 0.6)
-
-                }
-                , 'H'); //hearts
-        numbers.put(
-                new Coordinates[]{
-                        new Coordinates(0.5, 0.1),
-                        new Coordinates(0.5, 0.9),
-                        new Coordinates(0.1, 0.5),
-                        new Coordinates(0.9, 0.5),
-                        new Coordinates(0.4, 0.225),
-                        new Coordinates(0.4, 0.775),
-                        new Coordinates(0.275, 0.35),
-                        new Coordinates(0.275, 0.65),
-                        new Coordinates(0.8, 0.35),
-                        new Coordinates(0.8, 0.6),
-                        new Coordinates(0.65, 0.275),
-                        new Coordinates(0.7, 0.7),
-                        new Coordinates(0.6, 0.8),
-                        new Coordinates(0.0785, 0.5)
-
-                }
-                , 'D');//Diamonds
-
-        numbers.put(
-                new Coordinates[]{
-                        new Coordinates(0.1, 0.4),
-                        new Coordinates(0.25, 0.35),
-                        new Coordinates(0.85, 0.5),
-                        new Coordinates(0.5, 0.1),
-                        new Coordinates(0.5, 0.9),
-                        new Coordinates(0.1, 0.6),
-                        new Coordinates(0.7, 0.9),
-                        new Coordinates(0.75, 0.75),
-                        new Coordinates(0.45, 0.8),
-                        new Coordinates(0.45, 0.2),
-                        new Coordinates(0.7, 0.1),
-                        new Coordinates(0.25, 0.65),
-                        new Coordinates(0.75, 0.25)
-
-
-                }
-                , 'C');//Clubs
-        numbers.put(
-                new Coordinates[]{
-                        new Coordinates(0.1, 0.5),
-                        new Coordinates(0.25, 0.35),
-                        new Coordinates(0.85, 0.5),
-                        new Coordinates(0.5, 0.1),
-                        new Coordinates(0.5, 0.9),
-                        new Coordinates(0.1, 0.5),
-                        new Coordinates(0.7, 0.9),
-                        new Coordinates(0.75, 0.75),
-                        new Coordinates(0.32, 0.725),
-                        new Coordinates(0.32, 0.275),
-                        new Coordinates(0.7, 0.1),
-                        new Coordinates(0.25, 0.65),
-                        new Coordinates(0.75, 0.25)
-
-
-                }
-                , 'S');//SPARE
+//        numbers.put(
+//                new Coordinates[]{
+//                        new Coordinates(0.10, 0.5),
+//                        new Coordinates(0.15, 0.5),
+//                        new Coordinates(0.20, 0.5),
+//                        new Coordinates(0.25, 0.5),
+//                        new Coordinates(0.35, 0.5),
+//                        new Coordinates(0.40, 0.5),
+//                        new Coordinates(0.45, 0.5),
+//                        new Coordinates(0.50, 0.5),
+//                        new Coordinates(0.55, 0.5),
+//                        new Coordinates(0.65, 0.5),
+//                        new Coordinates(0.75, 0.5),
+//                        new Coordinates(0.85, 0.5),
+//                        new Coordinates(0.90, 0.5),
+//                }
+//                , '1');
+//        numbers.put(
+//                new Coordinates[]{
+//                        new Coordinates(0.15, 0.25),
+//                        new Coordinates(0.15, 0.75),
+//                        new Coordinates(0.85, 0.25),
+//                        new Coordinates(0.85, 0.75),
+//                        new Coordinates(0.5, 0.85),
+//                        new Coordinates(0.5, 0.15),
+//                        new Coordinates(0.6, 0.15),
+//                        new Coordinates(0.05, 0.5),
+//                        new Coordinates(0.95, 0.5),
+//                        new Coordinates(0.35, 0.175),
+//                        new Coordinates(0.7, 0.15),
+//                        new Coordinates(0.35, 0.825),
+//                        new Coordinates(0.7, 0.85)
+//                }
+//                , '0');
 
     }
 
+    public static Detector getInstance() {
+        if (single_instance == null)
+            single_instance = new Detector();
+
+        return single_instance;
+    }
 
     public Character recNumber(Mat frame, Rect figure, int threshold) {
         Map.Entry<Coordinates[], Character> closestMatch = null;
@@ -316,7 +281,7 @@ public class NumberDetector {
                     currentMatches++;
                 }
             }
-            if (currentMatches > matches && currentMatches >= 12) {
+            if (currentMatches > matches && currentMatches >= 10) {
                 matches = currentMatches;
                 closestMatch = entry;
             }
@@ -329,11 +294,63 @@ public class NumberDetector {
         }
 
         if (closestMatch != null) {
-            GUI.getInstance().showResult(figureCropped, closestMatch.getValue().toString());
             return closestMatch.getValue();
         }
         return ' ';
 
+
+    }
+
+    public Character recFigure(Mat frame, Rect figure, int threshold) {
+
+
+        Mat figureCropped = new Mat(frame, figure);
+        Mat grayCropped = new Mat(frame, figure);
+
+
+        Imgproc.cvtColor(figureCropped, grayCropped, Imgproc.COLOR_BGR2GRAY);
+        Imgproc.threshold(grayCropped, grayCropped, threshold, 255, Imgproc.THRESH_BINARY);
+
+        double[] centerPixel = figureCropped.get(figureCropped.height() / 2, figureCropped.width() / 2);
+
+        double[] clubsPixel = grayCropped.get((int) (figureCropped.height() * 0.33), (int) (figureCropped.width() * 0.27));
+        double[] clubsPixel2 = grayCropped.get((int) (figureCropped.height() * 0.33), (int) (figureCropped.width() * 0.73));
+        double[] clubsPixel3 = grayCropped.get((int) (figureCropped.height() * 0.15), (int) (figureCropped.width() * 0.25));
+
+        double[] diamondsPixel = grayCropped.get((int) (figureCropped.height() * 0.11), (int) (figureCropped.width() * 0.2));
+        double[] diamondsPixel2 = grayCropped.get((int) (figureCropped.height() * 0.11), (int) (figureCropped.width() * 0.8));
+        double[] diamondsPixel3 = grayCropped.get((int) (figureCropped.height() * 0.8), (int) (figureCropped.width() * 0.5));
+        double[] diamondsPixel4 = grayCropped.get((int) (figureCropped.height() * 0.2), (int) (figureCropped.width() * 0.5));
+
+        char output = ' ';
+
+        //If center pixel is black
+        if (centerPixel[2] < 100 && clubsPixel3[0] > 100) {
+            if (clubsPixel[0] < 100 && clubsPixel2[0] < 100) {
+                output = 'S';
+
+            }
+            else {
+                output = 'C';
+
+            }
+
+        }
+
+        //If center pixel is red
+        else if (centerPixel[2] > 100 && diamondsPixel3[0] < 100 && diamondsPixel4[0] < 100) {
+            if (diamondsPixel[0] < 100 && diamondsPixel2[0] < 100) {
+                output = 'H';
+
+            }
+
+            if (diamondsPixel[0] > 100 && diamondsPixel2[0] > 100) {
+                output = 'D';
+
+            }
+
+        }
+        return output;
 
     }
 

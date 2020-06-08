@@ -19,6 +19,7 @@ public class CardProcessor {
         Imgproc.GaussianBlur(frameGray, frameBlurred, new Size(5, 5), 0);
         Imgproc.threshold(frameBlurred, frameThresh, THRESHOLD, 255, Imgproc.THRESH_BINARY);
 
+
         List<MatOfPoint> cnts = new ArrayList<MatOfPoint>();
         List<Card> cards = new ArrayList<Card>();
 
@@ -36,194 +37,54 @@ public class CardProcessor {
         }
 
         GUI.getInstance().showResult(orgFrame, "");
+//        GUI.getInstance().showResult(frameThresh, "Threshold");
         System.out.println(cards.size() + " cards found!");
 
         return cards;
     }
 
     public void findCornerContours(Mat frame, Card card) {
-        List<Mat> listOfCorners = new ArrayList<Mat>();
         List<Rect> listOfFigures = new ArrayList<Rect>();
 
         //Crops the corner of the card
-        Mat cardsCropped = new Mat(frame, card.rectangle);
-        Mat cornersCropped = new Mat(cardsCropped, new Rect(0, 0, cardsCropped.width() / 4, cardsCropped.height() / 3));
-        listOfCorners.add(cornersCropped);
-
+        Mat cardCropped = new Mat(frame, card.rectangle);
+        Mat cornerCropped = new Mat(cardCropped, new Rect(0, 0, cardCropped.width() / 4, cardCropped.height() / 3));
 
         //Find the contours (figures and numbers) on each corner
         int cntscount = 0;
-        for (Mat m : listOfCorners) {
-            List<MatOfPoint> croppedCnts = new ArrayList<MatOfPoint>();
-            Mat mGray = new Mat();
 
-            //Image processing
-            Imgproc.cvtColor(m, mGray, Imgproc.COLOR_BGR2GRAY);
-            Imgproc.threshold(mGray, mGray, THRESHOLD, 255, Imgproc.THRESH_BINARY);
-            Imgproc.findContours(mGray, croppedCnts, new Mat(), Imgproc.RETR_TREE, Imgproc.CHAIN_APPROX_SIMPLE);
+        List<MatOfPoint> croppedCnts = new ArrayList<MatOfPoint>();
+        Mat mGray = new Mat();
 
-            for (MatOfPoint point : croppedCnts) {
-                Rect rect = Imgproc.boundingRect(point);
+        //Image processing
+        Imgproc.cvtColor(cornerCropped, mGray, Imgproc.COLOR_BGR2GRAY);
+        Imgproc.threshold(mGray, mGray, THRESHOLD, 255, Imgproc.THRESH_BINARY);
+        Imgproc.findContours(mGray, croppedCnts, new Mat(), Imgproc.RETR_TREE, Imgproc.CHAIN_APPROX_SIMPLE);
 
-                //Filter out small and large contours by size
-                if ((rect.width >= 8 && rect.height >= 31) && (rect.width <= 100 && rect.height <= 100)) {
-                    listOfFigures.add(rect);
-                    NumberDetector numberDetector = new NumberDetector();
+        for (MatOfPoint point : croppedCnts) {
+            Rect rect = Imgproc.boundingRect(point);
 
-                    if (rect.y < m.height() * 0.5) {
-                        card.number = numberDetector.recNumber(m, rect, THRESHOLD);
-                    }
-                    if (rect.y > m.height() * 0.5) {
-                        card.suit = recFigure(m, rect);
-                    }
+            //Filter out small and large contours by size
+            if ((rect.width >= 8 && rect.height >= 31) && (rect.width <= 100 && rect.height <= 100)) {
+                listOfFigures.add(rect);
 
-
-//                     reqFigure(m, rect, cntscount + 1);
-
-//                    recNumbers(m, rect, cntscount + 1);
-
-
-                    Imgproc.rectangle(m, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 1);
-                    cntscount++;
-                }
-            }
-            GUI.getInstance().showResult(m, "" + card.number + card.suit);
-        }
-        System.out.println(cntscount);
-    }
-
-    public char recFigure(Mat frame, Rect figure) {
-
-
-        Mat figureCropped = new Mat(frame, figure);
-        Mat grayCropped = new Mat(frame, figure);
-
-
-        Imgproc.cvtColor(figureCropped, grayCropped, Imgproc.COLOR_BGR2GRAY);
-        Imgproc.threshold(grayCropped, grayCropped, THRESHOLD, 255, Imgproc.THRESH_BINARY);
-
-        double[] centerPixel = figureCropped.get(figureCropped.height() / 2, figureCropped.width() / 2);
-
-        double[] clubsPixel = grayCropped.get((int) (figureCropped.height() * 0.33), (int) (figureCropped.width() * 0.27));
-        double[] clubsPixel2 = grayCropped.get((int) (figureCropped.height() * 0.33), (int) (figureCropped.width() * 0.73));
-        double[] clubsPixel3 = grayCropped.get((int) (figureCropped.height() * 0.15), (int) (figureCropped.width() * 0.25));
-
-        double[] diamondsPixel = grayCropped.get((int) (figureCropped.height() * 0.11), (int) (figureCropped.width() * 0.2));
-        double[] diamondsPixel2 = grayCropped.get((int) (figureCropped.height() * 0.11), (int) (figureCropped.width() * 0.8));
-        double[] diamondsPixel3 = grayCropped.get((int) (figureCropped.height() * 0.8), (int) (figureCropped.width() * 0.5));
-        double[] diamondsPixel4 = grayCropped.get((int) (figureCropped.height() * 0.2), (int) (figureCropped.width() * 0.5));
-
-        char output = ' ';
-
-        //If center pixel is black
-        if (centerPixel[2] < 100 && clubsPixel3[0] > 100) {
-            if (clubsPixel[0] < 100 && clubsPixel2[0] < 100) {
-                output = 'S';
-
-            }
-            if (clubsPixel[0] > 100 && clubsPixel2[0] > 100) {
-                output = 'C';
-
-            }
-
-        }
-
-        //If center pixel is red
-        else if (centerPixel[2] > 100 && diamondsPixel3[0] < 100 && diamondsPixel4[0] < 100) {
-            if (diamondsPixel[0] < 100 && diamondsPixel2[0] < 100) {
-                output = 'H';
-
-            }
-
-            if (diamondsPixel[0] > 100 && diamondsPixel2[0] > 100) {
-                output = 'D';
-
-            }
-
-        }
-        return output;
-
-    }
-
-    //Method for recognizing Numbers
-    public void recNumbers(Mat frame, Rect figure, int count) {
-        Mat figureCropped = new Mat(frame, figure);
-        Mat grayCropped = new Mat(frame, figure);
-
-        int bottom = (int) (figureCropped.height() * 0.9);
-        int left = (int) (figureCropped.width() * 0.2);
-        int right = (int) (figureCropped.width() * 0.8);
-        int top = (int) (figureCropped.height() * 0.1);
-        int center = (int) (figureCropped.height() * 0.5);
-
-        Imgproc.cvtColor(figureCropped, grayCropped, Imgproc.COLOR_BGR2GRAY);
-        Imgproc.threshold(grayCropped, grayCropped, THRESHOLD, 255, Imgproc.THRESH_BINARY);
-
-        boolean centerPixel = isPixelAreaColorBlack(grayCropped, figureCropped.height() / 2, figureCropped.width() / 2, 2);
-        boolean tlPixel = isPixelAreaColorBlack(grayCropped, top, left, 2);
-        boolean blPixel = isPixelAreaColorBlack(grayCropped, bottom, left, 2);
-        boolean trPixel = isPixelAreaColorBlack(grayCropped, top, right, 2);
-        boolean brPixel = isPixelAreaColorBlack(grayCropped, bottom, right, 2);
-        boolean crPixel = isPixelAreaColorBlack(grayCropped, center, right, 2);
-        boolean clPixel = isPixelAreaColorBlack(grayCropped, center, left, 2);
-
-        figureCropped.put(figureCropped.height() / 2, figureCropped.width() / 2, new double[]{0.0, 255.0, 0.0});
-        figureCropped.put(top, left, new double[]{0.0, 255.0, 0.0});
-        figureCropped.put(bottom, left, new double[]{0.0, 255.0, 0.0});
-        figureCropped.put(top, right, new double[]{0.0, 255.0, 0.0});
-        figureCropped.put(bottom, right, new double[]{0.0, 255.0, 0.0});
-        figureCropped.put(center, right, new double[]{0.0, 255.0, 0.0});
-        figureCropped.put(center, left, new double[]{0.0, 255.0, 0.0});
-
-        String output = "tal";
-
-        if (centerPixel && tlPixel && blPixel && trPixel && brPixel && crPixel && clPixel) {
-            output = "OTTE ";
-        }
-        if (!centerPixel && !tlPixel && !blPixel && trPixel && brPixel && crPixel && clPixel) {
-            output = "FIRE ";
-        }
-//        if (centerPixel[0] > 100 && numberPixel1[0] < 100 && numberPixel2[0] < 100 && numberPixel3[0] < 100 && numberPixel4[0] < 100 && numberPixel5[0] < 100 && numberPixel6[0] < 100) {
-//            output = "TI ";
-//        }
-//        if (centerPixel[0] < 100 && numberPixel1[0] < 100 && numberPixel2[0] < 100 && numberPixel3[0] < 100 && numberPixel4[0] < 100 && numberPixel5[0] > 100 && numberPixel6[0] > 100) {
-//            output = "TO ";
-//        }
-//        if (centerPixel[0] > 100 && numberPixel1[0] > 100 && numberPixel2[0] > 100 && numberPixel3[0] < 100 && numberPixel4[0] < 100 && numberPixel5[0] < 100 && numberPixel6[0] < 100) {
-//            output = "FIRE ";
-//        }
-
-        GUI.getInstance().showResult(grayCropped, output + count);
-
-    }
-
-
-    public boolean isPixelAreaColorBlack(Mat image, int row, int col, int area) {
-        if (area == 1) {
-            image.put(row, col, new double[]{255.0, 0.0, 0.0});
-            if (image.get(row, col)[0] > 100) {
-                return false;
-            } else {
-                return true;
-            }
-
-
-        }
-
-        int whitecounter = 0;
-        int blackcounter = 0;
-        for (int i = -(area / 2); i < area / 2; i++) {
-            for (int j = -(area / 2); j < area / 2; j++) {
-                if (image.get(row + j, col + i)[0] > 100) {
-                    whitecounter++;
+                if (cntscount > 2) {
+                    card.number = 'T';
                 } else {
-                    blackcounter++;
+                    if (rect.y < cornerCropped.height() * 0.5) {
+                        card.number = Detector.getInstance().recNumber(cornerCropped, rect, THRESHOLD);
+                    }
+                    if (rect.y > cornerCropped.height() * 0.5) {
+                        card.suit = Detector.getInstance().recFigure(cornerCropped, rect, THRESHOLD);
+                    }
                 }
-                image.put(row + j, col + i, new double[]{0.0, 255.0, 0.0});
+
+                Imgproc.rectangle(cornerCropped, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 1);
+                cntscount++;
             }
         }
-        return whitecounter > blackcounter ? false : true;
-
+        GUI.getInstance().showResult(cornerCropped, "" + card.number + card.suit);
     }
+
 
 }
