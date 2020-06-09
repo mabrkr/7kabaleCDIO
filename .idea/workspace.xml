@@ -21,11 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CardProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CardProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NumberDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Detector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Detector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Detector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SnapshotCapturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SnapshotCapturer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,10 +54,6 @@
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Integer.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/NullPointerException.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -110,15 +104,15 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\7kabaleCDIO\resources\test_images" />
-      <recent name="D:\IdeaProjects\7kabaleCDIO\resources\snapshots\Testbilleder" />
-      <recent name="$PROJECT_DIR$/resources/snapshots" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\7kabaleCDIO\resources\test_images" />
       <recent name="C:\Users\hemer\IdeaProjects\7kabaleCDIO\resources\snapshots" />
       <recent name="C:\Users\Fars\IdeaProjects\OpenCVTest2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\7kabaleCDIO\resources\test_images" />
+      <recent name="D:\IdeaProjects\7kabaleCDIO\resources\snapshots\Testbilleder" />
+      <recent name="$PROJECT_DIR$/resources/snapshots" />
     </key>
   </component>
   <component name="RunManager">
@@ -183,6 +177,9 @@
       <workItem from="1591340705988" duration="7020000" />
       <workItem from="1591427436081" duration="1300000" />
       <workItem from="1591600208801" duration="2435000" />
+      <workItem from="1591611122958" duration="879000" />
+      <workItem from="1591612102383" duration="1118000" />
+      <workItem from="1591686364390" duration="1994000" />
     </task>
     <task id="LOCAL-00001" summary="imagecapture v 1.0">
       <created>1583954545433</created>
@@ -333,33 +330,33 @@
     </state>
     <state x="738" y="312" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591177742409" />
     <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state width="1878" height="186" key="GridCell.Tab.0.bottom" timestamp="1591609102823">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="224" key="GridCell.Tab.0.bottom" timestamp="1591622171630">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="186" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591609102823" />
     <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
-    <state width="2517" height="230" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591602501546" />
+    <state width="2517" height="224" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591622171630" />
     <state width="1872" height="139" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694822" />
-    <state width="1878" height="186" key="GridCell.Tab.0.center" timestamp="1591609102822">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="224" key="GridCell.Tab.0.center" timestamp="1591622171630">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="186" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591609102822" />
     <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
-    <state width="2517" height="230" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591602501546" />
+    <state width="2517" height="224" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591622171630" />
     <state width="1872" height="139" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="186" key="GridCell.Tab.0.left" timestamp="1591609102822">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="224" key="GridCell.Tab.0.left" timestamp="1591622171630">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="186" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591609102822" />
     <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
-    <state width="2517" height="230" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591602501546" />
+    <state width="2517" height="224" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591622171630" />
     <state width="1872" height="139" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="186" key="GridCell.Tab.0.right" timestamp="1591609102823">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="224" key="GridCell.Tab.0.right" timestamp="1591622171630">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="186" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591609102823" />
     <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
-    <state width="2517" height="230" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591602501546" />
+    <state width="2517" height="224" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591622171630" />
     <state width="1872" height="139" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
     <state width="1878" height="348" key="GridCell.Tab.1.bottom" timestamp="1591608112529">
       <screen x="0" y="0" width="1920" height="1040" />

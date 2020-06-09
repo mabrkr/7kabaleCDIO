@@ -23,7 +23,7 @@ public class SnapshotCapturer {
 
 
 //        Argumentet angiver hvilket kamera (0 = standardkameraet)
-        VideoCapture capture = new VideoCapture(1);
+        VideoCapture capture = new VideoCapture(0);
 
         Mat frame = new Mat();
 

@@ -83,7 +83,7 @@ public class CardProcessor {
                 cntscount++;
             }
         }
-        GUI.getInstance().showResult(cornerCropped, "" + card.number + card.suit);
+//        GUI.getInstance().showResult(cornerCropped, "" + card.number + card.suit);
     }
 
 

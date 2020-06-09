@@ -13,6 +13,126 @@ public class Detector {
     private Detector() {
         numbers.put(
                 new Coordinates[]{
+                        new Coordinates(0.1, 0.5),
+                        new Coordinates(0.3, 0.4),
+                        new Coordinates(0.3, 0.6),
+                        new Coordinates(0.5, 0.3),
+                        new Coordinates(0.5, 0.7),
+                        new Coordinates(0.7, 0.3),
+                        new Coordinates(0.7, 0.7),
+                        new Coordinates(0.7, 0.5),
+                        new Coordinates(0.925, 0.2),
+                        new Coordinates(0.925, 0.8),
+                        new Coordinates(0.925, 0.1),
+                        new Coordinates(0.925, 0.9),
+                        new Coordinates(0.925, 0.65)
+                }
+                , 'A');
+        numbers.put(
+                new Coordinates[]{
+                        new Coordinates(0.1, 0.2),
+                        new Coordinates(0.9, 0.2),
+                        new Coordinates(0.1, 0.8),
+                        new Coordinates(0.9, 0.8),
+                        new Coordinates(0.5, 0.5),
+                        new Coordinates(0.4, 0.7),
+                        new Coordinates(0.6, 0.3),
+                        new Coordinates(0.05, 0.5),
+                        new Coordinates(0.95, 0.5),
+                        new Coordinates(0.3, 0.15),
+                        new Coordinates(0.7, 0.15),
+                        new Coordinates(0.3, 0.85),
+                        new Coordinates(0.8, 0.8)
+                }
+                , '2');
+        numbers.put(
+                new Coordinates[]{
+                        new Coordinates(0.2, 0.2),
+                        new Coordinates(0.075, 0.2),
+                        new Coordinates(0.075, 0.4),
+                        new Coordinates(0.075, 0.6),
+                        new Coordinates(0.075, 0.8),
+                        new Coordinates(0.175, 0.7),
+                        new Coordinates(0.25, 0.6),
+                        new Coordinates(0.35, 0.5),
+                        new Coordinates(0.925, 0.5),
+                        new Coordinates(0.85, 0.15),
+                        new Coordinates(0.5, 0.775),
+                        new Coordinates(0.825, 0.775),
+                        new Coordinates(0.65, 0.875),
+                }
+                , '3');
+        numbers.put(
+                new Coordinates[]{
+                        new Coordinates(0.1, 0.75),
+                        new Coordinates(0.3, 0.75),
+                        new Coordinates(0.9, 0.75),
+                        new Coordinates(0.5, 0.75),
+                        new Coordinates(0.7, 0.75),
+                        new Coordinates(0.7, 0.5),
+                        new Coordinates(0.7, 0.3),
+                        new Coordinates(0.7, 0.1),
+                        new Coordinates(0.6, 0.2),
+                        new Coordinates(0.7, 0.9),
+                        new Coordinates(0.3, 0.5),
+                        new Coordinates(0.4, 0.4),
+                        new Coordinates(0.5, 0.3)
+                }
+                , '4');
+        numbers.put(
+                new Coordinates[]{
+                        new Coordinates(0.075, 0.5),
+                        new Coordinates(0.075, 0.15),
+                        new Coordinates(0.075, 0.75),
+                        new Coordinates(0.3, 0.2),
+                        new Coordinates(0.5, 0.2),
+                        new Coordinates(0.375, 0.5),
+                        new Coordinates(0.425, 0.7),
+                        new Coordinates(0.425, 0.3),
+                        new Coordinates(0.925, 0.5),
+                        new Coordinates(0.85, 0.75),
+                        new Coordinates(0.7, 0.85),
+                        new Coordinates(0.875, 0.25),
+                        new Coordinates(0.725, 0.15)
+                }
+                , '5');
+        numbers.put(
+                new Coordinates[]{
+                        new Coordinates(0.15, 0.25),
+                        new Coordinates(0.225, 0.85),
+                        new Coordinates(0.85, 0.25),
+                        new Coordinates(0.85, 0.75),
+                        new Coordinates(0.4, 0.5),
+                        new Coordinates(0.45, 0.7),
+                        new Coordinates(0.45, 0.3),
+                        new Coordinates(0.05, 0.5),
+                        new Coordinates(0.95, 0.5),
+                        new Coordinates(0.3, 0.15),
+                        new Coordinates(0.7, 0.15),
+                        new Coordinates(0.5, 0.1),
+                        new Coordinates(0.7, 0.85)
+                }
+                , '6');
+        numbers.put(
+                new Coordinates[]{
+                        new Coordinates(0.075, 0.1),
+                        new Coordinates(0.2, 0.1),
+                        new Coordinates(0.075, 0.3),
+                        new Coordinates(0.075, 0.4),
+                        new Coordinates(0.075, 0.5),
+                        new Coordinates(0.075, 0.6),
+                        new Coordinates(0.075, 0.7),
+                        new Coordinates(0.075, 0.8),
+                        new Coordinates(0.075, 0.9),
+                        new Coordinates(0.9, 0.4),
+                        new Coordinates(0.7, 0.5),
+                        new Coordinates(0.5, 0.6),
+                        new Coordinates(0.3, 0.7),
+                        new Coordinates(0.2, 0.8)
+                }
+                , '7');
+        numbers.put(
+                new Coordinates[]{
                         new Coordinates(0.15, 0.25),
                         new Coordinates(0.15, 0.75),
                         new Coordinates(0.85, 0.25),
@@ -47,6 +167,23 @@ public class Detector {
                 , '9');
         numbers.put(
                 new Coordinates[]{
+                        new Coordinates(0.075, 0.5),
+                        new Coordinates(0.075, 0.6),
+                        new Coordinates(0.075, 0.7),
+                        new Coordinates(0.075, 0.8),
+                        new Coordinates(0.075, 0.9),
+                        new Coordinates(0.9, 0.4),
+                        new Coordinates(0.7, 0.675),
+                        new Coordinates(0.5, 0.675),
+                        new Coordinates(0.3, 0.675),
+                        new Coordinates(0.2, 0.675),
+                        new Coordinates(0.75, 0.1),
+                        new Coordinates(0.85, 0.2),
+                        new Coordinates(0.825, 0.625)
+                }                                               //10 bliver fundet i cardProcceser, ved at tjekke for om det er en af de andre, hvis ikke så er det en 10er.
+                , 'J');
+        numbers.put(
+                new Coordinates[]{
                         new Coordinates(0.15, 0.25),
                         new Coordinates(0.15, 0.75),
                         new Coordinates(0.85, 0.3),
@@ -62,145 +199,6 @@ public class Detector {
                         new Coordinates(0.7, 0.8)
                 }
                 , 'Q');
-        numbers.put(
-                new Coordinates[]{
-                        new Coordinates(0.2, 0.2),
-                        new Coordinates(0.075, 0.2),
-                        new Coordinates(0.075, 0.4),
-                        new Coordinates(0.075, 0.6),
-                        new Coordinates(0.075, 0.8),
-                        new Coordinates(0.175, 0.7),
-                        new Coordinates(0.25, 0.6),
-                        new Coordinates(0.35, 0.5),
-                        new Coordinates(0.925, 0.5),
-                        new Coordinates(0.85, 0.15),
-                        new Coordinates(0.5, 0.775),
-                        new Coordinates(0.825, 0.775),
-                        new Coordinates(0.65, 0.875),
-                }
-                , '3');
-        numbers.put(
-                new Coordinates[]{
-                        new Coordinates(0.15, 0.25),
-                        new Coordinates(0.225, 0.85),
-                        new Coordinates(0.85, 0.25),
-                        new Coordinates(0.85, 0.75),
-                        new Coordinates(0.4, 0.5),
-                        new Coordinates(0.45, 0.7),
-                        new Coordinates(0.45, 0.3),
-                        new Coordinates(0.05, 0.5),
-                        new Coordinates(0.95, 0.5),
-                        new Coordinates(0.3, 0.15),
-                        new Coordinates(0.7, 0.15),
-                        new Coordinates(0.5, 0.1),
-                        new Coordinates(0.7, 0.85)
-                }
-                , '6');
-        numbers.put(
-                new Coordinates[]{
-                        new Coordinates(0.075, 0.5),
-                        new Coordinates(0.075, 0.15),
-                        new Coordinates(0.075, 0.75),
-                        new Coordinates(0.3, 0.2),
-                        new Coordinates(0.5, 0.2),
-                        new Coordinates(0.375, 0.5),
-                        new Coordinates(0.425, 0.7),
-                        new Coordinates(0.425, 0.3),
-                        new Coordinates(0.925, 0.5),
-                        new Coordinates(0.85, 0.75),
-                        new Coordinates(0.7, 0.85),
-                        new Coordinates(0.875, 0.25),
-                        new Coordinates(0.725, 0.15)
-                }
-                , '5');
-
-        numbers.put(
-                new Coordinates[]{
-                        new Coordinates(0.1, 0.2),
-                        new Coordinates(0.9, 0.2),
-                        new Coordinates(0.1, 0.8),
-                        new Coordinates(0.9, 0.8),
-                        new Coordinates(0.5, 0.5),
-                        new Coordinates(0.4, 0.7),
-                        new Coordinates(0.6, 0.3),
-                        new Coordinates(0.05, 0.5),
-                        new Coordinates(0.95, 0.5),
-                        new Coordinates(0.3, 0.15),
-                        new Coordinates(0.7, 0.15),
-                        new Coordinates(0.3, 0.85),
-                        new Coordinates(0.8, 0.8)
-                }
-                , '2');
-        numbers.put(
-                new Coordinates[]{
-                        new Coordinates(0.1, 0.75),
-                        new Coordinates(0.3, 0.75),
-                        new Coordinates(0.9, 0.75),
-                        new Coordinates(0.5, 0.75),
-                        new Coordinates(0.7, 0.75),
-                        new Coordinates(0.7, 0.5),
-                        new Coordinates(0.7, 0.3),
-                        new Coordinates(0.7, 0.1),
-                        new Coordinates(0.6, 0.2),
-                        new Coordinates(0.7, 0.9),
-                        new Coordinates(0.3, 0.5),
-                        new Coordinates(0.4, 0.4),
-                        new Coordinates(0.5, 0.3)
-                }
-                , '4');
-
-        numbers.put(
-                new Coordinates[]{
-                        new Coordinates(0.1, 0.5),
-                        new Coordinates(0.3, 0.4),
-                        new Coordinates(0.3, 0.6),
-                        new Coordinates(0.5, 0.3),
-                        new Coordinates(0.5, 0.7),
-                        new Coordinates(0.7, 0.3),
-                        new Coordinates(0.7, 0.7),
-                        new Coordinates(0.7, 0.5),
-                        new Coordinates(0.925, 0.2),
-                        new Coordinates(0.925, 0.8),
-                        new Coordinates(0.925, 0.1),
-                        new Coordinates(0.925, 0.9),
-                        new Coordinates(0.925, 0.65)
-                }
-                , 'A');
-        numbers.put(
-                new Coordinates[]{
-                        new Coordinates(0.075, 0.1),
-                        new Coordinates(0.2, 0.1),
-                        new Coordinates(0.075, 0.3),
-                        new Coordinates(0.075, 0.4),
-                        new Coordinates(0.075, 0.5),
-                        new Coordinates(0.075, 0.6),
-                        new Coordinates(0.075, 0.7),
-                        new Coordinates(0.075, 0.8),
-                        new Coordinates(0.075, 0.9),
-                        new Coordinates(0.9, 0.4),
-                        new Coordinates(0.7, 0.5),
-                        new Coordinates(0.5, 0.6),
-                        new Coordinates(0.3, 0.7),
-                        new Coordinates(0.2, 0.8)
-                }
-                , '7');
-        numbers.put(
-                new Coordinates[]{
-                        new Coordinates(0.075, 0.5),
-                        new Coordinates(0.075, 0.6),
-                        new Coordinates(0.075, 0.7),
-                        new Coordinates(0.075, 0.8),
-                        new Coordinates(0.075, 0.9),
-                        new Coordinates(0.9, 0.4),
-                        new Coordinates(0.7, 0.675),
-                        new Coordinates(0.5, 0.675),
-                        new Coordinates(0.3, 0.675),
-                        new Coordinates(0.2, 0.675),
-                        new Coordinates(0.75, 0.1),
-                        new Coordinates(0.85, 0.2),
-                        new Coordinates(0.825, 0.625)
-                }
-                , 'J');
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.075, 0.15),
