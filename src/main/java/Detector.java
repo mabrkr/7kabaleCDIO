@@ -3,13 +3,19 @@ import org.opencv.core.Rect;
 import org.opencv.imgproc.Imgproc;
 
 import java.util.*;
-
+/**
+ * A singleton class for classifying numbers and figures
+ * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
+ */
 public class Detector {
 
     private static Detector single_instance = null;
 
     Map<Coordinates[], Character> numbers = new HashMap<Coordinates[], Character>();
 
+    /**
+     * initialysing coordinates to the card, making a pattern of pixels for recognising numbers
+     */
     private Detector() {
         numbers.put(
                 new Coordinates[]{
@@ -260,6 +266,12 @@ public class Detector {
         return single_instance;
     }
 
+    /**
+     * @param frame openCV representation of a jpg
+     * @param figure position of the figure to be recognized, representated as a rectangle
+     * @param threshold the threshold which makes most sense in term of image proccesing
+     * @return the best matching char
+     */
     public Character recNumber(Mat frame, Rect figure, int threshold) {
         Map.Entry<Coordinates[], Character> closestMatch = null;
 
@@ -299,6 +311,12 @@ public class Detector {
 
     }
 
+    /**
+     * @param frame openCV representation of a jpg
+     * @param figure position of the figure to be recognized, representated as a rectangle
+     * @param threshold the threshold which makes most sense in term of image proccesing
+     * @return the best matching char
+     */
     public Character recFigure(Mat frame, Rect figure, int threshold) {
 
 
@@ -352,6 +370,9 @@ public class Detector {
 
     }
 
+    /**
+     * Model for the coordinates
+     */
     private class Coordinates {
         public double row;
         public double col;

@@ -4,10 +4,20 @@ import org.opencv.imgproc.Imgproc;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Method for detectin cards and adding contours
+ *
+ * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
+ */
 public class CardProcessor {
 
     private final int THRESHOLD = 165;
 
+    /**
+     * Joe exotic
+     * @param frame openCV representation of a .jpg
+     * @return A list of card objects
+     */
     public List<Card> detectCards(Mat frame) {
         Mat orgFrame = frame.clone();
         Mat frameGray = new Mat();
@@ -43,6 +53,11 @@ public class CardProcessor {
         return cards;
     }
 
+    /**
+     * Adds value and suit to a card, this method also checks if the card is a 10
+     * @param frame
+     * @param card
+     */
     public void findCornerContours(Mat frame, Card card) {
         List<Rect> listOfFigures = new ArrayList<Rect>();
 

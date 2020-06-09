@@ -11,7 +11,10 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
-
+/**
+ * Singleton for showing the pictures to the users
+ * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
+ */
 public class GUI {
     private static GUI single_instance = null;
 

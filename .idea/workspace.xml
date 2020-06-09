@@ -20,14 +20,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Tager billede som input istedet for webcam.&#10;Kabale.jpg tilføjet til test.&#10;Performancetest indsat.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/CardProcessorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DetectorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/Card.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/CardProcessor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/Detector.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/GUI.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/Main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/SnapshotCapturer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/allclasses-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/allclasses.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/allpackages-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/constant-values.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/deprecated-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/element-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/index-files/index-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/index-files/index-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/index-files/index-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/index-files/index-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/index-files/index-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/index-files/index-6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/index-files/index-7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/index-files/index-8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/external/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/images/ui-bg_glass_65_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/images/ui-icons_222222_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/images/ui-icons_454545_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/images/ui-icons_888888_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/jszip-utils/dist/jszip-utils-ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/jszip-utils/dist/jszip-utils-ie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/jszip-utils/dist/jszip-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/jszip-utils/dist/jszip-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/jszip/dist/jszip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/jquery/jszip/dist/jszip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/member-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/member-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/package-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/package-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/resources/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/type-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/type-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CardProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CardProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Detector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Detector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SnapshotCapturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SnapshotCapturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +120,6 @@
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Integer.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/NullPointerException.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -119,23 +176,23 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\7kabaleCDIO\src\main\java" />
-      <recent name="D:\IdeaProjects\7kabaleCDIO\src" />
-      <recent name="D:\IdeaProjects\7kabaleCDIO\resources\test_images" />
-      <recent name="C:\Users\hemer\IdeaProjects\7kabaleCDIO\resources\snapshots" />
-      <recent name="C:\Users\Fars\IdeaProjects\OpenCVTest2" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\7kabaleCDIO\resources\test_images" />
       <recent name="D:\IdeaProjects\7kabaleCDIO\resources\snapshots\Testbilleder" />
       <recent name="$PROJECT_DIR$/resources/snapshots" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\7kabaleCDIO\src\main\java" />
+      <recent name="D:\IdeaProjects\7kabaleCDIO\src" />
+      <recent name="D:\IdeaProjects\7kabaleCDIO\resources\test_images" />
+      <recent name="C:\Users\hemer\IdeaProjects\7kabaleCDIO\resources\snapshots" />
+      <recent name="C:\Users\Fars\IdeaProjects\OpenCVTest2" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.CardProcessorTest">
@@ -412,6 +469,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="744" y="385" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1591695834022" />
+    <state x="1026" y="408" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1591702430405">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1026" y="408" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1591702430405" />
     <state x="724" y="118" width="824" height="875" key="CommitChangelistDialog2" timestamp="1591447376961">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -421,38 +482,39 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="93" y="93" width="1733" height="853" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591432662731" />
-    <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl" timestamp="1591177742409">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="984" y="420" width="424" height="486" key="FileChooserDialogImpl" timestamp="1591701240109">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="738" y="312" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591177742409" />
+    <state x="984" y="420" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1591701240109" />
     <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state width="1878" height="186" key="GridCell.Tab.0.bottom" timestamp="1591695912208">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="224" key="GridCell.Tab.0.bottom" timestamp="1591702430455">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="186" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591695912208" />
     <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
-    <state width="2517" height="230" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591602501546" />
+    <state width="2517" height="224" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591702430455" />
     <state width="1872" height="139" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694822" />
-    <state width="1878" height="186" key="GridCell.Tab.0.center" timestamp="1591695912208">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="224" key="GridCell.Tab.0.center" timestamp="1591702430455">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="186" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591695912208" />
     <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
-    <state width="2517" height="230" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591602501546" />
+    <state width="2517" height="224" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591702430455" />
     <state width="1872" height="139" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="186" key="GridCell.Tab.0.left" timestamp="1591695912208">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="224" key="GridCell.Tab.0.left" timestamp="1591702430454">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="186" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591695912208" />
     <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
-    <state width="2517" height="230" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591602501546" />
+    <state width="2517" height="224" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591702430454" />
     <state width="1872" height="139" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="186" key="GridCell.Tab.0.right" timestamp="1591695912208">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="2517" height="224" key="GridCell.Tab.0.right" timestamp="1591702430455">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="186" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591695912208" />
     <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
-    <state width="2517" height="230" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591602501546" />
+    <state width="2517" height="224" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591702430455" />
     <state width="1872" height="139" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
     <state width="1878" height="348" key="GridCell.Tab.1.bottom" timestamp="1591611426545">
       <screen x="0" y="0" width="1920" height="1040" />

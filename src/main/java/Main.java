@@ -3,7 +3,9 @@ import org.opencv.core.Mat;
 
 import java.util.Date;
 import java.util.List;
-
+/**
+ * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
+ */
 public class Main {
 
     public static void main(String[] args) throws Exception {

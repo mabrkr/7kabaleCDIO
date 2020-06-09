@@ -14,7 +14,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
-
+/**
+ * Class to either insert a picture through a path, or taking a picture with the clients webcam
+ * @author Jeppe Kaare Larsen, Mads Martin Dickmeiss Hemer & Malte Brink Kristensen
+ */
 public class SnapshotCapturer {
 
     // Ref: https://www.tutorialspoint.com/opencv/opencv_using_camera.htm

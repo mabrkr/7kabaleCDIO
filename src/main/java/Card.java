@@ -1,5 +1,10 @@
 import org.opencv.core.Rect;
 
+/**
+ * Card model
+ * 
+ * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
+ */
 public class Card {
 
     int x;
