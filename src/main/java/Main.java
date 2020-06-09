@@ -20,7 +20,7 @@ public class Main {
             cp.findCornerContours(snapshot, card);
         }
 
-//        System.out.println(listOfCards.toString());
+        System.out.println(listOfCards.toString());
         System.out.println("Running time: " + (System.currentTimeMillis() - startTime + "ms"));
 
     }

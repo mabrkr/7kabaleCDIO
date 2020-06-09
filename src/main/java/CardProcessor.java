@@ -72,9 +72,11 @@ public class CardProcessor {
                     card.number = 'T';
                 } else {
                     if (rect.y < cornerCropped.height() * 0.5) {
+
                         card.number = Detector.getInstance().recNumber(cornerCropped, rect, THRESHOLD);
                     }
                     if (rect.y > cornerCropped.height() * 0.5) {
+                        System.out.println(rect);
                         card.suit = Detector.getInstance().recFigure(cornerCropped, rect, THRESHOLD);
                     }
                 }
