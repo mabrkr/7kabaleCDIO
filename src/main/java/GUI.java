@@ -6,13 +6,16 @@ import org.opencv.imgproc.Imgproc;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
+
 /**
  * Singleton for showing the pictures to the users
+ *
  * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
  */
 public class GUI {
@@ -21,6 +24,7 @@ public class GUI {
     private final int WIDTH = 1000;
     private final int HEIGHT = 800;
     private JFrame jframe;
+//    private JButton = new Button();
 
     private GUI() {
     }
@@ -33,6 +37,13 @@ public class GUI {
     }
 
     public void showResult(Mat img, String title) {
+
+        JLabel label = new JLabel("suggestion");
+        label.setMinimumSize(new Dimension(1000, 100));
+
+        JButton btn = new JButton("pres");
+        btn.setMinimumSize(new Dimension(1000, 100));
+
         Imgproc.resize(img, img, new Size(WIDTH, HEIGHT));
         MatOfByte matOfByte = new MatOfByte();
         Imgcodecs.imencode(".jpg", img, matOfByte);
@@ -43,13 +54,23 @@ public class GUI {
             bufImage = ImageIO.read(in);
 
             jframe = new JFrame();
-            if(title != null) jframe.setTitle(title);
+            BoxLayout boxLayout = new BoxLayout(jframe.getContentPane(), BoxLayout.Y_AXIS);
+            if (title != null) jframe.setTitle(title);
             jframe.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+            Box.createVerticalGlue();
+
             jframe.getContentPane().add(new JLabel(new ImageIcon(bufImage)));
+
+            jframe.setLayout(boxLayout);
+            jframe.getContentPane().add(btn);
+            Box.createVerticalGlue();
+            jframe.getContentPane().add(label);
             jframe.pack();
             jframe.setVisible(true);
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+
     }
 }
