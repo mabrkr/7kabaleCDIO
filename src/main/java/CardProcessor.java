@@ -37,7 +37,7 @@ public class CardProcessor {
         }
 
         GUI.getInstance().showResult(orgFrame, "");
-//        GUI.getInstance().showResult(frameThresh, "Threshold");
+        GUI.getInstance().showResult(frameThresh, "Threshold");
         System.out.println(cards.size() + " cards found!");
 
         return cards;

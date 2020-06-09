@@ -22,19 +22,19 @@ public class SnapshotCapturer {
 
 
 
-//        Argumentet angiver hvilket kamera (0 = standardkameraet)
-        VideoCapture capture = new VideoCapture(1);
+////        Argumentet angiver hvilket kamera (0 = standardkameraet)
+//        VideoCapture capture = new VideoCapture(0);
+//
+//        Mat frame = new Mat();
+//
+//        if (!capture.isOpened()) {
+//            throw new IOException("Kamerafejl. Tjek evt. om det rigtige kamera anvendes.");
+//        } else {
+//            capture.read(frame);
+//        }
 
-        Mat frame = new Mat();
-
-        if (!capture.isOpened()) {
-            throw new IOException("Kamerafejl. Tjek evt. om det rigtige kamera anvendes.");
-        } else {
-            capture.read(frame);
-        }
-
-//        Mat frame;
-//        frame = Imgcodecs.imread("resources/test_images/AllCards.jpg");
+        Mat frame;
+        frame = Imgcodecs.imread("resources/test_images/AllCards.jpg");
         return frame;
     }
 
