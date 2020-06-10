@@ -22,7 +22,6 @@
     <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,23 +109,23 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SharkGaming\OneDrive\Desktop\semproj1\D1_gr9001\7kabaleCDIO\resources\test_images" />
+      <recent name="D:\IdeaProjects\7kabaleCDIO\src\main\java" />
+      <recent name="D:\IdeaProjects\7kabaleCDIO\src" />
+      <recent name="D:\IdeaProjects\7kabaleCDIO\resources\test_images" />
+      <recent name="C:\Users\hemer\IdeaProjects\7kabaleCDIO\resources\snapshots" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\7kabaleCDIO\resources\test_images" />
       <recent name="D:\IdeaProjects\7kabaleCDIO\resources\snapshots\Testbilleder" />
       <recent name="$PROJECT_DIR$/resources/snapshots" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\7kabaleCDIO\src\main\java" />
-      <recent name="D:\IdeaProjects\7kabaleCDIO\src" />
-      <recent name="D:\IdeaProjects\7kabaleCDIO\resources\test_images" />
-      <recent name="C:\Users\hemer\IdeaProjects\7kabaleCDIO\resources\snapshots" />
-      <recent name="C:\Users\Fars\IdeaProjects\OpenCVTest2" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -178,8 +177,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.CardProcessorTest" />
         <item itemvalue="JUnit.DetectorTest" />
+        <item itemvalue="JUnit.CardProcessorTest" />
         <item itemvalue="JUnit.DetectorTest.getInstance" />
         <item itemvalue="JUnit.CardProcessorTest.findCornerContours" />
       </list>
@@ -239,7 +238,8 @@
       <workItem from="1591612564476" duration="106000" />
       <workItem from="1591614191599" duration="1617000" />
       <workItem from="1591687990596" duration="6745000" />
-      <workItem from="1591707614057" duration="640000" />
+      <workItem from="1591707614057" duration="1315000" />
+      <workItem from="1591770042072" duration="8147000" />
     </task>
     <task id="LOCAL-00001" summary="imagecapture v 1.0">
       <created>1583954545433</created>
@@ -346,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591702668593</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="videreudvikling af GUI til kabaleløsning påbegyndt">
+      <created>1591708572015</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1591708572016</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,7 +386,8 @@
     <MESSAGE value="Optimering af figurgenkendelse.&#10;Oprydning af klasser og navngivning.&#10;Gjort klar til kameratest." />
     <MESSAGE value="Tager billede som input istedet for webcam.&#10;Kabale.jpg tilføjet til test.&#10;Performancetest indsat." />
     <MESSAGE value="Javadoc påbegyndt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Javadoc påbegyndt" />
+    <MESSAGE value="videreudvikling af GUI til kabaleløsning påbegyndt" />
+    <option name="LAST_COMMIT_MESSAGE" value="videreudvikling af GUI til kabaleløsning påbegyndt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="626" y="240" width="657" height="629" key="#Main" timestamp="1585731209473" />
@@ -416,10 +424,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1026" y="408" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1591702430405" />
-    <state x="724" y="118" width="824" height="875" key="CommitChangelistDialog2" timestamp="1591702668044">
+    <state x="724" y="118" width="824" height="875" key="CommitChangelistDialog2" timestamp="1591708571649">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="724" y="118" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1591702668044" />
+    <state x="724" y="118" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1591708571649" />
     <state x="543" y="117" width="824" height="875" key="CommitChangelistDialog2/0.28.1920.1052@0.28.1920.1052" timestamp="1585739846420" />
     <state x="93" y="93" width="1733" height="853" key="DiffContextDialog" timestamp="1591432662731">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -431,33 +439,33 @@
     <state x="738" y="312" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591177742409" />
     <state x="984" y="420" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1591701240109" />
     <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state width="2517" height="443" key="GridCell.Tab.0.bottom" timestamp="1591708360390">
+    <state width="2517" height="179" key="GridCell.Tab.0.bottom" timestamp="1591779599258">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="186" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591695912208" />
     <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
-    <state width="2517" height="443" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591708360390" />
+    <state width="2517" height="179" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591779599258" />
     <state width="1872" height="139" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694822" />
-    <state width="2517" height="443" key="GridCell.Tab.0.center" timestamp="1591708360390">
+    <state width="2517" height="179" key="GridCell.Tab.0.center" timestamp="1591779599258">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="186" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591695912208" />
     <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
-    <state width="2517" height="443" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591708360390" />
+    <state width="2517" height="179" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591779599258" />
     <state width="1872" height="139" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="2517" height="443" key="GridCell.Tab.0.left" timestamp="1591708360390">
+    <state width="2517" height="179" key="GridCell.Tab.0.left" timestamp="1591779599258">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="186" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591695912208" />
     <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
-    <state width="2517" height="443" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591708360390" />
+    <state width="2517" height="179" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591779599258" />
     <state width="1872" height="139" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="2517" height="443" key="GridCell.Tab.0.right" timestamp="1591708360390">
+    <state width="2517" height="179" key="GridCell.Tab.0.right" timestamp="1591779599258">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1878" height="186" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591695912208" />
     <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
-    <state width="2517" height="443" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591708360390" />
+    <state width="2517" height="179" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591779599258" />
     <state width="1872" height="139" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
     <state width="1878" height="348" key="GridCell.Tab.1.bottom" timestamp="1591611426545">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -488,11 +496,11 @@
     </state>
     <state x="443" y="131" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585940730267" />
     <state x="443" y="131" width="1024" height="847" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state x="740" y="349" width="800" height="530" key="Vcs.Push.Dialog.v2" timestamp="1591702673510">
+    <state x="740" y="349" width="800" height="530" key="Vcs.Push.Dialog.v2" timestamp="1591708574085">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="555" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591689894127" />
-    <state x="740" y="349" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1591702673510" />
+    <state x="740" y="349" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1591708574085" />
     <state x="555" y="290" width="800" height="530" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1585739851016" />
     <state x="628" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1585905144086">
       <screen x="0" y="28" width="1920" height="1052" />
@@ -518,5 +526,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="622" y="246" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1591265946891" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Detector.java</url>
+          <line>275</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

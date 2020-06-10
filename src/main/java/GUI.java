@@ -7,6 +7,8 @@ import org.opencv.imgproc.Imgproc;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -14,7 +16,7 @@ import java.io.InputStream;
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 
 /**
- * Singleton for showing the pictures to the users
+ * Singleton for showing the pictures to the users and GUI for choosing suggestion
  *
  * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
  */
@@ -38,39 +40,59 @@ public class GUI {
 
     public void showResult(Mat img, String title) {
 
-        JLabel label = new JLabel("suggestion");
-        label.setMinimumSize(new Dimension(1000, 100));
-
-        JButton btn = new JButton("pres");
-        btn.setMinimumSize(new Dimension(1000, 100));
-
         Imgproc.resize(img, img, new Size(WIDTH, HEIGHT));
         MatOfByte matOfByte = new MatOfByte();
         Imgcodecs.imencode(".jpg", img, matOfByte);
         byte[] byteArray = matOfByte.toArray();
-        BufferedImage bufImage;
+        BufferedImage bufImage = null;
         try {
             InputStream in = new ByteArrayInputStream(byteArray);
             bufImage = ImageIO.read(in);
 
-            jframe = new JFrame();
-            BoxLayout boxLayout = new BoxLayout(jframe.getContentPane(), BoxLayout.Y_AXIS);
-            if (title != null) jframe.setTitle(title);
-            jframe.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-            Box.createVerticalGlue();
 
-            jframe.getContentPane().add(new JLabel(new ImageIcon(bufImage)));
-
-            jframe.setLayout(boxLayout);
-            jframe.getContentPane().add(btn);
-            Box.createVerticalGlue();
-            jframe.getContentPane().add(label);
-            jframe.pack();
-            jframe.setVisible(true);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
 
+        jframe = new JFrame();
+
+        JPanel top = new JPanel();
+        JPanel center = new JPanel();
+        JPanel bottom = new JPanel();
+
+
+        JLabel image = new JLabel(new ImageIcon(bufImage));
+        JButton btn = new JButton("Pres to get Suggestion");
+        JLabel text = new JLabel("suggestion ændres senere sut joe");
+
+
+        top.add(image);
+        center.add(btn);
+        bottom.add(text);
+
+        jframe.add(top);
+        jframe.add(center);
+        jframe.add(bottom);
+
+
+        BoxLayout boxLayout = new BoxLayout(jframe.getContentPane(), BoxLayout.Y_AXIS);
+        if (title != null) jframe.setTitle(title);
+        jframe.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        jframe.setLayout(boxLayout);
+        jframe.pack();
+        jframe.setVisible(true);
+
+        btn.addActionListener(new CustomActionListener());
+
+
+    }
+
+    class CustomActionListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            System.out.println("button clicked");
+
+            //TODO: Take photo with webcam on click
+        }
     }
 }
