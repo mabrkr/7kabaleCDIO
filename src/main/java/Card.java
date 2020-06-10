@@ -1,6 +1,11 @@
 import org.opencv.core.Rect;
 import com.google.gson.Gson;
 
+/**
+ * Card model
+ * 
+ * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
+ */
 public class Card {
 
     int x;
