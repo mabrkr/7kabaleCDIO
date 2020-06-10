@@ -20,8 +20,8 @@ public class CardProcessor {
         Imgproc.threshold(frameBlurred, frameThresh, THRESHOLD, 255, Imgproc.THRESH_BINARY);
 
 
-        List<MatOfPoint> cnts = new ArrayList<MatOfPoint>();
-        List<Card> cards = new ArrayList<Card>();
+        List<MatOfPoint> cnts = new ArrayList<>();
+        List<Card> cards = new ArrayList<>();
 
         //Use Imgproc.RETR_EXTERNAL for cards and Imgproc.RETR_TREE for all contours.
         Imgproc.findContours(frameThresh, cnts, new Mat(), Imgproc.RETR_EXTERNAL, Imgproc.CHAIN_APPROX_SIMPLE);
@@ -37,15 +37,13 @@ public class CardProcessor {
         }
 
         GUI.getInstance().showResult(orgFrame, "");
-        GUI.getInstance().showResult(frameThresh, "Threshold");
+//        GUI.getInstance().showResult(frameThresh, "Threshold");
         System.out.println(cards.size() + " cards found!");
 
         return cards;
     }
 
     public void findCornerContours(Mat frame, Card card) {
-        List<Rect> listOfFigures = new ArrayList<Rect>();
-
         //Crops the corner of the card
         Mat cardCropped = new Mat(frame, card.rectangle);
         Mat cornerCropped = new Mat(cardCropped, new Rect(0, 0, cardCropped.width() / 4, cardCropped.height() / 3));
@@ -53,7 +51,7 @@ public class CardProcessor {
         //Find the contours (figures and numbers) on each corner
         int cntscount = 0;
 
-        List<MatOfPoint> croppedCnts = new ArrayList<MatOfPoint>();
+        List<MatOfPoint> croppedCnts = new ArrayList<>();
         Mat mGray = new Mat();
 
         //Image processing
@@ -66,7 +64,6 @@ public class CardProcessor {
 
             //Filter out small and large contours by size
             if ((rect.width >= 8 && rect.height >= 31) && (rect.width <= 100 && rect.height <= 100)) {
-                listOfFigures.add(rect);
 
                 if (cntscount > 2) {
                     card.number = 'T';
@@ -76,7 +73,6 @@ public class CardProcessor {
                         card.number = Detector.getInstance().recNumber(cornerCropped, rect, THRESHOLD);
                     }
                     if (rect.y > cornerCropped.height() * 0.5) {
-                        System.out.println(rect);
                         card.suit = Detector.getInstance().recFigure(cornerCropped, rect, THRESHOLD);
                     }
                 }

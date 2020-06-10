@@ -8,7 +8,7 @@ public class Detector {
 
     private static Detector single_instance = null;
 
-    Map<Coordinates[], Character> numbers = new HashMap<Coordinates[], Character>();
+    Map<Coordinates[], Character> numbers = new HashMap<>();
 
     private Detector() {
         numbers.put(
@@ -287,7 +287,7 @@ public class Detector {
 
         if (closestMatch != null) {
             for (int i = 0; i < closestMatch.getKey().length; i++) {
-                figureCropped.put((int) (grayCropped.height() * closestMatch.getKey()[i].row), (int) (grayCropped.width() * closestMatch.getKey()[i].col), new double[]{0.0, 255.0, 0.0});
+                figureCropped.put((int) (grayCropped.height() * closestMatch.getKey()[i].row), (int) (grayCropped.width() * closestMatch.getKey()[i].col), 0.0, 255.0, 0.0);
             }
         }
 
@@ -352,7 +352,7 @@ public class Detector {
 
     }
 
-    private class Coordinates {
+    private class   Coordinates {
         public double row;
         public double col;
 

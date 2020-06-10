@@ -1,7 +1,6 @@
 import nu.pattern.OpenCV;
 import org.opencv.core.Mat;
 
-import java.util.Date;
 import java.util.List;
 
 public class Main {

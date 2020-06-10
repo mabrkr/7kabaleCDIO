@@ -1,19 +1,7 @@
 import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
-import org.opencv.imgproc.Imgproc;
-import org.opencv.objdetect.CascadeClassifier;
-import org.opencv.videoio.VideoCapture;
 
-import javax.imageio.ImageIO;
-import javax.swing.*;
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-
-import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 
 public class SnapshotCapturer {
 
@@ -34,7 +22,7 @@ public class SnapshotCapturer {
 //        }
 
         Mat frame;
-        frame = Imgcodecs.imread("resources/test_images/1.jpg");
+        frame = Imgcodecs.imread("resources/test_images/Kabale.jpg");
         return frame;
     }
 
