@@ -3,8 +3,10 @@ import org.opencv.core.Rect;
 import org.opencv.imgproc.Imgproc;
 
 import java.util.*;
+
 /**
  * A singleton class for classifying numbers and figures
+ *
  * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
  */
 public class Detector {
@@ -267,8 +269,8 @@ public class Detector {
     }
 
     /**
-     * @param frame openCV representation of a jpg
-     * @param figure position of the figure to be recognized, representated as a rectangle
+     * @param frame     openCV representation of a jpg
+     * @param figure    position of the figure to be recognized, representated as a rectangle
      * @param threshold the threshold which makes most sense in term of image proccesing
      * @return the best matching char
      */
@@ -312,8 +314,8 @@ public class Detector {
     }
 
     /**
-     * @param frame openCV representation of a jpg
-     * @param figure position of the figure to be recognized, representated as a rectangle
+     * @param frame     openCV representation of a jpg
+     * @param figure    position of the figure to be recognized, representated as a rectangle
      * @param threshold the threshold which makes most sense in term of image proccesing
      * @return the best matching char
      */
@@ -345,8 +347,7 @@ public class Detector {
             if (clubsPixel[0] < 100 && clubsPixel2[0] < 100) {
                 output = 'S';
 
-            }
-            else {
+            } else {
                 output = 'C';
 
             }
@@ -358,9 +359,7 @@ public class Detector {
             if (diamondsPixel[0] < 100 && diamondsPixel2[0] < 100) {
                 output = 'H';
 
-            }
-
-            if (diamondsPixel[0] > 100 && diamondsPixel2[0] > 100) {
+            } else {
                 output = 'D';
 
             }

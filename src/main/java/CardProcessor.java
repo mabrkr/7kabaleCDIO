@@ -11,10 +11,11 @@ import java.util.List;
  */
 public class CardProcessor {
 
-    private final int THRESHOLD = 165;
+    private final int THRESHOLD = 200;
 
     /**
      * Joe exotic
+     *
      * @param frame openCV representation of a .jpg
      * @return A list of card objects
      */
@@ -40,14 +41,14 @@ public class CardProcessor {
             Rect rect = Imgproc.boundingRect(p);
 
             //Filter out small and large contours by size
-            if ((rect.width >= 100 && rect.height >= 100) && (rect.width <= 350 && rect.height <= 500)) {
+            if ((rect.width >= 100 && rect.height >= 10) && (rect.width <= 350 && rect.height <= 600)) {
                 cards.add(new Card(rect.x, rect.y, ' ', ' ', rect));
                 Imgproc.rectangle(orgFrame, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 3);
             }
         }
 
         GUI.getInstance().showResult(orgFrame, "");
-//        GUI.getInstance().showResult(frameThresh, "Threshold");
+        GUI.getInstance().showResult(frameThresh, "Threshold");
         System.out.println(cards.size() + " cards found!");
 
         return cards;
@@ -55,13 +56,22 @@ public class CardProcessor {
 
     /**
      * Adds value and suit to a card, this method also checks if the card is a 10
+     *
      * @param frame
      * @param card
      */
     public void findCornerContours(Mat frame, Card card) {
         //Crops the corner of the card
         Mat cardCropped = new Mat(frame, card.rectangle);
-        Mat cornerCropped = new Mat(cardCropped, new Rect(0, 0, cardCropped.width() / 4, cardCropped.height() / 3));
+        Mat cornerCropped;
+
+        if (card.rectangle.height > 400) {
+            cornerCropped = new Mat(cardCropped, new Rect(0, 0, cardCropped.width() / 4, cardCropped.height() / 3));
+
+        } else {
+            cornerCropped = new Mat(cardCropped, new Rect(0, 0, cardCropped.width() / 4, cardCropped.height()));
+            System.out.println("test");
+        }
 
         //Find the contours (figures and numbers) on each corner
         int cntscount = 0;
@@ -83,11 +93,11 @@ public class CardProcessor {
                 if (cntscount > 2) {
                     card.number = 'T';
                 } else {
-                    if (rect.y < cornerCropped.height() * 0.5) {
+                    if (rect.y < cornerCropped.height() * 0.3) {
 
                         card.number = Detector.getInstance().recNumber(cornerCropped, rect, THRESHOLD);
                     }
-                    if (rect.y > cornerCropped.height() * 0.5) {
+                    if (rect.y > cornerCropped.height() * 0.3) {
                         card.suit = Detector.getInstance().recFigure(cornerCropped, rect, THRESHOLD);
                     }
                 }
@@ -96,7 +106,7 @@ public class CardProcessor {
                 cntscount++;
             }
         }
-//        GUI.getInstance().showResult(cornerCropped, "" + card.number + card.suit);
+        GUI.getInstance().showResult(cornerCropped, "" + card.number + card.suit);
     }
 
 

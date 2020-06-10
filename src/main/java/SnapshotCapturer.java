@@ -31,7 +31,7 @@ public class SnapshotCapturer {
 //        }
 
         Mat frame;
-        frame = Imgcodecs.imread("resources/test_images/Kabale.jpg");
+        frame = Imgcodecs.imread("resources/test_images/EndGameTest.jpg");
         return frame;
     }
 
