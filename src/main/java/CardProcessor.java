@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class CardProcessor {
 
-    private final int THRESHOLD = 200;
+    private final int THRESHOLD = 195;
 
     /**
      * Joe exotic
@@ -70,7 +70,6 @@ public class CardProcessor {
 
         } else {
             cornerCropped = new Mat(cardCropped, new Rect(0, 0, cardCropped.width() / 4, cardCropped.height()));
-            System.out.println("test");
         }
 
         //Find the contours (figures and numbers) on each corner
@@ -105,8 +104,9 @@ public class CardProcessor {
                 Imgproc.rectangle(cornerCropped, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 1);
                 cntscount++;
             }
+
         }
-        GUI.getInstance().showResult(cornerCropped, "" + card.number + card.suit);
+
     }
 
 
