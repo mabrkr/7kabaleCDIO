@@ -18,7 +18,8 @@ public class Main {
         Mat snapshot = snapshotCapturer.captureSnapshot();
 
         CardProcessor cp = new CardProcessor();
-        List<Card> listOfCards = cp.detectCards(snapshot, 163);
+        List<Card> listOfCards = cp.detectCards(snapshot, 200);
+
 
         System.out.println(listOfCards.size() + " cards found! (rigtigt)");
         System.out.println(listOfCards.toString());

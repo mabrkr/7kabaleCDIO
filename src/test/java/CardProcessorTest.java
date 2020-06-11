@@ -34,7 +34,7 @@ class CardProcessorTest {
     }
 
     @Test
-    void findCornerContours() {
+    void identifyCard() {
         Mat frame;
         frame = Imgcodecs.imread("resources/test_images/1.jpg");
         List<Card> listOfCards = cp.detectCards(frame,165);

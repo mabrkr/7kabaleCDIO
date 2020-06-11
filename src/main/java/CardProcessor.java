@@ -2,10 +2,11 @@ import org.opencv.core.*;
 import org.opencv.imgproc.Imgproc;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 /**
- * Method for detectin cards and adding contours
+ * Method for detecting and identifying cards
  *
  * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
  */
@@ -56,7 +57,7 @@ public class CardProcessor {
 
         //Clear out 'false' cards by adding them to a new array.
         for (Card card : cards) {
-            identifyCards(frame, card);
+            identifyCard(frame, card);
             if (card.suit != ' ' && card.number != ' ') {
                 finalListOfCards.add(card);
             }
@@ -66,12 +67,12 @@ public class CardProcessor {
     }
 
     /**
-     * Adds value and suit to a card, this method also checks if the card is a 10
+     * Adds value and suit to a card
      *
      * @param frame
      * @param card
      */
-    public void identifyCards(Mat frame, Card card) {
+    public void identifyCard(Mat frame, Card card) {
         //Crops the corner of the card
         Mat cardCropped = new Mat(frame, card.rectangle);
         Mat cornerCropped;
@@ -87,6 +88,7 @@ public class CardProcessor {
         int cntscount = 0;
 
         List<MatOfPoint> croppedCnts = new ArrayList<>();
+        List<Rect> cntsRects = new ArrayList<>();
         Mat mGray = new Mat();
 
         //Image processing
@@ -96,26 +98,43 @@ public class CardProcessor {
 
         for (MatOfPoint point : croppedCnts) {
             Rect rect = Imgproc.boundingRect(point);
-
-            //Filter out small and large contours by size
             if ((rect.width >= 8 && rect.height >= 31) && (rect.width <= 100 && rect.height <= 100)) {
+                cntsRects.add(rect);
+            }
 
-                if (cntscount > 2) {
-                    card.number = 'T';
-                } else {
-                    if (rect.y < cornerCropped.height() * 0.3) {
+        }
 
-                        card.number = Detector.getInstance().recNumber(cornerCropped, rect, threshold);
-                    }
-                    if (rect.y > cornerCropped.height() * 0.3) {
-                        card.suit = Detector.getInstance().recFigure(cornerCropped, rect, threshold);
-                    }
+        Comparator<Rect> compareByXCord = new Comparator<Rect>() {
+            @Override
+            public int compare(Rect o1, Rect o2) {
+                Integer x1 = o1.x;
+                Integer x2 = o2.x;
+
+                return x1.compareTo(x2);
+            }
+        };
+
+        cntsRects.sort(compareByXCord);
+
+        if (cntsRects.size() >= 2) {
+            for (int i = 0; i < 2; i++) {
+                Rect rect = cntsRects.get(i);
+
+                //Filter out small and large contours by size
+
+                if (rect.y < cornerCropped.height() * 0.3) {
+
+                    card.number = Detector.getInstance().recNumber(cornerCropped, rect, threshold);
+                }
+                if (rect.y > cornerCropped.height() * 0.3) {
+                    card.suit = Detector.getInstance().recFigure(cornerCropped, rect, threshold);
                 }
 
                 Imgproc.rectangle(cornerCropped, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 1);
                 cntscount++;
             }
         }
+
 
         //TODO: Slet dette når alle test er færdige
         if (card.suit != ' ' && card.number != ' ') {

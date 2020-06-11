@@ -63,8 +63,8 @@ public class GUI {
 
 
         JLabel image = new JLabel(new ImageIcon(bufImage));
-        JButton btn = new JButton("Pres to get Suggestion");
-        JLabel text = new JLabel("suggestion ændres senere sut joe");
+        JButton btn = new JButton("Press to get suggestion");
+        JLabel text = new JLabel("suggestion here");
 
 
         top.add(image);

@@ -5,7 +5,7 @@ import org.opencv.imgproc.Imgproc;
 import java.util.*;
 
 /**
- * A singleton class for classifying numbers and figures
+ * A singleton class for classifying numbers/values and figures
  *
  * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
  */
@@ -16,7 +16,7 @@ public class Detector {
     Map<Coordinates[], Character> numbers = new HashMap<>();
 
     /**
-     * initialysing coordinates to the card, making a pattern of pixels for recognising numbers
+     * initialising coordinates to the card, making a pattern of pixels for recognising numbers
      */
     private Detector() {
         numbers.put(
@@ -188,7 +188,7 @@ public class Detector {
                         new Coordinates(0.75, 0.1),
                         new Coordinates(0.85, 0.2),
                         new Coordinates(0.825, 0.625)
-                }                                               //10 bliver fundet i cardProcceser, ved at tjekke for om det er en af de andre, hvis ikke så er det en 10er.
+                }
                 , 'J');
         numbers.put(
                 new Coordinates[]{
@@ -224,40 +224,40 @@ public class Detector {
                         new Coordinates(0.5, 0.5)
                 }
                 , 'K');
-//        numbers.put(
-//                new Coordinates[]{
-//                        new Coordinates(0.10, 0.5),
-//                        new Coordinates(0.15, 0.5),
-//                        new Coordinates(0.20, 0.5),
-//                        new Coordinates(0.25, 0.5),
-//                        new Coordinates(0.35, 0.5),
-//                        new Coordinates(0.40, 0.5),
-//                        new Coordinates(0.45, 0.5),
-//                        new Coordinates(0.50, 0.5),
-//                        new Coordinates(0.55, 0.5),
-//                        new Coordinates(0.65, 0.5),
-//                        new Coordinates(0.75, 0.5),
-//                        new Coordinates(0.85, 0.5),
-//                        new Coordinates(0.90, 0.5),
-//                }
-//                , '1');
-//        numbers.put(
-//                new Coordinates[]{
-//                        new Coordinates(0.15, 0.25),
-//                        new Coordinates(0.15, 0.75),
-//                        new Coordinates(0.85, 0.25),
-//                        new Coordinates(0.85, 0.75),
-//                        new Coordinates(0.5, 0.85),
-//                        new Coordinates(0.5, 0.15),
-//                        new Coordinates(0.6, 0.15),
-//                        new Coordinates(0.05, 0.5),
-//                        new Coordinates(0.95, 0.5),
-//                        new Coordinates(0.35, 0.175),
-//                        new Coordinates(0.7, 0.15),
-//                        new Coordinates(0.35, 0.825),
-//                        new Coordinates(0.7, 0.85)
-//                }
-//                , '0');
+        numbers.put(
+                new Coordinates[]{
+                        new Coordinates(0.10, 0.5),
+                        new Coordinates(0.15, 0.5),
+                        new Coordinates(0.20, 0.5),
+                        new Coordinates(0.25, 0.5),
+                        new Coordinates(0.35, 0.5),
+                        new Coordinates(0.40, 0.5),
+                        new Coordinates(0.45, 0.5),
+                        new Coordinates(0.50, 0.5),
+                        new Coordinates(0.55, 0.5),
+                        new Coordinates(0.65, 0.5),
+                        new Coordinates(0.75, 0.5),
+                        new Coordinates(0.85, 0.5),
+                        new Coordinates(0.90, 0.5),
+                }
+                , 'T');
+        numbers.put(
+                new Coordinates[]{
+                        new Coordinates(0.15, 0.25),
+                        new Coordinates(0.15, 0.75),
+                        new Coordinates(0.85, 0.25),
+                        new Coordinates(0.85, 0.75),
+                        new Coordinates(0.5, 0.85),
+                        new Coordinates(0.5, 0.15),
+                        new Coordinates(0.6, 0.15),
+                        new Coordinates(0.05, 0.5),
+                        new Coordinates(0.95, 0.5),
+                        new Coordinates(0.35, 0.175),
+                        new Coordinates(0.7, 0.15),
+                        new Coordinates(0.35, 0.825),
+                        new Coordinates(0.7, 0.85)
+                }
+                , 'T');
 
     }
 
