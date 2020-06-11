@@ -26,12 +26,12 @@ class CardProcessorTest {
         frame = Imgcodecs.imread("resources/test_images/2.jpg");
         assertEquals(1, cp.detectCards(frame,165).size());
 
-//        frame = Imgcodecs.imread("resources/test_images/AllCards.jpg");
-//        assertEquals(52, cp.detectCards(frame,163).size());
+        frame = Imgcodecs.imread("resources/test_images/AllCards.jpg");
+        assertEquals(52, cp.detectCards(frame,163).size());
 
 
-        frame = Imgcodecs.imread("resources/test_images/CAROLBASKIN.jpg");
-        assertEquals(22, cp.detectCards(frame,195).size());
+        frame = Imgcodecs.imread("resources/test_images/TraekPhotoshop.jpg");
+        assertEquals(22, cp.detectCards(frame,200).size());
 
     }
 

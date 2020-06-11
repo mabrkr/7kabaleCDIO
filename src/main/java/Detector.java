@@ -338,7 +338,6 @@ public class Detector {
         double[] diamondsPixel = grayCropped.get((int) (figureCropped.height() * 0.11), (int) (figureCropped.width() * 0.2));
         double[] diamondsPixel2 = grayCropped.get((int) (figureCropped.height() * 0.11), (int) (figureCropped.width() * 0.8));
         double[] diamondsPixel3 = grayCropped.get((int) (figureCropped.height() * 0.8), (int) (figureCropped.width() * 0.5));
-        double[] diamondsPixel4 = grayCropped.get((int) (figureCropped.height() * 0.2), (int) (figureCropped.width() * 0.5));
 
         char output = ' ';
 
@@ -355,7 +354,7 @@ public class Detector {
         }
 
         //If center pixel is red
-        else if (centerPixel[2] > 100 && diamondsPixel3[0] < 100 && diamondsPixel4[0] < 100) {
+        else if (centerPixel[2] > 100 && diamondsPixel3[0] < 100) {
             if (diamondsPixel[0] < 100 && diamondsPixel2[0] < 100) {
                 output = 'H';
 

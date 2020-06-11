@@ -41,7 +41,8 @@ public class SnapshotCapturer {
 //        frame = Imgcodecs.imread("resources/test_images/Traek5.jpg");
 //        frame = Imgcodecs.imread("resources/test_images/Traek6.jpg");
 //        frame = Imgcodecs.imread("resources/test_images/Traek7.jpg");
-        frame = Imgcodecs.imread("resources/test_images/TEEEEEST.jpg");
+        frame = Imgcodecs.imread("resources/test_images/TraekPhotoshop.jpg");
+//        frame = Imgcodecs.imread("resources/test_images/TEEEEEST.jpg");
 
 //        frame = Imgcodecs.imread("resources/test_images/1.jpg");
         return frame;

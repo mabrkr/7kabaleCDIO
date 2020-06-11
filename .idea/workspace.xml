@@ -20,23 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/test_images/CAROLBASKIN.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/TestSortB.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/Traek1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/Traek2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/Traek3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/Traek4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/Traek5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/Traek6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/Traek7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/test_images/TraekPhotoshop.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test_images/EndGameTest.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test_images/Kabale.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test_images/Kabale2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test_images/MidGameTest.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Detector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Detector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SnapshotCapturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SnapshotCapturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CardProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CardProcessorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +57,11 @@
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/openpnp/opencv/3.4.2-2/opencv-3.4.2-2.jar!/org/opencv/core/Rect.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Integer.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/NullPointerException.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -144,7 +137,7 @@
       <recent name="$PROJECT_DIR$/resources/snapshots" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.CardProcessorTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="7kabaleCDIO" />
@@ -192,8 +185,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CardProcessorTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DetectorTest" />
         <item itemvalue="JUnit.CardProcessorTest.detectCards" />
         <item itemvalue="JUnit.CardProcessorTest.findCornerContours" />
@@ -468,31 +461,31 @@
     <state x="738" y="312" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591177742409" />
     <state x="984" y="420" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1591701240109" />
     <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state width="2517" height="235" key="GridCell.Tab.0.bottom" timestamp="1591887039481">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1878" height="151" key="GridCell.Tab.0.bottom" timestamp="1591890035702">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="186" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591877781480" />
+    <state width="1878" height="151" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591890035702" />
     <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694822" />
-    <state width="2517" height="235" key="GridCell.Tab.0.center" timestamp="1591887039481">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1878" height="151" key="GridCell.Tab.0.center" timestamp="1591890035702">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="186" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591877781480" />
+    <state width="1878" height="151" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591890035702" />
     <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="2517" height="235" key="GridCell.Tab.0.left" timestamp="1591887039481">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1878" height="151" key="GridCell.Tab.0.left" timestamp="1591890035702">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="186" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591877781480" />
+    <state width="1878" height="151" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591890035702" />
     <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="2517" height="235" key="GridCell.Tab.0.right" timestamp="1591887039481">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1878" height="151" key="GridCell.Tab.0.right" timestamp="1591890035702">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="186" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591877781480" />
+    <state width="1878" height="151" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591890035702" />
     <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
