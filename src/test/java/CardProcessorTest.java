@@ -21,27 +21,23 @@ class CardProcessorTest {
     void detectCards() {
         Mat frame;
         frame = Imgcodecs.imread("resources/test_images/1.jpg");
-        assertEquals(1, cp.detectCards(frame).size());
+        assertEquals(1, cp.detectCards(frame,165).size());
 
         frame = Imgcodecs.imread("resources/test_images/2.jpg");
-        assertEquals(1, cp.detectCards(frame).size());
+        assertEquals(1, cp.detectCards(frame,165).size());
 
         frame = Imgcodecs.imread("resources/test_images/AllCards.jpg");
-        assertEquals(52, cp.detectCards(frame).size());
+        assertEquals(52, cp.detectCards(frame,163).size());
 
         frame = Imgcodecs.imread("resources/test_images/Kabale.jpg");
-        assertEquals(7, cp.detectCards(frame).size());
+        assertEquals(7, cp.detectCards(frame,165).size());
     }
 
     @Test
     void findCornerContours() {
         Mat frame;
         frame = Imgcodecs.imread("resources/test_images/1.jpg");
-        List<Card> listOfCards = cp.detectCards(frame);
-
-        for (Card card : listOfCards) {
-            cp.findCornerContours(frame, card);
-        }
+        List<Card> listOfCards = cp.detectCards(frame,165);
 
         assertEquals('A', listOfCards.get(0).number);
         assertEquals('S', listOfCards.get(0).suit);

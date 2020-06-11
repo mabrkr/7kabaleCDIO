@@ -31,11 +31,12 @@ public class SnapshotCapturer {
 //        }
 
         Mat frame;
-//        frame = Imgcodecs.imread("resources/test_images/AllCards.jpg");
+        frame = Imgcodecs.imread("resources/test_images/AllCards.jpg");
 //        frame = Imgcodecs.imread("resources/test_images/EndGameTest.jpg");
 //        frame = Imgcodecs.imread("resources/test_images/Kabale.jpg");
 //        frame = Imgcodecs.imread("resources/test_images/Kabale2.jpg");
-        frame = Imgcodecs.imread("resources/test_images/FullCardTest.jpg");
+//        frame = Imgcodecs.imread("resources/test_images/FullCardTest.jpg");
+//        frame = Imgcodecs.imread("resources/test_images/1.jpg");
         return frame;
     }
 

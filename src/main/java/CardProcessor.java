@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class CardProcessor {
 
-    private final int THRESHOLD = 195;
+    private int threshold;
 
     /**
      * Joe exotic
@@ -19,7 +19,9 @@ public class CardProcessor {
      * @param frame openCV representation of a .jpg
      * @return A list of card objects
      */
-    public List<Card> detectCards(Mat frame) {
+    public List<Card> detectCards(Mat frame, int threshold) {
+        this.threshold = threshold;
+
         Mat orgFrame = frame.clone();
         Mat frameGray = new Mat();
         Mat frameBlurred = new Mat();
@@ -28,11 +30,12 @@ public class CardProcessor {
         //Image processing
         Imgproc.cvtColor(frame, frameGray, Imgproc.COLOR_BGR2GRAY);
         Imgproc.GaussianBlur(frameGray, frameBlurred, new Size(5, 5), 0);
-        Imgproc.threshold(frameBlurred, frameThresh, THRESHOLD, 255, Imgproc.THRESH_BINARY);
+        Imgproc.threshold(frameBlurred, frameThresh, threshold, 255, Imgproc.THRESH_BINARY);
 
 
         List<MatOfPoint> cnts = new ArrayList<>();
         List<Card> cards = new ArrayList<>();
+        List<Card> finalListOfCards = new ArrayList<>();
 
         //Use Imgproc.RETR_EXTERNAL for cards and Imgproc.RETR_TREE for all contours.
         Imgproc.findContours(frameThresh, cnts, new Mat(), Imgproc.RETR_EXTERNAL, Imgproc.CHAIN_APPROX_SIMPLE);
@@ -47,11 +50,19 @@ public class CardProcessor {
             }
         }
 
+        //TODO: Slet dette når alle test er færdige
         GUI.getInstance().showResult(orgFrame, "");
         GUI.getInstance().showResult(frameThresh, "Threshold");
-        System.out.println(cards.size() + " cards found!");
 
-        return cards;
+        //Clear out 'false' cards by adding them to a new array.
+        for (Card card : cards) {
+            identifyCards(frame, card);
+            if (card.suit != ' ' && card.number != ' ') {
+                finalListOfCards.add(card);
+            }
+        }
+
+        return finalListOfCards;
     }
 
     /**
@@ -60,7 +71,7 @@ public class CardProcessor {
      * @param frame
      * @param card
      */
-    public void findCornerContours(Mat frame, Card card) {
+    public void identifyCards(Mat frame, Card card) {
         //Crops the corner of the card
         Mat cardCropped = new Mat(frame, card.rectangle);
         Mat cornerCropped;
@@ -80,7 +91,7 @@ public class CardProcessor {
 
         //Image processing
         Imgproc.cvtColor(cornerCropped, mGray, Imgproc.COLOR_BGR2GRAY);
-        Imgproc.threshold(mGray, mGray, THRESHOLD, 255, Imgproc.THRESH_BINARY);
+        Imgproc.threshold(mGray, mGray, threshold, 255, Imgproc.THRESH_BINARY);
         Imgproc.findContours(mGray, croppedCnts, new Mat(), Imgproc.RETR_TREE, Imgproc.CHAIN_APPROX_SIMPLE);
 
         for (MatOfPoint point : croppedCnts) {
@@ -94,19 +105,22 @@ public class CardProcessor {
                 } else {
                     if (rect.y < cornerCropped.height() * 0.3) {
 
-                        card.number = Detector.getInstance().recNumber(cornerCropped, rect, THRESHOLD);
+                        card.number = Detector.getInstance().recNumber(cornerCropped, rect, threshold);
                     }
                     if (rect.y > cornerCropped.height() * 0.3) {
-                        card.suit = Detector.getInstance().recFigure(cornerCropped, rect, THRESHOLD);
+                        card.suit = Detector.getInstance().recFigure(cornerCropped, rect, threshold);
                     }
                 }
 
                 Imgproc.rectangle(cornerCropped, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 1);
                 cntscount++;
             }
-
         }
 
+        //TODO: Slet dette når alle test er færdige
+        if (card.suit != ' ' && card.number != ' ') {
+            GUI.getInstance().showResult(cornerCropped, "" + card.number + card.suit);
+        }
     }
 
 

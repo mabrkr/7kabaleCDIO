@@ -18,23 +18,10 @@ public class Main {
         Mat snapshot = snapshotCapturer.captureSnapshot();
 
         CardProcessor cp = new CardProcessor();
-        List<Card> listOfCards = cp.detectCards(snapshot);
-        List<Card> finalListOfCards = new ArrayList<>();
+        List<Card> listOfCards = cp.detectCards(snapshot, 163);
 
-        for (Card card : listOfCards) {
-            cp.findCornerContours(snapshot, card);
-            if (card.suit != ' ' && card.number != ' ') {
-                finalListOfCards.add(card);
-            }
-        }
-
-        for (Card card : finalListOfCards) {
-            GUI.getInstance().showResult(snapshot, "" + card.number + card.suit);
-        }
-
-
-        System.out.println(finalListOfCards.size() + " cards found! (rigtigt)");
-        System.out.println(finalListOfCards.toString());
+        System.out.println(listOfCards.size() + " cards found! (rigtigt)");
+        System.out.println(listOfCards.toString());
         System.out.println("Running time: " + (System.currentTimeMillis() - startTime + "ms"));
 
     }
