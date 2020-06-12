@@ -15,9 +15,10 @@ public class CardProcessor {
     private int threshold;
 
     /**
-     * Joe exotic
+     * Method for detecting and returning cards in an image
      *
-     * @param frame openCV representation of a .jpg
+     * @param frame openCV representation of an image
+     * @param threshold an integer representing the threshold for making the image black and white.
      * @return A list of card objects
      */
     public List<Card> detectCards(Mat frame, int threshold) {
@@ -45,7 +46,7 @@ public class CardProcessor {
             Rect rect = Imgproc.boundingRect(p);
 
             //Filter out small and large contours by size
-            if ((rect.width >= 100 && rect.height >= 10) && (rect.width <= 350 && rect.height <= 600)) {
+            if ((rect.width >= 100 && rect.height >= 10) && (rect.width <= 375 && rect.height <= 575)) {
                 cards.add(new Card(rect.x, rect.y, ' ', ' ', rect));
                 Imgproc.rectangle(orgFrame, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 3);
             }
@@ -67,10 +68,10 @@ public class CardProcessor {
     }
 
     /**
-     * Adds value and suit to a card
+     * Adds number/value and suit to a card
      *
-     * @param frame
-     * @param card
+     * @param frame openCV representation of an image
+     * @param card a card object. Often from the 'detectCards' method.
      */
     public void identifyCard(Mat frame, Card card) {
         //Crops the corner of the card

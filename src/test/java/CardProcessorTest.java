@@ -20,25 +20,27 @@ class CardProcessorTest {
     @Test
     void detectCards() {
         Mat frame;
-        frame = Imgcodecs.imread("resources/test_images/1.jpg");
+        frame = Imgcodecs.imread("resources/test_images/AS.jpg");
         assertEquals(1, cp.detectCards(frame,165).size());
 
-        frame = Imgcodecs.imread("resources/test_images/2.jpg");
+        frame = Imgcodecs.imread("resources/test_images/10C.jpg");
         assertEquals(1, cp.detectCards(frame,165).size());
 
         frame = Imgcodecs.imread("resources/test_images/AllCards.jpg");
         assertEquals(52, cp.detectCards(frame,163).size());
 
-
         frame = Imgcodecs.imread("resources/test_images/TraekPhotoshop.jpg");
         assertEquals(22, cp.detectCards(frame,200).size());
+
+        frame = Imgcodecs.imread("resources/test_images/Test1.jpg");
+        assertEquals(18, cp.detectCards(frame,210).size());
 
     }
 
     @Test
     void identifyCard() {
         Mat frame;
-        frame = Imgcodecs.imread("resources/test_images/1.jpg");
+        frame = Imgcodecs.imread("resources/test_images/AS.jpg");
         List<Card> listOfCards = cp.detectCards(frame,165);
 
         assertEquals('A', listOfCards.get(0).number);

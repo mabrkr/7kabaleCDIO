@@ -18,9 +18,9 @@ public class Main {
         Mat snapshot = snapshotCapturer.captureSnapshot();
 
         CardProcessor cp = new CardProcessor();
-        List<Card> listOfCards = cp.detectCards(snapshot, 200);
+        List<Card> listOfCards = cp.detectCards(snapshot, 210);
 
-        System.out.println(listOfCards.size() + " cards found! (rigtigt)");
+        System.out.println(listOfCards.size() + " cards found!");
         System.out.println(listOfCards.toString());
         System.out.println("Running time: " + (System.currentTimeMillis() - startTime + "ms"));
 

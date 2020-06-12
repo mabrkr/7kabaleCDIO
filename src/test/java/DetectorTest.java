@@ -22,7 +22,7 @@ class DetectorTest {
     @Test
     void recNumber() {
         Mat frame;
-        frame = Imgcodecs.imread("resources/test_images/1.jpg");
+        frame = Imgcodecs.imread("resources/test_images/AS.jpg");
 
         Rect cardRect = new Rect();
         cardRect.x = 6;
@@ -46,7 +46,7 @@ class DetectorTest {
     @Test
     void recFigure() {
         Mat frame;
-        frame = Imgcodecs.imread("resources/test_images/1.jpg");
+        frame = Imgcodecs.imread("resources/test_images/AS.jpg");
 
         Rect cardRect = new Rect();
         cardRect.x = 6;

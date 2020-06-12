@@ -16,7 +16,7 @@ public class Detector {
     Map<Coordinates[], Character> numbers = new HashMap<>();
 
     /**
-     * initialising coordinates to the card, making a pattern of pixels for recognising numbers
+     * initialising coordinates to the card to make a pattern of pixels for recognising numbers
      */
     private Detector() {
         numbers.put(
@@ -247,8 +247,8 @@ public class Detector {
                         new Coordinates(0.15, 0.75),
                         new Coordinates(0.85, 0.25),
                         new Coordinates(0.85, 0.75),
-                        new Coordinates(0.5, 0.85),
-                        new Coordinates(0.5, 0.15),
+                        new Coordinates(0.45, 0.85),
+                        new Coordinates(0.45, 0.15),
                         new Coordinates(0.6, 0.15),
                         new Coordinates(0.05, 0.5),
                         new Coordinates(0.95, 0.5),
@@ -269,10 +269,10 @@ public class Detector {
     }
 
     /**
-     * @param frame     openCV representation of a jpg
-     * @param figure    position of the figure to be recognized, representated as a rectangle
-     * @param threshold the threshold which makes most sense in term of image proccesing
-     * @return the best matching char
+     * @param frame     openCV representation of an image
+     * @param figure    position of the figure on the frame representated as a rectangle
+     * @param threshold an integer representing the threshold for making the image black and white.
+     * @return the best matching number/value as a char
      */
     public Character recNumber(Mat frame, Rect figure, int threshold) {
         Map.Entry<Coordinates[], Character> closestMatch = null;
@@ -314,10 +314,10 @@ public class Detector {
     }
 
     /**
-     * @param frame     openCV representation of a jpg
-     * @param figure    position of the figure to be recognized, representated as a rectangle
-     * @param threshold the threshold which makes most sense in term of image proccesing
-     * @return the best matching char
+     * @param frame     openCV representation of an image
+     * @param figure    position of the figure on the frame representated as a rectangle
+     * @param threshold an integer representing the threshold for making the image black and white.
+     * @return the best matching suit as a char
      */
     public Character recFigure(Mat frame, Rect figure, int threshold) {
 
