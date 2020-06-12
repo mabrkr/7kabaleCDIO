@@ -1,7 +1,6 @@
 import nu.pattern.OpenCV;
 import org.opencv.core.Mat;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,7 +17,7 @@ public class Main {
         Mat snapshot = snapshotCapturer.captureSnapshot();
 
         CardProcessor cp = new CardProcessor();
-        List<Card> listOfCards = cp.detectCards(snapshot, 210);
+        List<Card> listOfCards = cp.detectCards(snapshot, 190);
 
         System.out.println(listOfCards.size() + " cards found!");
         System.out.println(listOfCards.toString());

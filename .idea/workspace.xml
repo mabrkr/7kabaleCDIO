@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Module '7kabaleCDIO'" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,22 +23,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Én pixel fjernet i genkendelse af &quot;hjerte&quot;-kulør.&#10;Photoshoppet billede tilføjet til test.&#10;Unittest virker.">
-      <change afterPath="$PROJECT_DIR$/resources/test_images/Test1.jpg" afterDir="false" />
+    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Oprydning. Mere Javadocs. Mere test.">
+      <change afterPath="$PROJECT_DIR$/resources/test_images/Test (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/test_images/Test (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/test_images/Test (3).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/test_images/Test2 (1).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/test_images/Test2 (2).jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/test_images/Test2 (3).jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test_images/CAROLBASKIN.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test_images/FullCardTest.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test_images/TEEEEEST.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test_images/TestSortB.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test_images/Traek1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test_images/Traek2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test_images/Traek3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test_images/Traek4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test_images/Traek5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test_images/Traek6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/test_images/Traek7.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CardProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CardProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Detector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Detector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SnapshotCapturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SnapshotCapturer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CardProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CardProcessorTest.java" afterDir="false" />
@@ -125,6 +124,7 @@
     <property name="project.structure.proportion" value="0.22413793" />
     <property name="project.structure.side.proportion" value="0.33162394" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
@@ -265,7 +265,7 @@
       <workItem from="1591794137113" duration="3897000" />
       <workItem from="1591866991109" duration="120000" />
       <workItem from="1591872477607" duration="3604000" />
-      <workItem from="1591959750021" duration="2141000" />
+      <workItem from="1591959750021" duration="7487000" />
     </task>
     <task id="LOCAL-00001" summary="imagecapture v 1.0">
       <created>1583954545433</created>
@@ -393,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591890426237</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Oprydning. Mere Javadocs. Mere test.">
+      <created>1591962158350</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1591962158350</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -429,7 +436,8 @@
     <MESSAGE value="videreudvikling af GUI til kabaleløsning påbegyndt" />
     <MESSAGE value="videreudvikling af GUI, Layout fixet, event listener på Knap tilføjet." />
     <MESSAGE value="Én pixel fjernet i genkendelse af &quot;hjerte&quot;-kulør.&#10;Photoshoppet billede tilføjet til test.&#10;Unittest virker." />
-    <option name="LAST_COMMIT_MESSAGE" value="Én pixel fjernet i genkendelse af &quot;hjerte&quot;-kulør.&#10;Photoshoppet billede tilføjet til test.&#10;Unittest virker." />
+    <MESSAGE value="Oprydning. Mere Javadocs. Mere test." />
+    <option name="LAST_COMMIT_MESSAGE" value="Oprydning. Mere Javadocs. Mere test." />
   </component>
   <component name="WindowStateProjectService">
     <state x="626" y="240" width="657" height="629" key="#Main" timestamp="1585731209473" />
@@ -464,9 +472,10 @@
     </state>
     <state x="744" y="385" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1591695834022" />
     <state x="992" y="518" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2560.1400@0.0.2560.1400" timestamp="1591879965235" />
-    <state x="1026" y="408" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1591702430405">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="770" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1591962231797">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="770" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1591962231797" />
     <state x="1026" y="408" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400@0.0.2560.1400" timestamp="1591702430405" />
     <state x="724" y="118" width="824" height="875" key="CommitChangelistDialog2" timestamp="1591780056749">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -483,31 +492,31 @@
     <state x="738" y="312" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591177742409" />
     <state x="984" y="420" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1591701240109" />
     <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state width="1878" height="149" key="GridCell.Tab.0.bottom" timestamp="1591961730304">
+    <state width="1878" height="193" key="GridCell.Tab.0.bottom" timestamp="1591967317739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="149" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591961730303" />
+    <state width="1878" height="193" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1591967317739" />
     <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694822" />
-    <state width="1878" height="149" key="GridCell.Tab.0.center" timestamp="1591961730302">
+    <state width="1878" height="193" key="GridCell.Tab.0.center" timestamp="1591967317739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="149" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591961730302" />
+    <state width="1878" height="193" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1591967317739" />
     <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="149" key="GridCell.Tab.0.left" timestamp="1591961730302">
+    <state width="1878" height="193" key="GridCell.Tab.0.left" timestamp="1591967317739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="149" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591961730302" />
+    <state width="1878" height="193" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1591967317739" />
     <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="149" key="GridCell.Tab.0.right" timestamp="1591961730303">
+    <state width="1878" height="193" key="GridCell.Tab.0.right" timestamp="1591967317739">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="149" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591961730303" />
+    <state width="1878" height="193" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1591967317739" />
     <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
@@ -544,10 +553,10 @@
     </state>
     <state x="443" y="131" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1585940730267" />
     <state x="443" y="131" width="1024" height="847" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state x="555" y="259" width="800" height="530" key="Vcs.Push.Dialog.v2" timestamp="1591890428596">
+    <state x="555" y="259" width="800" height="530" key="Vcs.Push.Dialog.v2" timestamp="1591962161331">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="555" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591890428596" />
+    <state x="555" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1591962161331" />
     <state x="740" y="349" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1591780059578" />
     <state x="555" y="290" width="800" height="530" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1585739851016" />
     <state x="628" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1585905144086">
@@ -574,5 +583,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="622" y="246" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1591265946891" />
+    <state x="805" y="303" key="scopes" timestamp="1591962187323">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="805" y="303" key="scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1591962187323" />
   </component>
 </project>

@@ -21,19 +21,40 @@ class CardProcessorTest {
     void detectCards() {
         Mat frame;
         frame = Imgcodecs.imread("resources/test_images/AS.jpg");
-        assertEquals(1, cp.detectCards(frame,165).size());
+        assertEquals(1, cp.detectCards(frame, 165).size());
 
         frame = Imgcodecs.imread("resources/test_images/10C.jpg");
-        assertEquals(1, cp.detectCards(frame,165).size());
+        assertEquals(1, cp.detectCards(frame, 165).size());
 
         frame = Imgcodecs.imread("resources/test_images/AllCards.jpg");
-        assertEquals(52, cp.detectCards(frame,163).size());
+        assertEquals(52, cp.detectCards(frame, 163).size());
 
         frame = Imgcodecs.imread("resources/test_images/TraekPhotoshop.jpg");
-        assertEquals(22, cp.detectCards(frame,200).size());
+        assertEquals(22, cp.detectCards(frame, 200).size());
 
         frame = Imgcodecs.imread("resources/test_images/Test1.jpg");
-        assertEquals(18, cp.detectCards(frame,210).size());
+        assertEquals(18, cp.detectCards(frame, 210).size());
+
+        frame = Imgcodecs.imread("resources/test_images/Test (1).jpg");
+        assertEquals(20, cp.detectCards(frame, 200).size());
+
+        frame = Imgcodecs.imread("resources/test_images/Test (2).jpg");
+        assertEquals(24, cp.detectCards(frame, 200).size());
+
+        frame = Imgcodecs.imread("resources/test_images/Test (3).jpg");
+        assertEquals(24, cp.detectCards(frame, 190).size());
+//
+        frame = Imgcodecs.imread("resources/test_images/Test2 (1).jpg");
+        assertEquals(26, cp.detectCards(frame, 190).size());
+
+        frame = Imgcodecs.imread("resources/test_images/Test2 (2).jpg");
+        assertEquals(25, cp.detectCards(frame, 190).size());
+
+        frame = Imgcodecs.imread("resources/test_images/Test2 (3).jpg");
+        assertEquals(28, cp.detectCards(frame, 190).size());
+
+
+
 
     }
 
@@ -41,7 +62,7 @@ class CardProcessorTest {
     void identifyCard() {
         Mat frame;
         frame = Imgcodecs.imread("resources/test_images/AS.jpg");
-        List<Card> listOfCards = cp.detectCards(frame,165);
+        List<Card> listOfCards = cp.detectCards(frame, 165);
 
         assertEquals('A', listOfCards.get(0).number);
         assertEquals('S', listOfCards.get(0).suit);

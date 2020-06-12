@@ -2,11 +2,6 @@ import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-
-import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 
 /**
  * Class to either insert a picture through a path, or taking a picture with the clients webcam
@@ -32,7 +27,7 @@ public class SnapshotCapturer {
 //        }
 
         Mat frame;
-        frame = Imgcodecs.imread("resources/test_images/Test1.jpg");
+        frame = Imgcodecs.imread("resources/test_images/Test2 (1).jpg");
         return frame;
     }
 

@@ -63,7 +63,7 @@ public class CardProcessor {
                 finalListOfCards.add(card);
             }
         }
-
+//        return cards;
         return finalListOfCards;
     }
 
@@ -99,7 +99,9 @@ public class CardProcessor {
 
         for (MatOfPoint point : croppedCnts) {
             Rect rect = Imgproc.boundingRect(point);
-            if ((rect.width >= 8 && rect.height >= 31) && (rect.width <= 100 && rect.height <= 100)) {
+
+            //Filter out small and large contours by size
+            if ((rect.width >= 8 && rect.height >= 31) && (rect.width <= 115 && rect.height <= 115)) {
                 cntsRects.add(rect);
             }
 
@@ -120,8 +122,6 @@ public class CardProcessor {
         if (cntsRects.size() >= 2) {
             for (int i = 0; i < 2; i++) {
                 Rect rect = cntsRects.get(i);
-
-                //Filter out small and large contours by size
 
                 if (rect.y < cornerCropped.height() * 0.3) {
 

@@ -6,7 +6,6 @@ import org.opencv.imgproc.Imgproc;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
@@ -61,7 +60,6 @@ public class GUI {
         JPanel center = new JPanel();
         JPanel bottom = new JPanel();
 
-
         JLabel image = new JLabel(new ImageIcon(bufImage));
         JButton btn = new JButton("Press to get suggestion");
         JLabel text = new JLabel("suggestion here");
@@ -88,7 +86,7 @@ public class GUI {
 
     }
 
-    class CustomActionListener implements ActionListener {
+    static class CustomActionListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             System.out.println("button clicked");
 
