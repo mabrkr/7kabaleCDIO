@@ -37,7 +37,7 @@ public class GUI {
         return single_instance;
     }
 
-    public void showResult(Mat img, String title) {
+    public void showImg(Mat img, String title) {
 
         Imgproc.resize(img, img, new Size(WIDTH, HEIGHT));
         MatOfByte matOfByte = new MatOfByte();

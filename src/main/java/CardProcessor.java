@@ -53,8 +53,8 @@ public class CardProcessor {
         }
 
         //TODO: Slet dette når alle test er færdige
-        GUI.getInstance().showResult(orgFrame, "");
-        GUI.getInstance().showResult(frameThresh, "Threshold");
+        GUI.getInstance().showImg(orgFrame, "");
+        GUI.getInstance().showImg(frameThresh, "Threshold");
 
         //Clear out 'false' cards by adding them to a new array.
         for (Card card : cards) {
@@ -128,7 +128,7 @@ public class CardProcessor {
                     card.number = Detector.getInstance().recNumber(cornerCropped, rect, threshold);
                 }
                 if (rect.y > cornerCropped.height() * 0.3) {
-                    card.suit = Detector.getInstance().recFigure(cornerCropped, rect, threshold);
+                    card.suit = Detector.getInstance().recSuit(cornerCropped, rect, threshold);
                 }
 
                 Imgproc.rectangle(cornerCropped, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 1);
@@ -139,7 +139,7 @@ public class CardProcessor {
 
         //TODO: Slet dette når alle test er færdige
         if (card.suit != ' ' && card.number != ' ') {
-            GUI.getInstance().showResult(cornerCropped, "" + card.number + card.suit);
+            GUI.getInstance().showImg(cornerCropped, "" + card.number + card.suit);
         }
     }
 

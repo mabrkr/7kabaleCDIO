@@ -3,18 +3,18 @@ import com.google.gson.Gson;
 
 /**
  * Card model
- * 
+ *
  * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
  */
 public class Card {
 
-    int x;
-    int y;
+    public int x;
+    public int y;
 
-    char number;
-    char suit;
+    public char number;
+    public char suit;
 
-    Rect rectangle;
+    public Rect rectangle;
 
     public Card(int x, int y, char number, char suit, Rect rectangle) {
         this.x = x;

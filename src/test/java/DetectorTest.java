@@ -63,6 +63,6 @@ class DetectorTest {
         rect.width = 30;
         rect.height = 40;
 
-        assertEquals('S', Detector.getInstance().recFigure(cornerCropped, rect, 165));
+        assertEquals('S', Detector.getInstance().recSuit(cornerCropped, rect, 165));
     }
 }

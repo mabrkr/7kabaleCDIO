@@ -319,7 +319,7 @@ public class Detector {
      * @param threshold an integer representing the threshold for making the image black and white.
      * @return the best matching suit as a char
      */
-    public Character recFigure(Mat frame, Rect figure, int threshold) {
+    public Character recSuit(Mat frame, Rect figure, int threshold) {
 
 
         Mat figureCropped = new Mat(frame, figure);
