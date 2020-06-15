@@ -1,3 +1,5 @@
+package Billedgenkendelse;
+
 import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
 

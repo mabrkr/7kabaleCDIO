@@ -1,3 +1,5 @@
+package Billedgenkendelse;
+
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfByte;
 import org.opencv.core.Size;
@@ -15,7 +17,7 @@ import java.io.InputStream;
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 
 /**
- * Singleton for showing the pictures to the users and GUI for choosing suggestion
+ * Singleton for showing the pictures to the users and Billedgenkendelse.GUI for choosing suggestion
  *
  * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
  */

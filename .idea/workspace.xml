@@ -23,10 +23,55 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Der bruges nu den officielle Card-klasse + getter og setter til suit og value.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Gitignore opdateret">
+      <change afterPath="$PROJECT_DIR$/src/main/java/MaltesMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MoveCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/BuildStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/GameSnapshot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/GameSnapshotFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Move.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategies/DefaultStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategies/DoEverythingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategies/MoveCalculationStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/util/CardSequenceChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DefaultStrategyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/Card.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/Card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/CardProcessor.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/CardProcessor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/Detector.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/Detector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/GUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/GUI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/Main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/SnapshotCapturer.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/SnapshotCapturer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/allclasses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/jquery/external/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/jquery/external/jquery/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/jquery/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/jquery/jquery-3.3.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/jquery/jquery-3.4.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/jquery/jquery-3.4.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid1720.log" beforeDir="false" afterPath="$PROJECT_DIR$/hs_err_pid1720.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CardProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/CardProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Detector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/Detector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SnapshotCapturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/SnapshotCapturer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CardProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CardProcessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DetectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DetectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +146,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/test_images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -110,6 +155,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.22413793" />
     <property name="project.structure.side.proportion" value="0.33162394" />
@@ -121,15 +167,19 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\7kabaleCDIO\src\main\java" />
       <recent name="D:\IdeaProjects\7kabaleCDIO\resources\test_images" />
       <recent name="D:\IdeaProjects\7kabaleCDIO\resources\snapshots\Testbilleder" />
       <recent name="$PROJECT_DIR$/resources/snapshots" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
+    <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -140,7 +190,7 @@
       <recent name="D:\IdeaProjects\7kabaleCDIO\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CardProcessorTest.identifyCard">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="7kabaleCDIO" />
@@ -157,22 +207,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardProcessorTest.detectCards" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="7kabaleCDIO" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CardProcessorTest" />
-      <option name="METHOD_NAME" value="detectCards" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CardProcessorTest.identifyCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="7kabaleCDIO" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CardProcessorTest" />
       <option name="METHOD_NAME" value="identifyCard" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DefaultStrategyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="7kabaleCDIO" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DefaultStrategyTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -188,11 +237,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CardProcessorTest.identifyCard" />
-        <item itemvalue="JUnit.CardProcessorTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DetectorTest" />
-        <item itemvalue="JUnit.CardProcessorTest.detectCards" />
+        <item itemvalue="JUnit.CardProcessorTest" />
+        <item itemvalue="JUnit.DefaultStrategyTest" />
+        <item itemvalue="JUnit.CardProcessorTest.identifyCard" />
       </list>
     </recent_temporary>
   </component>
@@ -261,6 +310,7 @@
       <workItem from="1592200613672" duration="4321000" />
       <workItem from="1592223950092" duration="74000" />
       <workItem from="1592224160788" duration="2217000" />
+      <workItem from="1592227825033" duration="674000" />
     </task>
     <task id="LOCAL-00001" summary="imagecapture v 1.0">
       <created>1583954545433</created>
@@ -473,10 +523,10 @@
     </state>
     <state x="93" y="93" width="1733" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591877544371" />
     <state x="124" y="125" width="2311" height="1149" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591886013415" />
-    <state x="814" y="308" key="#com.intellij.ide.util.MemberChooser" timestamp="1592224713262">
+    <state x="814" y="308" key="#com.intellij.ide.util.MemberChooser" timestamp="1592227886030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="814" y="308" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592224713262" />
+    <state x="814" y="308" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592227886030" />
     <state x="1085" y="415" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1591600499784" />
     <state x="692" y="293" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1591694194117">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -486,11 +536,19 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="805" y="446" width="300" height="220" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1585731216753" />
+    <state x="663" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592227687616">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="663" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592227687616" />
     <state x="992" y="518" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1591879965235">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="744" y="385" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1591695834022" />
     <state x="992" y="518" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2560.1400@0.0.2560.1400" timestamp="1591879965235" />
+    <state x="755" y="401" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1592227752337">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="755" y="401" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1920.1040@0.0.1920.1040" timestamp="1592227752337" />
     <state x="770" y="303" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1592037173758">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -511,31 +569,31 @@
     <state x="738" y="312" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591177742409" />
     <state x="984" y="420" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1591701240109" />
     <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state width="1878" height="193" key="GridCell.Tab.0.bottom" timestamp="1592225180158">
+    <state width="1878" height="373" key="GridCell.Tab.0.bottom" timestamp="1592228324916">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="193" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592225180158" />
+    <state width="1878" height="373" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592228324916" />
     <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694822" />
-    <state width="1878" height="193" key="GridCell.Tab.0.center" timestamp="1592225180158">
+    <state width="1878" height="373" key="GridCell.Tab.0.center" timestamp="1592228324916">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="193" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592225180158" />
+    <state width="1878" height="373" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592228324916" />
     <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="193" key="GridCell.Tab.0.left" timestamp="1592225180158">
+    <state width="1878" height="373" key="GridCell.Tab.0.left" timestamp="1592228324916">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="193" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592225180158" />
+    <state width="1878" height="373" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592228324916" />
     <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="193" key="GridCell.Tab.0.right" timestamp="1592225180158">
+    <state width="1878" height="373" key="GridCell.Tab.0.right" timestamp="1592228324916">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="193" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592225180158" />
+    <state width="1878" height="373" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592228324916" />
     <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />

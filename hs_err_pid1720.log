@@ -503,14 +503,14 @@ Classes redefined (0 events):
 No events
 
 Internal exceptions (10 events):
-Event: 1.188 Thread 0x000002c66a70c800 Exception <a 'java/lang/ClassNotFoundException'{0x000000070fe94c98}: com/sun/swing/internal/plaf/basic/resources/spi/basicProvider> (0x000000070fe94c98) thrown at [t:/workspace/open/src/hotspot/share/classfile/systemDictionary.cpp, line 231]
+Event: 1.188 Thread 0x000002c66a70c800 Exception <a 'java/lang/ClassNotFoundException'{0x000000070fe94c98}: com/sun/swing/internal/plaf/basic/resources/spi/basicProvider> (0x000000070fe94c98) thrown at [t:/workspace/open/Logik/hotspot/share/classfile/systemDictionary.cpp, line 231]
 Event: 1.191 Thread 0x000002c66a70c800 Implicit null exception at 0x000002c607b2157e to 0x000002c607b224ae
 Event: 1.195 Thread 0x000002c66a70c800 Implicit null exception at 0x000002c607b2c42f to 0x000002c607b2c4a9
-Event: 1.211 Thread 0x000002c66a70c800 Exception <a 'java/lang/NoSuchMethodError'{0x000000070fd7bcb8}: java.lang.invoke.DirectMethodHandle$Holder.invokeStaticInit(Ljava/lang/Object;)V> (0x000000070fd7bcb8) thrown at [t:/workspace/open/src/hotspot/share/interpreter/linkResolver.cpp, line 772]
+Event: 1.211 Thread 0x000002c66a70c800 Exception <a 'java/lang/NoSuchMethodError'{0x000000070fd7bcb8}: java.lang.invoke.DirectMethodHandle$Holder.invokeStaticInit(Ljava/lang/Object;)V> (0x000000070fd7bcb8) thrown at [t:/workspace/open/Logik/hotspot/share/interpreter/linkResolver.cpp, line 772]
 Event: 1.229 Thread 0x000002c66a70c800 Exception <a 'java/lang/NoSuchMethodError'{0x000000070fcbbc78}: java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lan
 Event: 1.230 Thread 0x000002c66a70c800 Exception <a 'java/lang/NoSuchMethodError'{0x000000070fcdd068}: java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lan
 Event: 1.231 Thread 0x000002c66a70c800 Exception <a 'java/lang/NoSuchMethodError'{0x000000070fcfc290}: java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lan
-Event: 1.232 Thread 0x000002c66a70c800 Exception <a 'java/lang/NoSuchMethodError'{0x000000070fb08978}: java.lang.invoke.Invokers$Holder.linkToTargetMethod(Ljava/lang/Object;ILjava/lang/Object;)Ljava/lang/Object;> (0x000000070fb08978) thrown at [t:/workspace/open/src/hotspot/share/interpreter/l
+Event: 1.232 Thread 0x000002c66a70c800 Exception <a 'java/lang/NoSuchMethodError'{0x000000070fb08978}: java.lang.invoke.Invokers$Holder.linkToTargetMethod(Ljava/lang/Object;ILjava/lang/Object;)Ljava/lang/Object;> (0x000000070fb08978) thrown at [t:/workspace/open/Logik/hotspot/share/interpreter/l
 Event: 1.264 Thread 0x000002c61088e800 Exception <a 'java/lang/NoSuchMethodError'{0x000000070fd4b570}: java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lan
 Event: 1.266 Thread 0x000002c61088e800 Implicit null exception at 0x000002c607af7190 to 0x000002c607af72c6
 

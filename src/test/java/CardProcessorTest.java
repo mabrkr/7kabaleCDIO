@@ -1,3 +1,4 @@
+import Billedgenkendelse.CardProcessor;
 import model.Card;
 import nu.pattern.OpenCV;
 import org.junit.jupiter.api.BeforeAll;

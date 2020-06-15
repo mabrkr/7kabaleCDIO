@@ -1,4 +1,8 @@
+import Billedgenkendelse.CardProcessor;
+import Billedgenkendelse.SnapshotCapturer;
 import model.Card;
+import model.GameSnapshot;
+import model.GameSnapshotFactory;
 import nu.pattern.OpenCV;
 import org.opencv.core.Mat;
 
@@ -24,6 +28,10 @@ public class Main {
         System.out.println(listOfCards.toString());
         System.out.println("Running time: " + (System.currentTimeMillis() - startTime + "ms"));
 
+       GameSnapshot gameSnapshot = GameSnapshotFactory.fromPositionCards(listOfCards);
+
+        MoveCalculator moveCalculator = new MoveCalculator();
+        System.out.println(moveCalculator.calculateBestPossibleMove(gameSnapshot).toString());
     }
 
 

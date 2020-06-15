@@ -1,3 +1,5 @@
+package Billedgenkendelse;
+
 import model.Card;
 import org.opencv.core.*;
 import org.opencv.imgproc.Imgproc;

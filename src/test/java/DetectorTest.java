@@ -1,3 +1,5 @@
+import Billedgenkendelse.Detector;
+import model.Card;
 import nu.pattern.OpenCV;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -20,7 +22,7 @@ class DetectorTest {
     }
 
     @Test
-    void recNumber() {
+    void recValue() {
         Mat frame;
         frame = Imgcodecs.imread("resources/test_images/AS.jpg");
 
@@ -39,12 +41,12 @@ class DetectorTest {
         rect.width = 38;
         rect.height = 58;
 
-        assertEquals('A', Detector.getInstance().recValue(cornerCropped, rect, 165));
+        assertEquals(1, Detector.getInstance().recValue(cornerCropped, rect, 165));
 
     }
 
     @Test
-    void recFigure() {
+    void recSuit() {
         Mat frame;
         frame = Imgcodecs.imread("resources/test_images/AS.jpg");
 
@@ -63,6 +65,6 @@ class DetectorTest {
         rect.width = 30;
         rect.height = 40;
 
-        assertEquals('S', Detector.getInstance().recSuit(cornerCropped, rect, 165));
+        assertEquals(Card.Suit.SPADE, Detector.getInstance().recSuit(cornerCropped, rect, 165));
     }
 }
