@@ -23,14 +23,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Små tilretninger i navngivning.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Card.java" afterDir="false" />
+    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Der bruges nu den officielle Card-klasse + getter og setter til suit og value.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Card.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CardProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CardProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Detector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Detector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DetectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DetectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CardProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CardProcessorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +140,7 @@
       <recent name="D:\IdeaProjects\7kabaleCDIO\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.CardProcessorTest.identifyCard">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="7kabaleCDIO" />
@@ -171,11 +167,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardProcessorTest.findCornerContours" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CardProcessorTest.identifyCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="7kabaleCDIO" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CardProcessorTest" />
-      <option name="METHOD_NAME" value="findCornerContours" />
+      <option name="METHOD_NAME" value="identifyCard" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -192,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CardProcessorTest.identifyCard" />
         <item itemvalue="JUnit.CardProcessorTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.DetectorTest" />
         <item itemvalue="JUnit.CardProcessorTest.detectCards" />
-        <item itemvalue="JUnit.CardProcessorTest.findCornerContours" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +260,7 @@
       <workItem from="1592047641524" duration="84000" />
       <workItem from="1592200613672" duration="4321000" />
       <workItem from="1592223950092" duration="74000" />
-      <workItem from="1592224160788" duration="851000" />
+      <workItem from="1592224160788" duration="2217000" />
     </task>
     <task id="LOCAL-00001" summary="imagecapture v 1.0">
       <created>1583954545433</created>
@@ -413,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592047713529</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Der bruges nu den officielle Card-klasse + getter og setter til suit og value.">
+      <created>1592225120825</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1592225120825</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +455,8 @@
     <MESSAGE value="Oprydning. Mere Javadocs. Mere test." />
     <MESSAGE value="Små justeringer. Mere test." />
     <MESSAGE value="Små tilretninger i navngivning." />
-    <option name="LAST_COMMIT_MESSAGE" value="Små tilretninger i navngivning." />
+    <MESSAGE value="Der bruges nu den officielle Card-klasse + getter og setter til suit og value." />
+    <option name="LAST_COMMIT_MESSAGE" value="Der bruges nu den officielle Card-klasse + getter og setter til suit og value." />
   </component>
   <component name="WindowStateProjectService">
     <state x="626" y="240" width="657" height="629" key="#Main" timestamp="1585731209473" />
@@ -507,31 +511,31 @@
     <state x="738" y="312" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591177742409" />
     <state x="984" y="420" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1591701240109" />
     <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state width="1878" height="193" key="GridCell.Tab.0.bottom" timestamp="1592223911252">
+    <state width="1878" height="193" key="GridCell.Tab.0.bottom" timestamp="1592225180158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="193" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592223911252" />
+    <state width="1878" height="193" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592225180158" />
     <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694822" />
-    <state width="1878" height="193" key="GridCell.Tab.0.center" timestamp="1592223911252">
+    <state width="1878" height="193" key="GridCell.Tab.0.center" timestamp="1592225180158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="193" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592223911252" />
+    <state width="1878" height="193" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592225180158" />
     <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="193" key="GridCell.Tab.0.left" timestamp="1592223911252">
+    <state width="1878" height="193" key="GridCell.Tab.0.left" timestamp="1592225180158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="193" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592223911252" />
+    <state width="1878" height="193" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592225180158" />
     <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="193" key="GridCell.Tab.0.right" timestamp="1592223911252">
+    <state width="1878" height="193" key="GridCell.Tab.0.right" timestamp="1592225180158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="193" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592223911252" />
+    <state width="1878" height="193" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592225180158" />
     <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
@@ -572,10 +576,10 @@
     </state>
     <state x="443" y="131" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592223976985" />
     <state x="443" y="131" width="1024" height="847" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state x="555" y="259" width="800" height="530" key="Vcs.Push.Dialog.v2" timestamp="1592047716975">
+    <state x="555" y="259" width="800" height="530" key="Vcs.Push.Dialog.v2" timestamp="1592225124061">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="555" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592047716975" />
+    <state x="555" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592225124061" />
     <state x="740" y="349" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1591780059578" />
     <state x="555" y="290" width="800" height="530" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1585739851016" />
     <state x="628" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1585905144086">
@@ -598,10 +602,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="766" y="381" key="git4idea.rebase.GitRebaseDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592221142447" />
-    <state x="758" y="421" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1592221257634">
+    <state x="758" y="421" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1592226209659">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="758" y="421" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592221257634" />
+    <state x="758" y="421" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592226209659" />
     <state x="385" y="140" key="new project wizard" timestamp="1585940689504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -65,8 +65,8 @@ class CardProcessorTest {
         frame = Imgcodecs.imread("resources/test_images/AS.jpg");
         List<Card> listOfCards = cp.detectCards(frame, 165);
 
-        assertEquals('A', listOfCards.get(0).getValue());
-        assertEquals('S', listOfCards.get(0).getSuit());
+        assertEquals(1, listOfCards.get(0).getValue());
+        assertEquals(Card.Suit.SPADE, listOfCards.get(0).getSuit());
     }
 
 
