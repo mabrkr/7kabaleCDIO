@@ -1,3 +1,4 @@
+import model.Card;
 import nu.pattern.OpenCV;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -64,8 +65,8 @@ class CardProcessorTest {
         frame = Imgcodecs.imread("resources/test_images/AS.jpg");
         List<Card> listOfCards = cp.detectCards(frame, 165);
 
-        assertEquals('A', listOfCards.get(0).number);
-        assertEquals('S', listOfCards.get(0).suit);
+        assertEquals('A', listOfCards.get(0).getValue());
+        assertEquals('S', listOfCards.get(0).getSuit());
     }
 
 

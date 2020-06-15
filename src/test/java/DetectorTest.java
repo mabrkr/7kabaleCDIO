@@ -39,7 +39,7 @@ class DetectorTest {
         rect.width = 38;
         rect.height = 58;
 
-        assertEquals('A', Detector.getInstance().recNumber(cornerCropped, rect, 165));
+        assertEquals('A', Detector.getInstance().recValue(cornerCropped, rect, 165));
 
     }
 

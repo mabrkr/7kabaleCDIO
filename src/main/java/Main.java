@@ -1,3 +1,4 @@
+import model.Card;
 import nu.pattern.OpenCV;
 import org.opencv.core.Mat;
 

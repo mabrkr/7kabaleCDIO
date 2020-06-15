@@ -1,3 +1,4 @@
+import model.Card;
 import org.opencv.core.Mat;
 import org.opencv.core.Rect;
 import org.opencv.imgproc.Imgproc;
@@ -13,7 +14,7 @@ public class Detector {
 
     private static Detector single_instance = null;
 
-    Map<Coordinates[], Character> numbers = new HashMap<>();
+    Map<Coordinates[], Integer> numbers = new HashMap<>();
 
     /**
      * initialising coordinates to the card to make a pattern of pixels for recognising numbers
@@ -35,7 +36,7 @@ public class Detector {
                         new Coordinates(0.925, 0.9),
                         new Coordinates(0.925, 0.65)
                 }
-                , 'A');
+                , 1);
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.1, 0.2),
@@ -52,7 +53,7 @@ public class Detector {
                         new Coordinates(0.3, 0.85),
                         new Coordinates(0.8, 0.8)
                 }
-                , '2');
+                , 2);
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.2, 0.2),
@@ -69,7 +70,7 @@ public class Detector {
                         new Coordinates(0.825, 0.775),
                         new Coordinates(0.65, 0.875),
                 }
-                , '3');
+                , 3);
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.1, 0.75),
@@ -86,7 +87,7 @@ public class Detector {
                         new Coordinates(0.4, 0.4),
                         new Coordinates(0.5, 0.3)
                 }
-                , '4');
+                , 4);
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.075, 0.5),
@@ -103,7 +104,7 @@ public class Detector {
                         new Coordinates(0.875, 0.25),
                         new Coordinates(0.725, 0.15)
                 }
-                , '5');
+                , 5);
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.15, 0.25),
@@ -120,7 +121,7 @@ public class Detector {
                         new Coordinates(0.5, 0.1),
                         new Coordinates(0.7, 0.85)
                 }
-                , '6');
+                , 6);
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.075, 0.1),
@@ -138,7 +139,7 @@ public class Detector {
                         new Coordinates(0.3, 0.7),
                         new Coordinates(0.2, 0.8)
                 }
-                , '7');
+                , 7);
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.15, 0.25),
@@ -155,7 +156,7 @@ public class Detector {
                         new Coordinates(0.35, 0.825),
                         new Coordinates(0.7, 0.85)
                 }
-                , '8');
+                , 8);
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.15, 0.25),
@@ -172,7 +173,7 @@ public class Detector {
                         new Coordinates(0.35, 0.825),
                         new Coordinates(0.7, 0.85)
                 }
-                , '9');
+                , 9);
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.075, 0.5),
@@ -189,7 +190,7 @@ public class Detector {
                         new Coordinates(0.85, 0.2),
                         new Coordinates(0.825, 0.625)
                 }
-                , 'J');
+                , 11);
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.15, 0.25),
@@ -206,7 +207,7 @@ public class Detector {
                         new Coordinates(0.35, 0.8),
                         new Coordinates(0.7, 0.8)
                 }
-                , 'Q');
+                , 12);
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.075, 0.15),
@@ -223,7 +224,7 @@ public class Detector {
                         new Coordinates(0.3, 0.575),
                         new Coordinates(0.5, 0.5)
                 }
-                , 'K');
+                , 13);
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.10, 0.5),
@@ -240,7 +241,7 @@ public class Detector {
                         new Coordinates(0.85, 0.5),
                         new Coordinates(0.90, 0.5),
                 }
-                , 'T');
+                , 10);
         numbers.put(
                 new Coordinates[]{
                         new Coordinates(0.15, 0.25),
@@ -257,7 +258,7 @@ public class Detector {
                         new Coordinates(0.35, 0.825),
                         new Coordinates(0.7, 0.85)
                 }
-                , 'T');
+                , 10);
 
     }
 
@@ -274,8 +275,8 @@ public class Detector {
      * @param threshold an integer representing the threshold for making the image black and white.
      * @return the best matching number/value as a char
      */
-    public Character recNumber(Mat frame, Rect figure, int threshold) {
-        Map.Entry<Coordinates[], Character> closestMatch = null;
+    public int recValue(Mat frame, Rect figure, int threshold) {
+        Map.Entry<Coordinates[], Integer> closestMatch = null;
 
         Mat figureCropped = new Mat(frame, figure);
         Mat grayCropped = new Mat(frame, figure);
@@ -285,7 +286,7 @@ public class Detector {
 
         int matches = 0;
 
-        for (Map.Entry<Coordinates[], Character> entry : numbers.entrySet()) {
+        for (Map.Entry<Coordinates[], Integer> entry : numbers.entrySet()) {
             int currentMatches = 0;
             for (int i = 0; i < entry.getKey().length; i++) {
 
@@ -308,7 +309,7 @@ public class Detector {
         if (closestMatch != null) {
             return closestMatch.getValue();
         }
-        return ' ';
+        return -1;
 
 
     }
@@ -319,7 +320,7 @@ public class Detector {
      * @param threshold an integer representing the threshold for making the image black and white.
      * @return the best matching suit as a char
      */
-    public Character recSuit(Mat frame, Rect figure, int threshold) {
+    public Card.Suit recSuit(Mat frame, Rect figure, int threshold) {
 
 
         Mat figureCropped = new Mat(frame, figure);
@@ -341,15 +342,15 @@ public class Detector {
 
         double[] diamondsPixel3 = grayCropped.get((int) (figureCropped.height() * 0.8), (int) (figureCropped.width() * 0.5));
 
-        char output = ' ';
+        Card.Suit output = null;
 
         //If center pixel is black
         if (centerPixel[2] < 100 && clubsPixel3[0] > 100) {
             if (clubsPixel[0] < 100 && clubsPixel2[0] < 100) {
-                output = 'S';
+                output = Card.Suit.SPADE;
 
             } else {
-                output = 'C';
+                output = Card.Suit.CLUB;
 
             }
 
@@ -358,10 +359,10 @@ public class Detector {
         //If center pixel is red
         else if (centerPixel[2] > 100 && diamondsPixel3[0] < 100) {
             if (diamondsPixel[0] < 100 && diamondsPixel2[0] < 100) {
-                output = 'H';
+                output = Card.Suit.HEART;
 
             } else {
-                output = 'D';
+                output = Card.Suit.DIAMOND;
 
             }
 

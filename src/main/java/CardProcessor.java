@@ -1,3 +1,4 @@
+import model.Card;
 import org.opencv.core.*;
 import org.opencv.imgproc.Imgproc;
 
@@ -47,7 +48,11 @@ public class CardProcessor {
 
             //Filter out small and large contours by size
             if ((rect.width >= 100 && rect.height >= 10) && (rect.width <= 375 && rect.height <= 575)) {
-                cards.add(new Card(rect.x, rect.y, ' ', ' ', rect));
+                Card card = new Card(-1, null);
+                card.x = rect.x;
+                card.y = rect.y;
+                card.rectangle = rect;
+                cards.add(card);
                 Imgproc.rectangle(orgFrame, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 3);
             }
         }
@@ -59,7 +64,7 @@ public class CardProcessor {
         //Clear out 'false' cards by adding them to a new array.
         for (Card card : cards) {
             identifyCard(frame, card);
-            if (card.suit != ' ' && card.number != ' ') {
+            if (card.getValue() != -1 && card.getSuit() != null) {
                 finalListOfCards.add(card);
             }
         }
@@ -125,10 +130,11 @@ public class CardProcessor {
 
                 if (rect.y < cornerCropped.height() * 0.3) {
 
-                    card.number = Detector.getInstance().recNumber(cornerCropped, rect, threshold);
+                    card.setValue(Detector.getInstance().recValue(cornerCropped, rect, threshold));
+
                 }
                 if (rect.y > cornerCropped.height() * 0.3) {
-                    card.suit = Detector.getInstance().recSuit(cornerCropped, rect, threshold);
+                    card.setSuit(Detector.getInstance().recSuit(cornerCropped, rect, threshold));
                 }
 
                 Imgproc.rectangle(cornerCropped, new Point(rect.x, rect.y), new Point(rect.x + rect.width, rect.y + rect.height), new Scalar(0, 255, 0), 1);
@@ -138,8 +144,8 @@ public class CardProcessor {
 
 
         //TODO: Slet dette når alle test er færdige
-        if (card.suit != ' ' && card.number != ' ') {
-            GUI.getInstance().showImg(cornerCropped, "" + card.number + card.suit);
+        if (card.getValue() != -1 && card.getSuit() != null) {
+            GUI.getInstance().showImg(cornerCropped, "" + card.getValue() + card.getSuit());
         }
     }
 
