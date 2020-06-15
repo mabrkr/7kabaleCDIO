@@ -3,6 +3,7 @@ package model;
 import model.Card;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.ToIntFunction;
@@ -16,24 +17,26 @@ public final class GameSnapshotFactory {
     public static GameSnapshot fromPositionCards(List<Card> positionCards) {
 
         int Yseperator = getYSeparatorCoordinate(positionCards);
-        List<Card> cardsBelowY = getCardsBelowY(Yseperator,positionCards);
-        List<Card> cardsAboveY = getCardsAboveY(Yseperator,positionCards);;
+        List<Card> cardsBelowY = getCardsBelowY(Yseperator, positionCards);
+        List<Card> cardsAboveY = getCardsAboveY(Yseperator, positionCards);
+        ;
 
         Card cardFromDrawPile = guessDrawpileCard(cardsAboveY);
         List<Card> topCardsOfSuitStacks = new ArrayList<>();
-        if(cardFromDrawPile != null){
+        if (cardFromDrawPile != null) {
             for (int i = 1; i < cardsAboveY.size(); i++) {
                 topCardsOfSuitStacks.add(cardsAboveY.get(i));
             }
-        }else{
+        } else {
             topCardsOfSuitStacks = cardsAboveY;
         }
 
         List<List<Card>> buildStacks = getColumns(cardsBelowY);
         List<Integer> heightsOfFaceDownSequences = new ArrayList<>();
-        for(List<Card> stack: buildStacks ){
-            int height = getUnturnedCardsColumnLength(Yseperator, stack);
-            heightsOfFaceDownSequences.add(height);
+        for (List<Card> stack : buildStacks) {
+            System.out.println(stack);
+//            int height = getUnturnedCardsColumnLength(Yseperator, stack);
+//            heightsOfFaceDownSequences.add(height);
         }
 
         // Conversion
@@ -45,11 +48,11 @@ public final class GameSnapshotFactory {
         int index = 0;
         Card[][] _buildStacks = new Card[7][];
         double[] _heightsOfFaceDownSequences = new double[7];
-        for(List<Card> column : buildStacks){
+        for (List<Card> column : buildStacks) {
             int size = buildStacks.get(0).size();
             Card[] _column = new Card[size];
             int columnIndex = 0;
-            for (Card card : column){
+            for (Card card : column) {
                 _column[columnIndex] = card;
                 columnIndex++;
             }
@@ -61,7 +64,7 @@ public final class GameSnapshotFactory {
         int suitStackCount = topCardsOfSuitStacks.size();
         Card[] _topCardsOfSuitStacks = new Card[suitStackCount];
         int suitIndex = 0;
-        for (Card positionCard: topCardsOfSuitStacks) {
+        for (Card positionCard : topCardsOfSuitStacks) {
             _topCardsOfSuitStacks[suitIndex] = positionCard;
         }
 
@@ -74,7 +77,7 @@ public final class GameSnapshotFactory {
 
     /**
      * Get the top-left card in a list of PositionCards.
-     *
+     * <p>
      * If the topmost card isn't the same as the leftmost card, pick the topmost of the two.
      *
      * @param positionCards a list of PositionCards
@@ -105,60 +108,60 @@ public final class GameSnapshotFactory {
         return comparatorBy(fy);
     }
 
-    public static List<Card> getCardsBelowY(int YCoordinate, List<Card> positionCards){
+    public static List<Card> getCardsBelowY(int YCoordinate, List<Card> positionCards) {
         //insert check if no cards below, or above.
-        List<Card> cardsBelowY = null;
-        for (Card card : positionCards){
-            if (card.y < YCoordinate){
+        List<Card> cardsBelowY = new ArrayList<>();
+        for (Card card : positionCards) {
+            if (card.y < YCoordinate) {
                 cardsBelowY.add(card);
             }
         }
         return cardsBelowY;
     }
 
-    public static List<Card> getCardsAboveY(int YCoordinate, List<Card> positionCards){
+    public static List<Card> getCardsAboveY(int YCoordinate, List<Card> positionCards) {
         //insert check if no cards below, or above.
         List<Card> cardsAboveY = new ArrayList<>();
-        for (Card card : positionCards){
-            if (card.y > YCoordinate){
+        for (Card card : positionCards) {
+            if (card.y > YCoordinate) {
                 cardsAboveY.add(card);
             }
         }
         return cardsAboveY;
     }
 
-    public static int getYSeparatorCoordinate(List<Card> positionCards){
+    public static int getYSeparatorCoordinate(List<Card> positionCards) {
         Card topCard = topLeftCard(positionCards);
         int bottomOftopCardY = topCard.y + topCard.rectangle.height;
         List<Card> cardsBelowY = getCardsBelowY(bottomOftopCardY, positionCards);
         Card topBelowtopLeft = topLeftCard(cardsBelowY);
-        int separatorCoordinateY = ((bottomOftopCardY - topBelowtopLeft.y)/ 2) + bottomOftopCardY;
+        int separatorCoordinateY = ((bottomOftopCardY - topBelowtopLeft.y) / 2) + bottomOftopCardY;
         return separatorCoordinateY;
     }
 
-    public static List<List<Card>> getColumns(List<Card> positionCards){
-        List<List<Card>> columnLists = new ArrayList<>();;
+    public static List<List<Card>> getColumns(List<Card> positionCards) {
+        List<List<Card>> columnLists = new ArrayList<>();
+
         List<Card> sorted =
                 positionCards
                         .stream()
                         .sorted(comparatorX())
                         .collect(Collectors.toList());
         List<Card> column = new ArrayList<>();
-        for( int index = 0; index < sorted.size(); index++ ){
-            if(index == 0){
+        for (int index = 0; index < sorted.size() - 1; index++) {
+            if (index == 0) {
                 column.add(sorted.get(index));
             }
             Card card = sorted.get(index);
-            Card nextCard =sorted.get(index+1);
-            if (cardsAreOverlappingX(card, nextCard)){
+            Card nextCard = sorted.get(index + 1);
+            if (cardsAreOverlappingX(card, nextCard)) {
                 column.add(nextCard);
-            }
-            else{
+            } else {
                 columnLists.add(column.stream()
                         .sorted(comparatorY())
                         .collect(Collectors.toList()));
                 column = new ArrayList<>();
-                if(index == sorted.size() -2){
+                if (index == sorted.size() - 2) {
                     column.add(nextCard);
                     columnLists.add(column.stream()
                             .sorted(comparatorY())
@@ -204,12 +207,12 @@ public final class GameSnapshotFactory {
         return above.y - above.rectangle.height >= below.y;
     }
 
-    public static boolean cardsAreOverlappingX(Card cardA, Card cardB){
+    public static boolean cardsAreOverlappingX(Card cardA, Card cardB) {
         int xA0 = cardA.x;
         int xA1 = cardA.x + cardA.rectangle.width;
         int xB0 = cardB.x;
         int xB1 = cardB.x + cardB.rectangle.width;
-        if((xB0 >= xA0 && xB0 <= xA1) || (xB1 >= xA0 && xB1 <= xA1)){
+        if ((xB0 >= xA0 && xB0 <= xA1) || (xB1 >= xA0 && xB1 <= xA1)) {
             return true;
         }
         return false;
@@ -237,21 +240,21 @@ public final class GameSnapshotFactory {
 //    }
 
 
-    public static int countColumns(List<List<Card>> columns){
+    public static int countColumns(List<List<Card>> columns) {
         return columns.size();
     }
 
-    public static Card guessDrawpileCard(List<Card> positionCards){
+    public static Card guessDrawpileCard(List<Card> positionCards) {
         List<Card> sorted =
                 positionCards
                         .stream()
                         .sorted(comparatorX())
                         .collect(Collectors.toList());
-        if (sorted.size() == 4){
+        if (sorted.size() == 4) {
             int card0farX = sorted.get(0).x + sorted.get(0).rectangle.width;
             int card1nearX = sorted.get(1).x;
             int width = sorted.get(0).rectangle.width;
-            if(card0farX - card1nearX < width){
+            if (card0farX - card1nearX < width) {
                 return null;
             }
         }
@@ -259,13 +262,13 @@ public final class GameSnapshotFactory {
     }
 
 
-    public static int getUnturnedCardsColumnLength(int Yline, List<Card> positionCards){
-        List<Card> sorted =
-                positionCards
-                        .stream()
-                        .sorted(comparatorY())
-                        .collect(Collectors.toList());
-        int distance = Yline - sorted.get(0).y;
+    public static int getUnturnedCardsColumnLength(int Yline, List<Card> positionCards) {
+//        List<Card> sorted = positionCards
+//                .stream()
+//                .sorted(comparatorY())
+//                .collect(Collectors.toList());
+        positionCards.sort(comparatorY());
+        int distance = Yline - positionCards.get(0).y;
         return distance;
     }
 

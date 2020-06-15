@@ -23,55 +23,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Gitignore opdateret">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MaltesMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MoveCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/BuildStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/GameSnapshot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/GameSnapshotFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/Move.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategies/DefaultStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategies/DoEverythingStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategies/MoveCalculationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/util/CardSequenceChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DefaultStrategyTest.java" afterDir="false" />
+    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="De to projekter er merged.&#10;&#10;Link til gammelt logik-repo:&#10;https://github.com/mabrkr/7kabalelogik.git">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/Card.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/Card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/CardProcessor.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/CardProcessor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/Detector.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/Detector.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/GUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/GUI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/Main.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/Main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/SnapshotCapturer.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/SnapshotCapturer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/allclasses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/jquery/external/jquery/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/jquery/external/jquery/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/jquery/jquery-3.3.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/jquery/jquery-3.3.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/jquery/jquery-3.4.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/jquery/jquery-3.4.1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid1720.log" beforeDir="false" afterPath="$PROJECT_DIR$/hs_err_pid1720.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CardProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/CardProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Detector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/Detector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SnapshotCapturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/SnapshotCapturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CardProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CardProcessorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DetectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DetectorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/GameSnapshotFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/GameSnapshotFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +264,7 @@
       <workItem from="1592200613672" duration="4321000" />
       <workItem from="1592223950092" duration="74000" />
       <workItem from="1592224160788" duration="2217000" />
-      <workItem from="1592227825033" duration="674000" />
+      <workItem from="1592227825033" duration="1455000" />
     </task>
     <task id="LOCAL-00001" summary="imagecapture v 1.0">
       <created>1583954545433</created>
@@ -466,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592225120825</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="De to projekter er merged.&#10;&#10;Link til gammelt logik-repo:&#10;https://github.com/mabrkr/7kabalelogik.git">
+      <created>1592228685338</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1592228685338</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +467,8 @@
     <MESSAGE value="Små justeringer. Mere test." />
     <MESSAGE value="Små tilretninger i navngivning." />
     <MESSAGE value="Der bruges nu den officielle Card-klasse + getter og setter til suit og value." />
-    <option name="LAST_COMMIT_MESSAGE" value="Der bruges nu den officielle Card-klasse + getter og setter til suit og value." />
+    <MESSAGE value="De to projekter er merged.&#10;&#10;Link til gammelt logik-repo:&#10;https://github.com/mabrkr/7kabalelogik.git" />
+    <option name="LAST_COMMIT_MESSAGE" value="De to projekter er merged.&#10;&#10;Link til gammelt logik-repo:&#10;https://github.com/mabrkr/7kabalelogik.git" />
   </component>
   <component name="WindowStateProjectService">
     <state x="626" y="240" width="657" height="629" key="#Main" timestamp="1585731209473" />
@@ -569,31 +531,31 @@
     <state x="738" y="312" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1591177742409" />
     <state x="984" y="420" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1591701240109" />
     <state x="738" y="312" width="424" height="486" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state width="1878" height="373" key="GridCell.Tab.0.bottom" timestamp="1592228324916">
+    <state width="1878" height="428" key="GridCell.Tab.0.bottom" timestamp="1592229071123">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="373" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592228324916" />
+    <state width="1878" height="428" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592229071123" />
     <state width="2151" height="333" key="GridCell.Tab.0.bottom/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694822" />
-    <state width="1878" height="373" key="GridCell.Tab.0.center" timestamp="1592228324916">
+    <state width="1878" height="428" key="GridCell.Tab.0.center" timestamp="1592229071123">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="373" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592228324916" />
+    <state width="1878" height="428" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592229071123" />
     <state width="2151" height="333" key="GridCell.Tab.0.center/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="373" key="GridCell.Tab.0.left" timestamp="1592228324916">
+    <state width="1878" height="428" key="GridCell.Tab.0.left" timestamp="1592229071123">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="373" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592228324916" />
+    <state width="1878" height="428" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592229071123" />
     <state width="2151" height="333" key="GridCell.Tab.0.left/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
-    <state width="1878" height="373" key="GridCell.Tab.0.right" timestamp="1592228324916">
+    <state width="1878" height="428" key="GridCell.Tab.0.right" timestamp="1592229071123">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="373" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592228324916" />
+    <state width="1878" height="428" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592229071123" />
     <state width="2151" height="333" key="GridCell.Tab.0.right/0.0.2194.1194@0.0.2194.1194" timestamp="1585937936344" />
     <state width="2517" height="235" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1591887039481" />
     <state width="1872" height="139" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1585912694821" />
@@ -625,19 +587,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="599" y="281" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1591689856169" />
-    <state x="758" y="222" key="RollbackChangesDialog" timestamp="1592224364232">
+    <state x="758" y="222" key="RollbackChangesDialog" timestamp="1592229020683">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="758" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592224364232" />
+    <state x="758" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592229020683" />
     <state x="443" y="131" width="1024" height="847" key="SettingsEditor" timestamp="1592223976985">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="443" y="131" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592223976985" />
     <state x="443" y="131" width="1024" height="847" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1585731209473" />
-    <state x="555" y="259" width="800" height="530" key="Vcs.Push.Dialog.v2" timestamp="1592225124061">
+    <state x="555" y="259" width="800" height="530" key="Vcs.Push.Dialog.v2" timestamp="1592228690698">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="555" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592225124061" />
+    <state x="555" y="259" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592228690698" />
     <state x="740" y="349" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1591780059578" />
     <state x="555" y="290" width="800" height="530" key="Vcs.Push.Dialog.v2/0.28.1920.1052@0.28.1920.1052" timestamp="1585739851016" />
     <state x="628" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1585905144086">
