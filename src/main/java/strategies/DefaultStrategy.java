@@ -6,6 +6,28 @@ import model.GameSnapshot;
 import model.Move;
 import util.CardSequenceChecker;
 
+//        Regel 1: Vendt kort fra bunken? Hvis ikke -> vend fra bunken.
+//
+//        Regel 2: Læg altid es eller toer op.
+//
+//        Regel 3: Hvis konge er flytbar:
+//
+//        Findes der tom plads?
+//
+//        Ryk derhen.
+//
+//        Kan der laves tom plads?
+//
+//        Hvis ja: Gør det.
+//
+//        Regel 4: Hvis der er et træk, der fører til vending, så tag det.
+//
+//        Regel 5: Hvis der er et træk, der fører til et træk, der fører til vending, så lav det.
+//
+//        Regel 6: Hvis ingen foregående regler kan bruges -> vend fra bunken.
+//
+//        Regel 7: Hvis bunken er kørt igennem uden regel 1-5 kan bruges -> begynd at vende igen, men udfør samtlige mulige træk (men prioriter stadig 1-5).
+
 public class DefaultStrategy implements MoveCalculationStrategy {
 
     protected GameSnapshot gameSnapshot;

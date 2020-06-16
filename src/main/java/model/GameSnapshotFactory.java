@@ -57,7 +57,7 @@ public final class GameSnapshotFactory {
         double[] _heightsOfFaceDownSequences = ArrayUtils.toPrimitive(heightsOfFaceDownSequences.toArray(new Double[0]));
 
         //drop the tomme arrays.
-        Card[] _topCardsOfSuitStacks = topCardsOfSuitStacks.stream().toArray( n -> new Card[n]);
+        Card[] _topCardsOfSuitStacks = topCardsOfSuitStacks.stream().toArray(n -> new Card[n]);
 
 //        //is DrawPileEmpty? I don't know what this card looks like.
 //        boolean _isDrawPileEmpty = false;
@@ -86,6 +86,11 @@ public final class GameSnapshotFactory {
 //        for (Card positionCard : topCardsOfSuitStacks) {
 //            _topCardsOfSuitStacks[suitIndex] = positionCard;
 //        }
+
+        //TODO: Tjek om følgende løkke er unødvendig
+        for (Card[] stack : _buildStacks) {
+            ArrayUtils.reverse(stack);
+        }
 
 
         GameSnapshot test = new GameSnapshot(_isDrawPileEmpty, _cardFromDrawPile, _buildStacks, _topCardsOfSuitStacks,
@@ -177,7 +182,7 @@ public final class GameSnapshotFactory {
         System.out.println(sorted);
         List<Card> column = new ArrayList<>();
         column.add(sorted.get(0));
-        for(int index = 0; index < sorted.size() -1; index++){
+        for (int index = 0; index < sorted.size() - 1; index++) {
             System.out.print("Index ");
             System.out.println(index);
             System.out.print("Card at Index: ");
@@ -191,18 +196,17 @@ public final class GameSnapshotFactory {
                 System.out.print("Column: ");
                 System.out.println(columnLists.size());
                 column.add(nextCard);
-            }
-            else{
-                columnLists.add(column.stream()
-                        .sorted(comparatorY().reversed())
-                        .collect(Collectors.toList()));
+            } else {
+                column.sort(comparatorY());
+                columnLists.add(column);
+
                 column = new ArrayList<>();
                 column.add(nextCard);
             }
-            if(index == sorted.size() -2){
-                columnLists.add(column.stream()
-                            .sorted(comparatorY().reversed())
-                            .collect(Collectors.toList()));
+            if (index == sorted.size() - 2) {
+
+                column.sort(comparatorY());
+                columnLists.add(column);
             }
         }
         System.out.println(columnLists);

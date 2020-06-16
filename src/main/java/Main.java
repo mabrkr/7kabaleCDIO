@@ -22,7 +22,7 @@ public class Main {
         Mat snapshot = snapshotCapturer.captureSnapshot();
 
         CardProcessor cp = new CardProcessor();
-        List<Card> listOfCards = cp.detectCards(snapshot, 190);
+        List<Card> listOfCards = cp.detectCards(snapshot, 180);
 
         System.out.println(listOfCards.size() + " cards found!");
         System.out.println(listOfCards.toString());
@@ -32,6 +32,7 @@ public class Main {
 
         MoveCalculator moveCalculator = new MoveCalculator();
         System.out.println(moveCalculator.calculateBestPossibleMove(gameSnapshot).toString());
+        MaltesMain.printGameSnapshotToConsole(gameSnapshot);
     }
 
 
