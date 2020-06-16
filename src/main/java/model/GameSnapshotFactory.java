@@ -1,12 +1,10 @@
 package model;
 
 import model.Card;
+import org.apache.commons.lang3.ArrayUtils;
 
 import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.function.ToIntFunction;
 import java.util.stream.Collectors;
 
@@ -29,6 +27,7 @@ public final class GameSnapshotFactory {
         System.out.println("----------");
         Card cardFromDrawPile = guessDrawpileCard(cardsAboveY);
         List<Card> topCardsOfSuitStacks = new ArrayList<>();
+        cardsAboveY.sort(comparatorX());
         if (cardFromDrawPile != null) {
             for (int i = 1; i < cardsAboveY.size(); i++) {
                 topCardsOfSuitStacks.add(cardsAboveY.get(i));
@@ -41,11 +40,11 @@ public final class GameSnapshotFactory {
 
         List<List<Card>> buildStacks = getColumns(cardsBelowY);
         System.out.println("Build Stacks");
-        List<Integer> heightsOfFaceDownSequences = new ArrayList<>();
+        List<Double> heightsOfFaceDownSequences = new ArrayList<>();
         for (List<Card> stack : buildStacks) {
             System.out.println(stack);
-//            int height = getUnturnedCardsColumnLength(Yseperator, stack);
-//            heightsOfFaceDownSequences.add(height);s
+            double height = getUnturnedCardsColumnLength(Yseperator, stack);
+            heightsOfFaceDownSequences.add(height);
         }
 
         // Conversion
@@ -53,10 +52,21 @@ public final class GameSnapshotFactory {
         boolean _isDrawPileEmpty = false;
         // DrawpileCard
         Card _cardFromDrawPile = cardFromDrawPile;
-        //Build stack and heights
-        int index = 0;
-        Card[][] _buildStacks = new Card[7][];
-        double[] _heightsOfFaceDownSequences = new double[7];
+
+        Card[][] _buildStacks = buildStacks.stream().map(u -> u.toArray(new Card[0])).toArray(Card[][]::new);
+        double[] _heightsOfFaceDownSequences = ArrayUtils.toPrimitive(heightsOfFaceDownSequences.toArray(new Double[0]));
+
+        //drop the tomme arrays.
+        Card[] _topCardsOfSuitStacks = topCardsOfSuitStacks.stream().toArray( n -> new Card[n]);
+
+//        //is DrawPileEmpty? I don't know what this card looks like.
+//        boolean _isDrawPileEmpty = false;
+//        // DrawpileCard
+//        Card _cardFromDrawPile = cardFromDrawPile;
+//        //Build stack and heights
+//        int index = 0;
+//        Card[][] _buildStacks = new Card[7][];
+//        double[] _heightsOfFaceDownSequences = new double[7];
 //        for (List<Card> column : buildStacks) {
 //            int size = buildStacks.get(0).size();
 //            Card[] _column = new Card[size];
@@ -66,22 +76,23 @@ public final class GameSnapshotFactory {
 //                columnIndex++;
 //            }
 //            _buildStacks[index] = _column;
-//            //_heightsOfFaceDownSequences[index] = (double) heightsOfFaceDownSequences.get(index);
+//            _heightsOfFaceDownSequences[index] = (double) heightsOfFaceDownSequences.get(index);
 //            index++;
 //        }
-        //drop the tomme arrays.
-        int suitStackCount = topCardsOfSuitStacks.size();
-        Card[] _topCardsOfSuitStacks = new Card[suitStackCount];
-        int suitIndex = 0;
-        for (Card positionCard : topCardsOfSuitStacks) {
-            _topCardsOfSuitStacks[suitIndex] = positionCard;
-        }
+//        //drop the tomme arrays.
+//        int suitStackCount = topCardsOfSuitStacks.size();
+//        Card[] _topCardsOfSuitStacks = new Card[suitStackCount];
+//        int suitIndex = 0;
+//        for (Card positionCard : topCardsOfSuitStacks) {
+//            _topCardsOfSuitStacks[suitIndex] = positionCard;
+//        }
 
 
-        //GameSnapshot test = new GameSnapshot(_isDrawPileEmpty, _cardFromDrawPile, _buildStacks, _topCardsOfSuitStacks,
-       //         _heightsOfFaceDownSequences);
-        throw new UnsupportedOperationException();
-        //return GameSnapshot;
+        GameSnapshot test = new GameSnapshot(_isDrawPileEmpty, _cardFromDrawPile, _buildStacks, _topCardsOfSuitStacks,
+                _heightsOfFaceDownSequences);
+        return test;
+        //throw new UnsupportedOperationException();
+
     }
 
     /**
@@ -324,13 +335,13 @@ public final class GameSnapshotFactory {
     }
 
 
-    public static int getUnturnedCardsColumnLength(int Yline, List<Card> positionCards) {
+    public static double getUnturnedCardsColumnLength(int Yline, List<Card> positionCards) {
 //        List<Card> sorted = positionCards
 //                .stream()
 //                .sorted(comparatorY())
 //                .collect(Collectors.toList());
         positionCards.sort(comparatorY());
-        int distance = Yline - positionCards.get(0).y;
+        int distance = positionCards.get(0).y - Yline;
         return distance;
     }
 
