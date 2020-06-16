@@ -29,7 +29,7 @@ public class SnapshotCapturer {
 //        }
 
         Mat frame;
-        frame = Imgcodecs.imread("resources/test_images/Test1.jpg");
+        frame = Imgcodecs.imread("resources/test_images/Test2 (3).jpg");
         return frame;
     }
 

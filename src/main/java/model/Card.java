@@ -3,7 +3,14 @@ package model;
 import org.opencv.core.Point;
 import org.opencv.core.Rect;
 
-// Represent a face-up card.
+
+
+
+/**
+ * SKRIV NOGET HER (DER STOD // Represent a face-up card.)
+ *
+ * @author Malte Brink Kristensen, Jeppe Kaare Larsen, Neal Patrick Norman, Mads Martin Dickmeiss Hemer
+ */
 public class Card {
 
     public int x;

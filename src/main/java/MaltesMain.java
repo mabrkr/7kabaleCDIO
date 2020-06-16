@@ -2,6 +2,11 @@ import model.BuildStack;
 import model.Card;
 import model.GameSnapshot;
 
+/**
+ * SKRIV NOGET HER
+ *
+ * @author Malte Brink Kristensen
+ */
 public class MaltesMain {
 
     public static void main(String[] args) {

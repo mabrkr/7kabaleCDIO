@@ -1,7 +1,10 @@
 package model;
 
-import model.Card;
-
+/**
+ * SKRIV NOGET HER
+ *
+ * @author Malte Brink Kristensen
+ */
 public class Move {
 
     private MoveType type;

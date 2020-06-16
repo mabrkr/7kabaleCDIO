@@ -8,7 +8,10 @@ import java.util.Collections;
 /**
  * A GameSnapshot represents a certain game state of a game of Klondike. The relevant parameters are the state of the
  * draw pile, the moveable cards, and the number of face-down cards in each build stack.
+ *
+ *  @author Malte Brink Kristensen
  */
+
 public class GameSnapshot {
 
     private boolean isDrawPileEmpty;

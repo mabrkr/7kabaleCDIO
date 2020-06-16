@@ -4,6 +4,11 @@ import model.BuildStack;
 import model.GameSnapshot;
 import model.Move;
 
+/**
+ * SKRIV NOGET HER
+ *
+ * @author Malte Brink Kristensen
+ */
 public class DoEverythingStrategy extends DefaultStrategy implements MoveCalculationStrategy {
 
     @Override

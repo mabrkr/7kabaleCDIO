@@ -3,7 +3,11 @@ import model.Move;
 import strategies.DefaultStrategy;
 import strategies.MoveCalculationStrategy;
 
-// This class serves as the Context in the Strategy design pattern.
+/**
+ * This class serves as the Context in the Strategy design pattern.
+ *
+ * @author Malte Brink Kristensen
+ */
 public class MoveCalculator {
 
     private MoveCalculationStrategy strategy = new DefaultStrategy();

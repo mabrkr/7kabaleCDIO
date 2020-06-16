@@ -28,6 +28,12 @@ import util.CardSequenceChecker;
 //
 //        Regel 7: Hvis bunken er kørt igennem uden regel 1-5 kan bruges -> begynd at vende igen, men udfør samtlige mulige træk (men prioriter stadig 1-5).
 
+/**
+ * SKRIV NOGET HER EVT OGSÅ REGLERNE OVENFOR
+ *
+ * @author Malte Brink Kristensen
+ */
+
 public class DefaultStrategy implements MoveCalculationStrategy {
 
     protected GameSnapshot gameSnapshot;

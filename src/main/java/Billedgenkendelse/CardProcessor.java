@@ -61,7 +61,7 @@ public class CardProcessor {
 
         //TODO: Slet dette når alle test er færdige
         GUI.getInstance().showImg(orgFrame, "");
-        GUI.getInstance().showImg(frameThresh, "Threshold");
+//        GUI.getInstance().showImg(frameThresh, "Threshold");
 
         //Clear out 'false' cards by adding them to a new array.
         for (Card card : cards) {

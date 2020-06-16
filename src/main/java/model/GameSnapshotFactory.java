@@ -8,6 +8,12 @@ import java.util.*;
 import java.util.function.ToIntFunction;
 import java.util.stream.Collectors;
 
+/**
+ * NEAL BESKRIV DIN KLASSE HER (GERNE PÅ PÆNT ENGELSK)
+ *
+ * @author Neal Patrick Norman
+ */
+
 public final class GameSnapshotFactory {
 
     // public GameSnapshot(boolean isDrawPileEmpty, Card cardFromDrawPile, Card[][] buildStacks,
@@ -16,15 +22,15 @@ public final class GameSnapshotFactory {
     public static GameSnapshot fromPositionCards(List<Card> positionCards) {
 
         int Yseperator = getYSeparatorCoordinate(positionCards);
-        System.out.println(Yseperator);
+//        System.out.println(Yseperator);
         //int Yseperator = 600;
         List<Card> cardsBelowY = getCardsBelowY(Yseperator, positionCards);
         List<Card> cardsAboveY = getCardsAboveY(Yseperator, positionCards);
-        System.out.println("cardsAboveY");
-        System.out.println(cardsAboveY);
-        System.out.println("cardsBelowY");
-        System.out.println(cardsBelowY);
-        System.out.println("----------");
+//        System.out.println("cardsAboveY");
+//        System.out.println(cardsAboveY);
+//        System.out.println("cardsBelowY");
+//        System.out.println(cardsBelowY);
+//        System.out.println("----------");
         Card cardFromDrawPile = guessDrawpileCard(cardsAboveY);
         List<Card> topCardsOfSuitStacks = new ArrayList<>();
         cardsAboveY.sort(comparatorX());
@@ -35,14 +41,14 @@ public final class GameSnapshotFactory {
         } else {
             topCardsOfSuitStacks = cardsAboveY;
         }
-        System.out.println("Cards in Suit Stacks");
-        System.out.println(topCardsOfSuitStacks);
+//        System.out.println("Cards in Suit Stacks");
+//        System.out.println(topCardsOfSuitStacks);
 
         List<List<Card>> buildStacks = getColumns(cardsBelowY);
-        System.out.println("Build Stacks");
+//        System.out.println("Build Stacks");
         List<Double> heightsOfFaceDownSequences = new ArrayList<>();
         for (List<Card> stack : buildStacks) {
-            System.out.println(stack);
+//            System.out.println(stack);
             double height = getUnturnedCardsColumnLength(Yseperator, stack);
             heightsOfFaceDownSequences.add(height);
         }
@@ -120,8 +126,8 @@ public final class GameSnapshotFactory {
 //                        .stream()
 //                        .sorted(comparatorY())
 //                        .collect(Collectors.toList());
-        System.out.println("topLeftCard");
-        System.out.println(sorted.get(0));
+//        System.out.println("topLeftCard");
+//        System.out.println(sorted.get(0));
         return sorted.get(0);
     }
 
@@ -178,23 +184,23 @@ public final class GameSnapshotFactory {
                         .sorted(comparatorX())
                         .collect(Collectors.toList());
 
-        System.out.println("sorted columns");
-        System.out.println(sorted);
+//        System.out.println("sorted columns");
+//        System.out.println(sorted);
         List<Card> column = new ArrayList<>();
         column.add(sorted.get(0));
         for (int index = 0; index < sorted.size() - 1; index++) {
-            System.out.print("Index ");
-            System.out.println(index);
-            System.out.print("Card at Index: ");
-            System.out.println(sorted.get(index));
+//            System.out.print("Index ");
+//            System.out.println(index);
+//            System.out.print("Card at Index: ");
+//            System.out.println(sorted.get(index));
             Card card = sorted.get(index);
             Card nextCard = sorted.get(index + 1);
 
             if (cardsAreOverlappingX(card, nextCard)) {
-                System.out.print("Adding Card: ");
-                System.out.println(nextCard);
-                System.out.print("Column: ");
-                System.out.println(columnLists.size());
+//                System.out.print("Adding Card: ");
+//                System.out.println(nextCard);
+//                System.out.print("Column: ");
+//                System.out.println(columnLists.size());
                 column.add(nextCard);
             } else {
                 column.sort(comparatorY());
@@ -209,7 +215,7 @@ public final class GameSnapshotFactory {
                 columnLists.add(column);
             }
         }
-        System.out.println(columnLists);
+//        System.out.println(columnLists);
 
 
 //        for (int index = 0; index < sorted.size()-1; index++) {

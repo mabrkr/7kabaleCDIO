@@ -1,6 +1,10 @@
 package model;
 
-
+/**
+ * SKRIV NOGET HER
+ *
+ * @author Malte Brink Kristensen
+ */
 public class BuildStack implements Comparable<BuildStack> {
 
     private final Card[] faceUpCards;
