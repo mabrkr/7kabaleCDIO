@@ -16,10 +16,15 @@ public final class GameSnapshotFactory {
 
     public static GameSnapshot fromPositionCards(List<Card> positionCards) {
 
-        int Yseperator = getYSeparatorCoordinate(positionCards);
+        //int Yseperator = getYSeparatorCoordinate(positionCards);
+        //System.out.println(Yseperator);
+        int Yseperator = 600;
         List<Card> cardsBelowY = getCardsBelowY(Yseperator, positionCards);
+        System.out.println("cardsBelowY");
+        System.out.println(cardsBelowY);
         List<Card> cardsAboveY = getCardsAboveY(Yseperator, positionCards);
-        ;
+        System.out.println("cardsAboveY");
+        System.out.println(cardsAboveY);
 
         Card cardFromDrawPile = guessDrawpileCard(cardsAboveY);
         List<Card> topCardsOfSuitStacks = new ArrayList<>();
@@ -60,7 +65,7 @@ public final class GameSnapshotFactory {
             _heightsOfFaceDownSequences[index] = (double) heightsOfFaceDownSequences.get(index);
             index++;
         }
-        //
+        //drop the tomme arrays.
         int suitStackCount = topCardsOfSuitStacks.size();
         Card[] _topCardsOfSuitStacks = new Card[suitStackCount];
         int suitIndex = 0;
@@ -112,7 +117,7 @@ public final class GameSnapshotFactory {
         //insert check if no cards below, or above.
         List<Card> cardsBelowY = new ArrayList<>();
         for (Card card : positionCards) {
-            if (card.y < YCoordinate) {
+            if (card.y > YCoordinate) {
                 cardsBelowY.add(card);
             }
         }
@@ -123,7 +128,7 @@ public final class GameSnapshotFactory {
         //insert check if no cards below, or above.
         List<Card> cardsAboveY = new ArrayList<>();
         for (Card card : positionCards) {
-            if (card.y > YCoordinate) {
+            if (card.y < YCoordinate) {
                 cardsAboveY.add(card);
             }
         }
