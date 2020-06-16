@@ -2,6 +2,7 @@ package model;
 
 import model.Card;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -16,9 +17,9 @@ public final class GameSnapshotFactory {
 
     public static GameSnapshot fromPositionCards(List<Card> positionCards) {
 
-        //int Yseperator = getYSeparatorCoordinate(positionCards);
-        //System.out.println(Yseperator);
-        int Yseperator = 600;
+        int Yseperator = getYSeparatorCoordinate(positionCards);
+        System.out.println(Yseperator);
+        //int Yseperator = 600;
         List<Card> cardsBelowY = getCardsBelowY(Yseperator, positionCards);
         System.out.println("cardsBelowY");
         System.out.println(cardsBelowY);
@@ -95,7 +96,13 @@ public final class GameSnapshotFactory {
                         .sorted(comparatorX())
                         .sorted(comparatorY())
                         .collect(Collectors.toList());
-
+//        List<Card> sorted =
+//                positionCards
+//                        .stream()
+//                        .sorted(comparatorY())
+//                        .collect(Collectors.toList());
+        System.out.println("topLeftCard");
+        System.out.println(sorted.get(0));
         return sorted.get(0);
     }
 
@@ -109,7 +116,7 @@ public final class GameSnapshotFactory {
     }
 
     private static Comparator<Card> comparatorY() {
-        ToIntFunction<Card> fy = (positionCard) -> positionCard.x;
+        ToIntFunction<Card> fy = (positionCard) -> positionCard.y;
         return comparatorBy(fy);
     }
 
