@@ -1,10 +1,10 @@
-package strategies;
+package gamelogic.strategies;
 
 import model.BuildStack;
 import model.Card;
 import model.GameSnapshot;
 import model.Move;
-import util.CardSequenceChecker;
+import gamelogic.util.CardSequenceChecker;
 
 //        Regel 1: Vendt kort fra bunken? Hvis ikke -> vend fra bunken.
 //

@@ -23,39 +23,37 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Alle ikke-relevante system.out.println udkommenteret. Javadocs igangsat i alle klasser.">
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (1).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (10).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (11).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (12).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (13).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (14).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (15).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (16).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (17).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (18).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (19).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (2).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (20).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (21).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (22).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (23).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (24).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (25).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (3).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (4).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (5).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (6).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (7).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (8).jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/test_images/1606Test/Test (9).jpg" afterDir="false" />
+    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Alt kan køre igennem GUI nu.&#10;Mange testbilleder tilføjet.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/CardProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/CardProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/SnapshotCapturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/SnapshotCapturer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/CardProcessor.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/CardProcessor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/Detector.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/Detector.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/GUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/GUI.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/SnapshotCapturer.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/SnapshotCapturer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/allclasses.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documentation/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid1720.log" beforeDir="false" afterPath="$PROJECT_DIR$/hs_err_pid1720.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/CardProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/image_recognition/CardProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/Detector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/image_recognition/Detector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/SnapshotCapturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/image_recognition/SnapshotCapturer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MoveCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/MoveCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/MoveCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamelogic/MoveCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategies/DefaultStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamelogic/strategies/DefaultStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategies/DoEverythingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamelogic/strategies/DoEverythingStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategies/MoveCalculationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamelogic/strategies/MoveCalculationStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/util/CardSequenceChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamelogic/util/CardSequenceChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CardProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CardProcessorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DefaultStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DefaultStrategyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DetectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DetectorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -505,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592306949489</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Alt kan køre igennem GUI nu.&#10;Mange testbilleder tilføjet.">
+      <created>1592312636081</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1592312636081</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,8 +530,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="imagecapture v 1.1" />
-    <MESSAGE value="Pakkestruktur opdateret." />
     <MESSAGE value="Som et eksempel er simpel ansigtsgenkendelse nu implementeret." />
     <MESSAGE value="Kan nu finde og markere kort." />
     <MESSAGE value="Konstanter til højde og bredde introduceret." />
@@ -550,7 +553,9 @@
     <MESSAGE value="fixed missing cards and 4 of hearts dissappearing" />
     <MESSAGE value="Virker med flere scenarier. Array reversed virker nu." />
     <MESSAGE value="Alle ikke-relevante system.out.println udkommenteret. Javadocs igangsat i alle klasser." />
-    <option name="LAST_COMMIT_MESSAGE" value="Alle ikke-relevante system.out.println udkommenteret. Javadocs igangsat i alle klasser." />
+    <MESSAGE value="Alt kan køre igennem GUI nu.&#10;Mange test tilføjet." />
+    <MESSAGE value="Alt kan køre igennem GUI nu.&#10;Mange testbilleder tilføjet." />
+    <option name="LAST_COMMIT_MESSAGE" value="Alt kan køre igennem GUI nu.&#10;Mange testbilleder tilføjet." />
   </component>
   <component name="WindowStateProjectService">
     <state x="626" y="240" width="657" height="629" key="#Main" timestamp="1585731209473" />
@@ -581,38 +586,46 @@
     </state>
     <state x="604" y="358" width="302" height="189" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900@0.0.1440.900" timestamp="1592229903969" />
     <state x="805" y="446" width="300" height="218" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1584528692655" />
+    <state x="781" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592312968391">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="781" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592312968391" />
+    <state x="744" y="385" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592312590719">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="744" y="385" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1592312590719" />
     <state x="590" y="0" key="CommitChangelistDialog2" timestamp="1592294036420">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="590" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1592294036420" />
     <state x="590" y="23" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1592287599309" />
     <state x="590" y="23" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1592291253058" />
-    <state width="1878" height="131" key="GridCell.Tab.0.bottom" timestamp="1592311126903">
+    <state width="1878" height="131" key="GridCell.Tab.0.bottom" timestamp="1592312896130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1592297052127" />
-    <state width="1878" height="131" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592311126903" />
+    <state width="1878" height="131" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592312896130" />
     <state width="824" height="240" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1592290937532" />
     <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1592293812488" />
-    <state width="1878" height="131" key="GridCell.Tab.0.center" timestamp="1592311126903">
+    <state width="1878" height="131" key="GridCell.Tab.0.center" timestamp="1592312896130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1592297052124" />
-    <state width="1878" height="131" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592311126903" />
+    <state width="1878" height="131" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592312896130" />
     <state width="824" height="240" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1592290937531" />
     <state width="1398" height="240" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1592293812483" />
-    <state width="1878" height="131" key="GridCell.Tab.0.left" timestamp="1592311126903">
+    <state width="1878" height="131" key="GridCell.Tab.0.left" timestamp="1592312896130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1592297052123" />
-    <state width="1878" height="131" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592311126903" />
+    <state width="1878" height="131" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592312896130" />
     <state width="824" height="240" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1592290937530" />
     <state width="1398" height="240" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1592293812481" />
-    <state width="1878" height="131" key="GridCell.Tab.0.right" timestamp="1592311126903">
+    <state width="1878" height="131" key="GridCell.Tab.0.right" timestamp="1592312896130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1398" height="240" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1592297052125" />
-    <state width="1878" height="131" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592311126903" />
+    <state width="1878" height="131" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592312896130" />
     <state width="824" height="240" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1592290937532" />
     <state width="1398" height="240" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1592293812487" />
     <state width="1878" height="328" key="GridCell.Tab.1.bottom" timestamp="1592298797606">
@@ -639,11 +652,11 @@
     <state width="1398" height="592" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1592297042820" />
     <state width="1878" height="328" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592298797606" />
     <state width="1398" height="592" key="GridCell.Tab.1.right/0.23.1440.826@0.23.1440.826" timestamp="1592296725973" />
-    <state x="809" y="192" key="Vcs.Push.Dialog.v2" timestamp="1592306951143">
+    <state x="809" y="192" key="Vcs.Push.Dialog.v2" timestamp="1592312638489">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="607" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1592294040161" />
-    <state x="809" y="192" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592306951143" />
+    <state x="809" y="192" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592312638489" />
     <state x="607" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.826@0.23.1440.826" timestamp="1592291255110" />
     <state x="482" y="73" key="refactoring.ChangeSignatureDialog" timestamp="1592295837062">
       <screen x="0" y="0" width="1440" height="900" />

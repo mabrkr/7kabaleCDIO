@@ -491,11 +491,11 @@ Event: 1.402 GC heap after
 Deoptimization events (9 events):
 Event: 0.096 Thread 0x000002c66a70c800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002c607adb078 method=java.lang.String.isLatin1()Z @ 10 c2
 Event: 0.120 Thread 0x000002c66a70c800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002c607ad5e14 method=java.lang.String.isLatin1()Z @ 10 c2
-Event: 0.167 Thread 0x000002c66a70c800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002c607ade200 method=java.util.HashMap.putVal(ILjava/lang/Object;Ljava/lang/Object;ZZ)Ljava/lang/Object; @ 181 c2
-Event: 0.594 Thread 0x000002c66a70c800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002c607afa7ec method=java.util.zip.ZipFile$ZipFileInputStream.read([BII)I @ 41 c2
-Event: 0.594 Thread 0x000002c66a70c800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002c607af7dd0 method=java.util.zip.Inflater.inflate([BII)I @ 327 c2
-Event: 1.191 Thread 0x000002c66a70c800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002c607b224c8 method=java.util.HashMap.hash(Ljava/lang/Object;)I @ 1 c2
-Event: 1.195 Thread 0x000002c66a70c800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002c607b2c4b8 method=java.util.HashMap.hash(Ljava/lang/Object;)I @ 1 c2
+Event: 0.167 Thread 0x000002c66a70c800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002c607ade200 method=java.gamelogic.util.HashMap.putVal(ILjava/lang/Object;Ljava/lang/Object;ZZ)Ljava/lang/Object; @ 181 c2
+Event: 0.594 Thread 0x000002c66a70c800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002c607afa7ec method=java.gamelogic.util.zip.ZipFile$ZipFileInputStream.read([BII)I @ 41 c2
+Event: 0.594 Thread 0x000002c66a70c800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002c607af7dd0 method=java.gamelogic.util.zip.Inflater.inflate([BII)I @ 327 c2
+Event: 1.191 Thread 0x000002c66a70c800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002c607b224c8 method=java.gamelogic.util.HashMap.hash(Ljava/lang/Object;)I @ 1 c2
+Event: 1.195 Thread 0x000002c66a70c800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002c607b2c4b8 method=java.gamelogic.util.HashMap.hash(Ljava/lang/Object;)I @ 1 c2
 Event: 1.220 Thread 0x000002c66a70c800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002c607b19044 method=java.lang.StringUTF16.compress([CI[BII)I @ 20 c2
 Event: 1.266 Thread 0x000002c61088e800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000002c607af72dc method=java.lang.ThreadLocal.get()Ljava/lang/Object; @ 11 c2
 

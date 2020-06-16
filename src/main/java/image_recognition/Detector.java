@@ -1,4 +1,4 @@
-package Billedgenkendelse;
+package image_recognition;
 
 import model.Card;
 import org.opencv.core.Mat;

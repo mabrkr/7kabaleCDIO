@@ -1,4 +1,4 @@
-package strategies;
+package gamelogic.strategies;
 
 import model.GameSnapshot;
 import model.Move;

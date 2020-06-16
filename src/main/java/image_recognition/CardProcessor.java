@@ -1,8 +1,9 @@
-package Billedgenkendelse;
+package image_recognition;
 
 import model.Card;
 import org.opencv.core.*;
 import org.opencv.imgproc.Imgproc;
+import view.GUI;
 
 import java.util.ArrayList;
 import java.util.Comparator;

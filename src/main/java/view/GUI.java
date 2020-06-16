@@ -1,5 +1,8 @@
-package Billedgenkendelse;
+package view;
 
+import gamelogic.MoveCalculator;
+import image_recognition.CardProcessor;
+import image_recognition.SnapshotCapturer;
 import model.Card;
 import model.GameSnapshot;
 import model.GameSnapshotFactory;
@@ -22,7 +25,7 @@ import java.util.List;
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 
 /**
- * Singleton for showing the pictures to the users and Billedgenkendelse.GUI for choosing suggestion
+ * Singleton for showing the pictures to the users and GUI for choosing suggestion
  *
  * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
  */
@@ -87,7 +90,7 @@ public class GUI {
         startGUI();
     }
 
-    static void setImage(Mat img) {
+    public static void setImage(Mat img) {
         Imgproc.resize(img, img, new Size(WIDTH, HEIGHT));
         MatOfByte matOfByte = new MatOfByte();
         Imgcodecs.imencode(".jpg", img, matOfByte);
@@ -104,6 +107,7 @@ public class GUI {
         }
     }
 
+    //ToDo: Skal hele programmets flow virkeligt køre i det følgende?
     static class fileChooserActionListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             JFileChooser fileChooser = new JFileChooser();
@@ -124,7 +128,7 @@ public class GUI {
 
                 GameSnapshot gameSnapshot = GameSnapshotFactory.fromPositionCards(listOfCards);
 
-                model.MoveCalculator moveCalculator = new model.MoveCalculator();
+                MoveCalculator moveCalculator = new MoveCalculator();
 
                 String suggestion = moveCalculator.calculateBestPossibleMove(gameSnapshot).toString();
                 suggestionText = suggestion;

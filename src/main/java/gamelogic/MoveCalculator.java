@@ -1,9 +1,9 @@
-package model;
+package gamelogic;
 
+import gamelogic.strategies.DefaultStrategy;
+import gamelogic.strategies.MoveCalculationStrategy;
 import model.GameSnapshot;
 import model.Move;
-import strategies.DefaultStrategy;
-import strategies.MoveCalculationStrategy;
 
 /**
  * This class serves as the Context in the Strategy design pattern.

@@ -1,4 +1,4 @@
-package util;
+package gamelogic.util;
 
 import model.Card;
 

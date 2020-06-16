@@ -1,13 +1,5 @@
-import Billedgenkendelse.CardProcessor;
-import Billedgenkendelse.GUI;
-import Billedgenkendelse.SnapshotCapturer;
-import model.Card;
-import model.GameSnapshot;
-import model.GameSnapshotFactory;
+import view.GUI;
 import nu.pattern.OpenCV;
-import org.opencv.core.Mat;
-
-import java.util.List;
 
 /**
  * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
@@ -29,7 +21,7 @@ public class Main {
 //
 //        GameSnapshot gameSnapshot = GameSnapshotFactory.fromPositionCards(listOfCards);
 //
-//        model.MoveCalculator moveCalculator = new model.MoveCalculator();
+//        gamelogic.MoveCalculator moveCalculator = new gamelogic.MoveCalculator();
 //        System.out.println(moveCalculator.calculateBestPossibleMove(gameSnapshot).toString());
 
     }
