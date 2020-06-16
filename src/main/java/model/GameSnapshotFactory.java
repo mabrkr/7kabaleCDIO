@@ -21,12 +21,12 @@ public final class GameSnapshotFactory {
         System.out.println(Yseperator);
         //int Yseperator = 600;
         List<Card> cardsBelowY = getCardsBelowY(Yseperator, positionCards);
-        System.out.println("cardsBelowY");
-        System.out.println(cardsBelowY);
         List<Card> cardsAboveY = getCardsAboveY(Yseperator, positionCards);
         System.out.println("cardsAboveY");
         System.out.println(cardsAboveY);
-
+        System.out.println("cardsBelowY");
+        System.out.println(cardsBelowY);
+        System.out.println("----------");
         Card cardFromDrawPile = guessDrawpileCard(cardsAboveY);
         List<Card> topCardsOfSuitStacks = new ArrayList<>();
         if (cardFromDrawPile != null) {
@@ -36,13 +36,16 @@ public final class GameSnapshotFactory {
         } else {
             topCardsOfSuitStacks = cardsAboveY;
         }
+        System.out.println("Cards in Suit Stacks");
+        System.out.println(topCardsOfSuitStacks);
 
         List<List<Card>> buildStacks = getColumns(cardsBelowY);
+        System.out.println("Build Stacks");
         List<Integer> heightsOfFaceDownSequences = new ArrayList<>();
         for (List<Card> stack : buildStacks) {
             System.out.println(stack);
 //            int height = getUnturnedCardsColumnLength(Yseperator, stack);
-//            heightsOfFaceDownSequences.add(height);
+//            heightsOfFaceDownSequences.add(height);s
         }
 
         // Conversion
@@ -54,18 +57,18 @@ public final class GameSnapshotFactory {
         int index = 0;
         Card[][] _buildStacks = new Card[7][];
         double[] _heightsOfFaceDownSequences = new double[7];
-        for (List<Card> column : buildStacks) {
-            int size = buildStacks.get(0).size();
-            Card[] _column = new Card[size];
-            int columnIndex = 0;
-            for (Card card : column) {
-                _column[columnIndex] = card;
-                columnIndex++;
-            }
-            _buildStacks[index] = _column;
-            _heightsOfFaceDownSequences[index] = (double) heightsOfFaceDownSequences.get(index);
-            index++;
-        }
+//        for (List<Card> column : buildStacks) {
+//            int size = buildStacks.get(0).size();
+//            Card[] _column = new Card[size];
+//            int columnIndex = 0;
+//            for (Card card : column) {
+//                _column[columnIndex] = card;
+//                columnIndex++;
+//            }
+//            _buildStacks[index] = _column;
+//            //_heightsOfFaceDownSequences[index] = (double) heightsOfFaceDownSequences.get(index);
+//            index++;
+//        }
         //drop the tomme arrays.
         int suitStackCount = topCardsOfSuitStacks.size();
         Card[] _topCardsOfSuitStacks = new Card[suitStackCount];
@@ -75,8 +78,8 @@ public final class GameSnapshotFactory {
         }
 
 
-        GameSnapshot test = new GameSnapshot(_isDrawPileEmpty, _cardFromDrawPile, _buildStacks, _topCardsOfSuitStacks,
-                _heightsOfFaceDownSequences);
+        //GameSnapshot test = new GameSnapshot(_isDrawPileEmpty, _cardFromDrawPile, _buildStacks, _topCardsOfSuitStacks,
+       //         _heightsOfFaceDownSequences);
         throw new UnsupportedOperationException();
         //return GameSnapshot;
     }
@@ -159,28 +162,42 @@ public final class GameSnapshotFactory {
                         .stream()
                         .sorted(comparatorX())
                         .collect(Collectors.toList());
+        System.out.println("sorted columns");
+        System.out.println(sorted);
         List<Card> column = new ArrayList<>();
-        for (int index = 0; index < sorted.size() - 1; index++) {
+        for (int index = 0; index < sorted.size()-1; index++) {
+            System.out.print("Index ");
+            System.out.println(index);
+            System.out.print("Card at Index: ");
+            System.out.println(sorted.get(index));
             if (index == 0) {
+                System.out.println("Adding Card: 0");
                 column.add(sorted.get(index));
             }
+
             Card card = sorted.get(index);
             Card nextCard = sorted.get(index + 1);
             if (cardsAreOverlappingX(card, nextCard)) {
-                column.add(nextCard);
-            } else {
-                columnLists.add(column.stream()
-                        .sorted(comparatorY())
-                        .collect(Collectors.toList()));
-                column = new ArrayList<>();
-                if (index == sorted.size() - 2) {
+                    System.out.print("Adding Card: ");
+                    System.out.println(nextCard);
                     column.add(nextCard);
+            } else {
                     columnLists.add(column.stream()
                             .sorted(comparatorY())
                             .collect(Collectors.toList()));
+                    column = new ArrayList<>();
+                    column.add(card);
+                    if (index == sorted.size() - 2) {
+                        System.out.print("Adding Card: ");
+                        System.out.println(nextCard);
+                        column.add(nextCard);
+                        columnLists.add(column.stream()
+                                .sorted(comparatorY())
+                                .collect(Collectors.toList()));
+                    }
                 }
             }
-        }
+
         return columnLists;
     }
 
