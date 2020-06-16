@@ -1,5 +1,8 @@
 package Billedgenkendelse;
 
+import model.Card;
+import model.GameSnapshot;
+import model.GameSnapshotFactory;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfByte;
 import org.opencv.core.Size;
@@ -12,7 +15,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
+import java.io.File;
 import java.io.InputStream;
+import java.util.List;
 
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 
@@ -24,10 +29,11 @@ import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 public class GUI {
     private static GUI single_instance = null;
 
-    private final int WIDTH = 1000;
-    private final int HEIGHT = 800;
-    private JFrame jframe;
-//    private JButton = new Button();
+    private static final int WIDTH = 1000;
+    private static final int HEIGHT = 800;
+    private static JFrame jframe;
+    private static ImageIcon imageIcon;
+    private static String suggestionText;
 
     private GUI() {
     }
@@ -39,37 +45,27 @@ public class GUI {
         return single_instance;
     }
 
-    public void showImg(Mat img, String title) {
-
-        Imgproc.resize(img, img, new Size(WIDTH, HEIGHT));
-        MatOfByte matOfByte = new MatOfByte();
-        Imgcodecs.imencode(".jpg", img, matOfByte);
-        byte[] byteArray = matOfByte.toArray();
-        BufferedImage bufImage = null;
-        try {
-            InputStream in = new ByteArrayInputStream(byteArray);
-            bufImage = ImageIO.read(in);
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-
+    public static void startGUI() {
         jframe = new JFrame();
 
         JPanel top = new JPanel();
         JPanel center = new JPanel();
         JPanel bottom = new JPanel();
 
-        JLabel image = new JLabel(new ImageIcon(bufImage));
-        JButton btn = new JButton("Press to get suggestion");
-        JLabel text = new JLabel("suggestion here");
+        JButton fileChooserButton = new JButton("Choose file to get suggestion");
+        JLabel suggestionLabel = new JLabel("suggestion output here");
 
+        if (imageIcon != null) {
+            JLabel image = new JLabel(imageIcon);
+            top.add(image);
+        }
 
-        top.add(image);
-        center.add(btn);
-        bottom.add(text);
+        if (suggestionText != null) {
+            suggestionLabel.setText(suggestionText);
+        }
+
+        center.add(fileChooserButton);
+        bottom.add(suggestionLabel);
 
         jframe.add(top);
         jframe.add(center);
@@ -77,22 +73,68 @@ public class GUI {
 
 
         BoxLayout boxLayout = new BoxLayout(jframe.getContentPane(), BoxLayout.Y_AXIS);
-        if (title != null) jframe.setTitle(title);
+        jframe.setTitle("7kabaleCDIO");
         jframe.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         jframe.setLayout(boxLayout);
         jframe.pack();
         jframe.setVisible(true);
 
-        btn.addActionListener(new CustomActionListener());
-
-
+        fileChooserButton.addActionListener(new fileChooserActionListener());
     }
 
-    static class CustomActionListener implements ActionListener {
-        public void actionPerformed(ActionEvent e) {
-            System.out.println("button clicked");
+    public static void updateGUI() {
+        jframe.dispose();
+        startGUI();
+    }
 
-            //TODO: Take photo with webcam on click
+    static void setImage(Mat img) {
+        Imgproc.resize(img, img, new Size(WIDTH, HEIGHT));
+        MatOfByte matOfByte = new MatOfByte();
+        Imgcodecs.imencode(".jpg", img, matOfByte);
+        byte[] byteArray = matOfByte.toArray();
+        BufferedImage bufImage = null;
+
+        try {
+            InputStream in = new ByteArrayInputStream(byteArray);
+            bufImage = ImageIO.read(in);
+            imageIcon = new ImageIcon(bufImage);
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
+
+    static class fileChooserActionListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            JFileChooser fileChooser = new JFileChooser();
+            fileChooser.setCurrentDirectory(new File("resources/test_images/1606Test2/"));
+            int result = fileChooser.showOpenDialog(jframe);
+            if (result == JFileChooser.APPROVE_OPTION) {
+                File selectedFile = fileChooser.getSelectedFile();
+                System.out.println("Selected file: " + selectedFile.getAbsolutePath());
+
+
+                SnapshotCapturer snapshotCapturer = new SnapshotCapturer();
+                Mat snapshot = snapshotCapturer.readFromFile(selectedFile.getPath());
+
+                CardProcessor cp = new CardProcessor();
+                List<Card> listOfCards = cp.detectCards(snapshot, 190);
+
+                System.out.println(listOfCards.size() + " cards found!");
+
+                GameSnapshot gameSnapshot = GameSnapshotFactory.fromPositionCards(listOfCards);
+
+                model.MoveCalculator moveCalculator = new model.MoveCalculator();
+
+                String suggestion = moveCalculator.calculateBestPossibleMove(gameSnapshot).toString();
+                suggestionText = suggestion;
+                System.out.println(suggestion);
+
+//                setImage(snapshot);
+                updateGUI();
+
+            }
+        }
+    }
+
 }

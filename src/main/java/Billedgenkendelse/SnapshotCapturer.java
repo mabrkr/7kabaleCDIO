@@ -2,6 +2,7 @@ package Billedgenkendelse;
 
 import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
+import org.opencv.videoio.VideoCapture;
 
 import java.io.IOException;
 
@@ -17,19 +18,23 @@ public class SnapshotCapturer {
     public Mat captureSnapshot() throws IOException {
 
 
-////        Argumentet angiver hvilket kamera (0 = standardkameraet)
-//        VideoCapture capture = new VideoCapture(0);
-//
-//        Mat frame = new Mat();
-//
-//        if (!capture.isOpened()) {
-//            throw new IOException("Kamerafejl. Tjek evt. om det rigtige kamera anvendes.");
-//        } else {
-//            capture.read(frame);
-//        }
+//        Argumentet angiver hvilket kamera (0 = standardkameraet)
+        VideoCapture capture = new VideoCapture(0);
 
+        Mat frame = new Mat();
+
+        if (!capture.isOpened()) {
+            throw new IOException("Kamerafejl. Tjek evt. om det rigtige kamera anvendes.");
+        } else {
+            capture.read(frame);
+        }
+        return frame;
+
+    }
+
+    public Mat readFromFile(String path) {
         Mat frame;
-        frame = Imgcodecs.imread("resources/test_images/Test2 (3).jpg");
+        frame = Imgcodecs.imread(path);
         return frame;
     }
 

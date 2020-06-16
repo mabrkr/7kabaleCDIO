@@ -1,6 +1,7 @@
 import model.Card;
 import model.GameSnapshot;
 import model.Move;
+import model.MoveCalculator;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
