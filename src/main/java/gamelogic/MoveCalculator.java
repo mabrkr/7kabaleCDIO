@@ -21,4 +21,8 @@ public class MoveCalculator {
     public void setStrategy(MoveCalculationStrategy strategy) {
         this.strategy = strategy;
     }
+
+    public MoveCalculationStrategy getStrategy() {
+        return strategy;
+    }
 }

@@ -337,7 +337,7 @@ public final class GameSnapshotFactory {
             int card0farX = sorted.get(0).x + sorted.get(0).rectangle.width;
             int card1nearX = sorted.get(1).x;
             int width = sorted.get(0).rectangle.width;
-            if (card0farX - card1nearX < width) {
+            if (card0farX - card1nearX > width) {
                 return null;
             }
         }

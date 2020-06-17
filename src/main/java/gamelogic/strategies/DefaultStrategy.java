@@ -314,4 +314,8 @@ public class DefaultStrategy implements MoveCalculationStrategy {
         return null;
     }
 
+    @Override
+    public String toString() {
+        return "DefaultStrategy";
+    }
 }

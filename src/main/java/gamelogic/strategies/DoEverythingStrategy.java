@@ -80,4 +80,9 @@ public class DoEverythingStrategy extends DefaultStrategy implements MoveCalcula
 
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "DoEverythingStrategy";
+    }
 }

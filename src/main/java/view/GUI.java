@@ -1,6 +1,8 @@
 package view;
 
 import gamelogic.MoveCalculator;
+import gamelogic.strategies.DefaultStrategy;
+import gamelogic.strategies.DoEverythingStrategy;
 import image_recognition.CardProcessor;
 import image_recognition.SnapshotCapturer;
 import model.Card;
@@ -37,6 +39,8 @@ public class GUI {
     private static JFrame jframe;
     private static ImageIcon imageIcon;
     private static String suggestionText;
+    private static MoveCalculator moveCalculator;
+    private static Mat snapshot;
 
     private GUI() {
     }
@@ -56,6 +60,7 @@ public class GUI {
         JPanel bottom = new JPanel();
 
         JButton fileChooserButton = new JButton("Choose file to get suggestion");
+        JButton strategyChooserButton = new JButton("Switch strategy");
         JLabel suggestionLabel = new JLabel("suggestion output here");
 
         if (imageIcon != null) {
@@ -68,6 +73,7 @@ public class GUI {
         }
 
         center.add(fileChooserButton);
+        center.add(strategyChooserButton);
         bottom.add(suggestionLabel);
 
         jframe.add(top);
@@ -83,11 +89,18 @@ public class GUI {
         jframe.setVisible(true);
 
         fileChooserButton.addActionListener(new fileChooserActionListener());
+        strategyChooserButton.addActionListener(new strategyChooserActionListener());
     }
 
     public static void updateGUI() {
         jframe.dispose();
         startGUI();
+    }
+
+    public static void updateGUI(String title) {
+        jframe.dispose();
+        startGUI();
+        jframe.setTitle(title);
     }
 
     public static void setImage(Mat img) {
@@ -107,37 +120,57 @@ public class GUI {
         }
     }
 
+    //TODO: Nyt navn!
+    public static void spilSpil() {
+        CardProcessor cp = new CardProcessor();
+        List<Card> listOfCards = cp.detectCards(snapshot.clone(), 190);
+
+        System.out.println(listOfCards.size() + " cards found!");
+
+        GameSnapshot gameSnapshot = GameSnapshotFactory.fromPositionCards(listOfCards);
+
+        if (moveCalculator == null) {
+            moveCalculator = new MoveCalculator();
+        }
+
+        String suggestion = moveCalculator.calculateBestPossibleMove(gameSnapshot).toString();
+        suggestionText = suggestion;
+        System.out.println(suggestion);
+
+//                setImage(snapshot);
+        updateGUI(moveCalculator.getStrategy().toString());
+    }
+
     //ToDo: Skal hele programmets flow virkeligt køre i det følgende?
     static class fileChooserActionListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             JFileChooser fileChooser = new JFileChooser();
-            fileChooser.setCurrentDirectory(new File("resources/test_images/1606Test2/"));
+            fileChooser.setCurrentDirectory(new File("resources/test_images/1606Test1/"));
             int result = fileChooser.showOpenDialog(jframe);
             if (result == JFileChooser.APPROVE_OPTION) {
                 File selectedFile = fileChooser.getSelectedFile();
                 System.out.println("Selected file: " + selectedFile.getAbsolutePath());
 
-
                 SnapshotCapturer snapshotCapturer = new SnapshotCapturer();
-                Mat snapshot = snapshotCapturer.readFromFile(selectedFile.getPath());
+                snapshot = snapshotCapturer.readFromFile(selectedFile.getPath());
 
-                CardProcessor cp = new CardProcessor();
-                List<Card> listOfCards = cp.detectCards(snapshot, 190);
-
-                System.out.println(listOfCards.size() + " cards found!");
-
-                GameSnapshot gameSnapshot = GameSnapshotFactory.fromPositionCards(listOfCards);
-
-                MoveCalculator moveCalculator = new MoveCalculator();
-
-                String suggestion = moveCalculator.calculateBestPossibleMove(gameSnapshot).toString();
-                suggestionText = suggestion;
-                System.out.println(suggestion);
-
-//                setImage(snapshot);
-                updateGUI();
+                spilSpil();
 
             }
+        }
+    }
+
+    static class strategyChooserActionListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            if (moveCalculator.getStrategy().toString().equals("DefaultStrategy")) {
+                moveCalculator.setStrategy(new DoEverythingStrategy());
+                updateGUI("DoEveryThingStrategy");
+            } else {
+                moveCalculator.setStrategy(new DefaultStrategy());
+                updateGUI("DefaultStrategy");
+            }
+            spilSpil();
+
         }
     }
 
