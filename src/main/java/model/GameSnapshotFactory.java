@@ -352,6 +352,9 @@ public final class GameSnapshotFactory {
 //                .collect(Collectors.toList());
         positionCards.sort(comparatorY());
         int distance = positionCards.get(0).y - Yline;
+        if (distance < 120){
+            distance = 0;
+        }
         return distance;
     }
 
