@@ -24,19 +24,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gamelogic/MoveCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamelogic/MoveCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gamelogic/strategies/DefaultStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamelogic/strategies/DefaultStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gamelogic/strategies/DoEverythingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamelogic/strategies/DoEverythingStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gamelogic/strategies/MoveCalculationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamelogic/strategies/MoveCalculationStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gamelogic/util/CardSequenceChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamelogic/util/CardSequenceChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/BuildStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/BuildStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/GameSnapshot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/GameSnapshot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Move.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,35 +53,6 @@
     <expand />
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="505364316">
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="html" value="1" />
-          <entry key="java" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="1" />
-          <entry key="JAVA" value="9" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="1213" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="1213" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -102,35 +65,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$MAVEN_REPOSITORY$/org/openpnp/opencv/3.4.2-2/opencv-3.4.2-2.jar!/org/opencv/imgproc/Imgproc.class" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/openpnp/opencv/3.4.2-2/opencv-3.4.2-2.jar!/org/opencv/core/Rect.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Integer.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/NullPointerException.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/openpnp/opencv/3.4.2-2/opencv-3.4.2-2.jar!/org/opencv/imgproc/Imgproc.class" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/model/BuildStack.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Card.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Move.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gamelogic/util/CardSequenceChecker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gamelogic/strategies/DoEverythingStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/GameSnapshot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gamelogic/strategies/MoveCalculationStrategy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gamelogic/MoveCalculator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gamelogic/strategies/DefaultStrategy.java" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
-  </component>
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -147,82 +91,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="7kabaleCDIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="7kabaleCDIO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="7kabaleCDIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="7kabaleCDIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="7kabaleCDIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="7kabaleCDIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="7kabaleCDIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="7kabaleCDIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="7kabaleCDIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="7kabaleCDIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gamelogic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="7kabaleCDIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="7kabaleCDIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gamelogic" type="462c0819:PsiDirectoryNode" />
-              <item name="strategies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="7kabaleCDIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="7kabaleCDIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="7kabaleCDIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="7kabaleCDIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="7kabaleCDIO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="7kabaleCDIO" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -286,18 +154,6 @@
       <recent name="D:\IdeaProjects\7kabaleCDIO\src" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -310,6 +166,7 @@
       <module name="7kabaleCDIO" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="CardProcessorTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -328,6 +185,7 @@
       <module name="7kabaleCDIO" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DefaultStrategyTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -336,14 +194,15 @@
       <module name="7kabaleCDIO" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DetectorTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.CardProcessorTest" />
       <item itemvalue="JUnit.CardProcessorTest.identifyCard" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.DefaultStrategyTest" />
       <item itemvalue="JUnit.DetectorTest" />
     </list>
@@ -598,42 +457,6 @@
     <option name="localTasksCounter" value="26" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3592000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32956153" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49932885" weight="0.32956153" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.32956153" />
-      <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
@@ -642,19 +465,12 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="imagecapture v 1.0" />
@@ -682,157 +498,51 @@
     <option name="LAST_COMMIT_MESSAGE" value="fixed line issue" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="626" y="240" width="657" height="629" key="#Main" />
-    <state x="626" y="240" width="657" height="629" key="#Main/0.28.1920.1052@0.28.1920.1052" />
-    <state x="555" y="215" width="825" height="679" key="#Project_Structure" />
-    <state x="555" y="215" key="#Project_Structure/0.0.2194.1194@0.0.2194.1194" />
-    <state x="555" y="215" width="825" height="679" key="#Project_Structure/0.28.1920.1052@0.28.1920.1052" />
-    <state x="418" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog" />
-    <state x="418" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" />
-    <state x="124" y="125" width="2311" height="1149" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" />
-    <state x="93" y="93" width="1733" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" />
-    <state x="124" y="125" width="2311" height="1149" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.2560.1400@0.0.2560.1400" />
-    <state x="814" y="308" key="#com.intellij.ide.util.MemberChooser" />
-    <state x="814" y="308" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" />
-    <state x="1085" y="415" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" />
-    <state x="692" y="293" key="#com.intellij.ide.util.PackageChooserDialog" />
-    <state x="692" y="293" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" />
-    <state x="604" y="358" width="302" height="189" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" />
-    <state x="604" y="358" width="302" height="189" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900@0.0.1440.900" />
-    <state x="805" y="446" width="300" height="218" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.28.1920.1052@0.28.1920.1052" />
-    <state x="590" y="23" key="CommitChangelistDialog2" />
-    <state x="590" y="23" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" />
-    <state x="590" y="23" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" />
-    <state width="824" height="240" key="GridCell.Tab.0.bottom" />
-    <state width="824" height="240" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" />
-    <state width="824" height="240" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" />
-    <state width="824" height="240" key="GridCell.Tab.0.center" />
-    <state width="824" height="240" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" />
-    <state width="824" height="240" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" />
-    <state width="824" height="240" key="GridCell.Tab.0.left" />
-    <state width="824" height="240" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" />
-    <state width="824" height="240" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" />
-    <state width="824" height="240" key="GridCell.Tab.0.right" />
-    <state width="824" height="240" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" />
-    <state width="824" height="240" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Billedgenkendelse/GUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Card.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="100" selection-start-line="7" selection-start-column="100" selection-end-line="7" selection-end-column="100" />
-          <folding>
-            <element signature="method#Card#0;class#Card#0" />
-            <element signature="method#toString#0;class#Card#0" />
-            <element signature="method#toSimpleString#0;class#Card#0" />
-            <element signature="class#Suit#0;class#Card#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamelogic/util/CardSequenceChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DefaultStrategyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="601" selection-start-line="601" selection-end-line="601" />
-          <folding>
-            <element signature="method#drawPileIsEmpty_ShouldReturnDrawMove#0;class#DefaultStrategyTest#0" />
-            <element signature="method#aceIsCardFromDrawPile_ShouldReturnSuitStackMove#0;class#DefaultStrategyTest#0" />
-            <element signature="method#aceIsBottomCardOfBuildStack_ShouldReturnSuitStackMove#0;class#DefaultStrategyTest#0" />
-            <element signature="method#twoIsBottomCardOfBuildStackAndAceInSuitStack_ShouldReturnSuitStackMove#0;class#DefaultStrategyTest#0" />
-            <element signature="method#twoIsBottomCardOfBuildStackButAceNotInSuitStack_ShouldNotReturnSuitStackMove#0;class#DefaultStrategyTest#0" />
-            <element signature="method#kingIsMoveableAndEmptyBuildStackExists_ShouldReturnKingMove#0;class#DefaultStrategyTest#0" />
-            <element signature="method#kingIsMoveableAndEmptyBuildStackCreationCanBeSetUp_ShouldReturnMove#0;class#DefaultStrategyTest#0" />
-            <element signature="method#faceDownCardCanBeFreed_ShouldReturnMove#0;class#DefaultStrategyTest#0" />
-            <element signature="method#twoFaceDownCardsCanBeFreed_ShouldReturnMoveFromBiggestStack#0;class#DefaultStrategyTest#0" />
-            <element signature="method#cardFromDrawPileCanSetUpFreeingOfFaceDownCard_ShouldReturnMove#0;class#DefaultStrategyTest#0" />
-            <element signature="method#cardFromDrawPileCanSetUpFreeingOfFaceDownCard2_ShouldReturnSuitStackMove#0;class#DefaultStrategyTest#0" />
-            <element signature="method#suitStackMoveCanSetUpFreeingOfFaceDownCard_ShouldReturnSuitStackMove#0;class#DefaultStrategyTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/documentation/allclasses.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/GameSnapshot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamelogic/strategies/MoveCalculationStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/BuildStack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="117" selection-start-line="3" selection-start-column="117" selection-end-line="3" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Move.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding>
-            <element signature="method#toString#0;class#Move#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamelogic/MoveCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamelogic/strategies/DoEverythingStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gamelogic/strategies/DefaultStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1377">
-          <caret line="118" column="60" selection-start-line="118" selection-start-column="60" selection-end-line="118" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
+    <state x="626" y="240" width="657" height="629" key="#Main" timestamp="1592392920745" />
+    <state x="626" y="240" width="657" height="629" key="#Main/0.28.1920.1052@0.28.1920.1052" timestamp="1592392920745" />
+    <state x="555" y="215" width="825" height="679" key="#Project_Structure" timestamp="1592392920745" />
+    <state x="555" y="215" key="#Project_Structure/0.0.2194.1194@0.0.2194.1194" timestamp="1592392920745" />
+    <state x="555" y="215" width="825" height="679" key="#Project_Structure/0.28.1920.1052@0.28.1920.1052" timestamp="1592392920745" />
+    <state x="418" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592392920745" />
+    <state x="418" y="212" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1592392920745" />
+    <state x="124" y="125" width="2311" height="1149" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1592392920745" />
+    <state x="93" y="93" width="1733" height="853" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592392920745" />
+    <state x="124" y="125" width="2311" height="1149" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592392920745" />
+    <state x="814" y="308" key="#com.intellij.ide.util.MemberChooser" timestamp="1592392920745" />
+    <state x="814" y="308" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592392920745" />
+    <state x="1085" y="415" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1592392920745" />
+    <state x="692" y="293" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1592392920745" />
+    <state x="692" y="293" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592392920745" />
+    <state x="604" y="358" width="302" height="189" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1592392920745" />
+    <state x="604" y="358" width="302" height="189" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900@0.0.1440.900" timestamp="1592392920745" />
+    <state x="805" y="446" width="300" height="218" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1592392920745" />
+    <state x="590" y="23" key="CommitChangelistDialog2" timestamp="1592392920745" />
+    <state x="590" y="23" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1592392920745" />
+    <state x="590" y="23" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1592392920745" />
+    <state width="1878" height="56" key="GridCell.Tab.0.bottom" timestamp="1592395807862">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="56" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592395807862" />
+    <state width="824" height="240" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1592392920745" />
+    <state width="824" height="240" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1592392920745" />
+    <state width="1878" height="56" key="GridCell.Tab.0.center" timestamp="1592395807862">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="56" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592395807862" />
+    <state width="824" height="240" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1592392920745" />
+    <state width="824" height="240" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1592392920745" />
+    <state width="1878" height="56" key="GridCell.Tab.0.left" timestamp="1592395807862">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="56" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592395807862" />
+    <state width="824" height="240" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1592392920745" />
+    <state width="824" height="240" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1592392920745" />
+    <state width="1878" height="56" key="GridCell.Tab.0.right" timestamp="1592395807862">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1878" height="56" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592395807862" />
+    <state width="824" height="240" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1592392920745" />
+    <state width="824" height="240" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1592392920745" />
   </component>
   <component name="masterDetails">
     <states>

@@ -10,7 +10,9 @@ public class Main {
         long startTime = System.currentTimeMillis();
         GUI.getInstance().startGUI();
 
-        OpenCV.loadShared();
+//        OpenCV.loadShared();
+        OpenCV.loadLocally();
+
 //        SnapshotCapturer snapshotCapturer = new SnapshotCapturer();
 //        Mat snapshot = snapshotCapturer.readFromFile("resources/test_images/Test2 (1).jpg");
 //

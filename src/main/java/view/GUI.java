@@ -21,6 +21,7 @@ import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
@@ -34,8 +35,8 @@ import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
 public class GUI {
     private static GUI single_instance = null;
 
-    private static final int WIDTH = 1000;
-    private static final int HEIGHT = 800;
+    private static final int WIDTH = 1600;
+    private static final int HEIGHT = 900;
     private static JFrame jframe;
     private static ImageIcon imageIcon;
     private static String suggestionText;
@@ -59,7 +60,7 @@ public class GUI {
         JPanel center = new JPanel();
         JPanel bottom = new JPanel();
 
-        JButton fileChooserButton = new JButton("Choose file to get suggestion");
+        JButton fileChooserButton = new JButton("Take photo to get suggestion");
         JButton strategyChooserButton = new JButton("Switch strategy");
         JLabel suggestionLabel = new JLabel("suggestion output here");
 
@@ -144,19 +145,27 @@ public class GUI {
     //ToDo: Skal hele programmets flow virkeligt køre i det følgende?
     static class fileChooserActionListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            JFileChooser fileChooser = new JFileChooser();
-            fileChooser.setCurrentDirectory(new File("resources/test_images/1606Test1/"));
-            int result = fileChooser.showOpenDialog(jframe);
-            if (result == JFileChooser.APPROVE_OPTION) {
-                File selectedFile = fileChooser.getSelectedFile();
-                System.out.println("Selected file: " + selectedFile.getAbsolutePath());
-
-                SnapshotCapturer snapshotCapturer = new SnapshotCapturer();
-                snapshot = snapshotCapturer.readFromFile(selectedFile.getPath());
-
-                spilSpil();
-
+//            JFileChooser fileChooser = new JFileChooser();
+//            fileChooser.setCurrentDirectory(new File("resources/test_images/1606Test1/"));
+//            int result = fileChooser.showOpenDialog(jframe);
+//            if (result == JFileChooser.APPROVE_OPTION) {
+//                File selectedFile = fileChooser.getSelectedFile();
+//                System.out.println("Selected file: " + selectedFile.getAbsolutePath());
+//
+//                SnapshotCapturer snapshotCapturer = new SnapshotCapturer();
+//                snapshot = snapshotCapturer.readFromFile(selectedFile.getPath());
+//
+//                spilSpil();
+//
+//            }
+            SnapshotCapturer snapshotCapturer = new SnapshotCapturer();
+            try {
+                snapshot = snapshotCapturer.captureSnapshot();
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
             }
+
+            spilSpil();
         }
     }
 
