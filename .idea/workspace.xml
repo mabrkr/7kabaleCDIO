@@ -23,38 +23,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Alt kan køre igennem GUI nu.&#10;Mange testbilleder tilføjet.">
+    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Virker med flere scenarier. Array reversed virker nu.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/CardProcessor.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/CardProcessor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/Detector.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/Detector.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/GUI.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/GUI.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/SnapshotCapturer.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/SnapshotCapturer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/allclasses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentation/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/documentation/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid1720.log" beforeDir="false" afterPath="$PROJECT_DIR$/hs_err_pid1720.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/CardProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/image_recognition/CardProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/Detector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/image_recognition/Detector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Billedgenkendelse/SnapshotCapturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/image_recognition/SnapshotCapturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/MoveCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamelogic/MoveCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/strategies/DefaultStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamelogic/strategies/DefaultStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/strategies/DoEverythingStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamelogic/strategies/DoEverythingStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/strategies/MoveCalculationStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamelogic/strategies/MoveCalculationStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/util/CardSequenceChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gamelogic/util/CardSequenceChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CardProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CardProcessorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DefaultStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DefaultStrategyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DetectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DetectorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/GameSnapshotFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/GameSnapshotFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,18 +60,11 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$MAVEN_REPOSITORY$/org/openpnp/opencv/3.4.2-2/opencv-3.4.2-2.jar!/org/opencv/core/Rect.class" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Integer.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/NullPointerException.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/openpnp/opencv/3.4.2-2/opencv-3.4.2-2.jar!/org/opencv/imgproc/Imgproc.class" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/openpnp/opencv/3.4.2-2/opencv-3.4.2-2.jar!/org/opencv/core/Rect.class" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -138,7 +102,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/test_images/1606Test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -162,25 +126,24 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\7kabaleCDIO\src\main\java" />
+      <recent name="D:\IdeaProjects\7kabaleCDIO\resources\test_images" />
+      <recent name="D:\IdeaProjects\7kabaleCDIO\resources\snapshots\Testbilleder" />
+      <recent name="$PROJECT_DIR$/resources/snapshots" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\7kabaleCDIO\resources\test_images" />
       <recent name="C:\Users\SharkGaming\IdeaProjects\7kabaleCDIO\resources\test_images" />
       <recent name="C:\Users\SharkGaming\OneDrive\Desktop\semproj1\D1_gr9001\7kabaleCDIO\resources\test_images" />
       <recent name="D:\IdeaProjects\7kabaleCDIO\src\main\java" />
       <recent name="D:\IdeaProjects\7kabaleCDIO\src" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaProjects\7kabaleCDIO\resources\test_images\1606Test" />
-      <recent name="D:\IdeaProjects\7kabaleCDIO\src\main\java" />
-      <recent name="D:\IdeaProjects\7kabaleCDIO\resources\test_images" />
-      <recent name="D:\IdeaProjects\7kabaleCDIO\resources\snapshots\Testbilleder" />
-      <recent name="$PROJECT_DIR$/resources/snapshots" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -191,9 +154,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MaltesMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MaltesMain" />
+    <configuration name="CardProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="7kabaleCDIO" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CardProcessorTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -229,7 +194,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.MaltesMain" />
       </list>
     </recent_temporary>
   </component>
@@ -496,21 +460,7 @@
       <option name="project" value="LOCAL" />
       <updated>1592299930909</updated>
     </task>
-    <task id="LOCAL-00029" summary="Alle ikke-relevante system.out.println udkommenteret. Javadocs igangsat i alle klasser.">
-      <created>1592306949489</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1592306949489</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Alt kan køre igennem GUI nu.&#10;Mange testbilleder tilføjet.">
-      <created>1592312636081</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1592312636081</updated>
-    </task>
-    <option name="localTasksCounter" value="31" />
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,15 +471,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="imagecapture v 1.0" />
+    <MESSAGE value="imagecapture v 1.1" />
+    <MESSAGE value="Pakkestruktur opdateret." />
     <MESSAGE value="Som et eksempel er simpel ansigtsgenkendelse nu implementeret." />
     <MESSAGE value="Kan nu finde og markere kort." />
     <MESSAGE value="Konstanter til højde og bredde introduceret." />
@@ -552,10 +506,7 @@
     <MESSAGE value="committing to relationships is hard.." />
     <MESSAGE value="fixed missing cards and 4 of hearts dissappearing" />
     <MESSAGE value="Virker med flere scenarier. Array reversed virker nu." />
-    <MESSAGE value="Alle ikke-relevante system.out.println udkommenteret. Javadocs igangsat i alle klasser." />
-    <MESSAGE value="Alt kan køre igennem GUI nu.&#10;Mange test tilføjet." />
-    <MESSAGE value="Alt kan køre igennem GUI nu.&#10;Mange testbilleder tilføjet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Alt kan køre igennem GUI nu.&#10;Mange testbilleder tilføjet." />
+    <option name="LAST_COMMIT_MESSAGE" value="Virker med flere scenarier. Array reversed virker nu." />
   </component>
   <component name="WindowStateProjectService">
     <state x="626" y="240" width="657" height="629" key="#Main" timestamp="1585731209473" />
@@ -586,86 +537,70 @@
     </state>
     <state x="604" y="358" width="302" height="189" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900@0.0.1440.900" timestamp="1592229903969" />
     <state x="805" y="446" width="300" height="218" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1584528692655" />
-    <state x="781" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1592312968391">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="781" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592312968391" />
-    <state x="744" y="385" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1592312590719">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="744" y="385" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1592312590719" />
     <state x="590" y="0" key="CommitChangelistDialog2" timestamp="1592294036420">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="590" y="0" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1592294036420" />
     <state x="590" y="23" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1592287599309" />
     <state x="590" y="23" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1592291253058" />
-    <state width="1878" height="131" key="GridCell.Tab.0.bottom" timestamp="1592312896130">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="240" key="GridCell.Tab.0.bottom" timestamp="1592377210769">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1592297052127" />
-    <state width="1878" height="131" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592312896130" />
+    <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1592377210769" />
+    <state width="1878" height="182" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592299582644" />
     <state width="824" height="240" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1592290937532" />
     <state width="1398" height="240" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1592293812488" />
-    <state width="1878" height="131" key="GridCell.Tab.0.center" timestamp="1592312896130">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="240" key="GridCell.Tab.0.center" timestamp="1592377210768">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1592297052124" />
-    <state width="1878" height="131" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592312896130" />
+    <state width="1398" height="240" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1592377210768" />
+    <state width="1878" height="182" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592299582644" />
     <state width="824" height="240" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1592290937531" />
     <state width="1398" height="240" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1592293812483" />
-    <state width="1878" height="131" key="GridCell.Tab.0.left" timestamp="1592312896130">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="240" key="GridCell.Tab.0.left" timestamp="1592377210767">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1592297052123" />
-    <state width="1878" height="131" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592312896130" />
+    <state width="1398" height="240" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1592377210767" />
+    <state width="1878" height="182" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592299582643" />
     <state width="824" height="240" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1592290937530" />
     <state width="1398" height="240" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1592293812481" />
-    <state width="1878" height="131" key="GridCell.Tab.0.right" timestamp="1592312896130">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="240" key="GridCell.Tab.0.right" timestamp="1592377210768">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="240" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1592297052125" />
-    <state width="1878" height="131" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592312896130" />
+    <state width="1398" height="240" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1592377210768" />
+    <state width="1878" height="182" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592299582644" />
     <state width="824" height="240" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1592290937532" />
     <state width="1398" height="240" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1592293812487" />
-    <state width="1878" height="328" key="GridCell.Tab.1.bottom" timestamp="1592298797606">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="592" key="GridCell.Tab.1.bottom" timestamp="1592297042821">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="592" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1592297042821" />
-    <state width="1878" height="328" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592298797606" />
     <state width="1398" height="592" key="GridCell.Tab.1.bottom/0.23.1440.826@0.23.1440.826" timestamp="1592296725974" />
-    <state width="1878" height="328" key="GridCell.Tab.1.center" timestamp="1592298797606">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="592" key="GridCell.Tab.1.center" timestamp="1592297042820">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="592" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1592297042820" />
-    <state width="1878" height="328" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592298797606" />
     <state width="1398" height="592" key="GridCell.Tab.1.center/0.23.1440.826@0.23.1440.826" timestamp="1592296725973" />
-    <state width="1878" height="328" key="GridCell.Tab.1.left" timestamp="1592298797606">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="592" key="GridCell.Tab.1.left" timestamp="1592297042819">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="592" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1592297042819" />
-    <state width="1878" height="328" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592298797606" />
     <state width="1398" height="592" key="GridCell.Tab.1.left/0.23.1440.826@0.23.1440.826" timestamp="1592296725972" />
-    <state width="1878" height="328" key="GridCell.Tab.1.right" timestamp="1592298797606">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1398" height="592" key="GridCell.Tab.1.right" timestamp="1592297042820">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state width="1398" height="592" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1592297042820" />
-    <state width="1878" height="328" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592298797606" />
     <state width="1398" height="592" key="GridCell.Tab.1.right/0.23.1440.826@0.23.1440.826" timestamp="1592296725973" />
-    <state x="809" y="192" key="Vcs.Push.Dialog.v2" timestamp="1592312638489">
+    <state x="809" y="192" key="Vcs.Push.Dialog.v2" timestamp="1592299935390">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="607" y="166" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1592294040161" />
-    <state x="809" y="192" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592312638489" />
+    <state x="809" y="192" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592299935390" />
     <state x="607" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.826@0.23.1440.826" timestamp="1592291255110" />
     <state x="482" y="73" key="refactoring.ChangeSignatureDialog" timestamp="1592295837062">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="482" y="73" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1592295837062" />
-    <state x="619" y="242" key="run.anything.popup" timestamp="1592307539697">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="619" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592307539697" />
   </component>
   <component name="masterDetails">
     <states>
