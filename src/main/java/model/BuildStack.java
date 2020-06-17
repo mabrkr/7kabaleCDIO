@@ -1,7 +1,7 @@
 package model;
 
 /**
- * SKRIV NOGET HER
+ * Represents a build stack in a game of Klondike. A build stack consists of a number of face-down and face-up cards.
  *
  * @author Malte Brink Kristensen
  */

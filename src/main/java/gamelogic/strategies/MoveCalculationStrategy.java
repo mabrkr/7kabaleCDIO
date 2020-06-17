@@ -4,8 +4,6 @@ import model.GameSnapshot;
 import model.Move;
 
 /**
- * SKRIV NOGET HER
- *
  * @author Malte Brink Kristensen
  */
 public interface MoveCalculationStrategy {

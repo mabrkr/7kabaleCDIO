@@ -6,34 +6,15 @@ import model.GameSnapshot;
 import model.Move;
 import gamelogic.util.CardSequenceChecker;
 
-//        Regel 1: Vendt kort fra bunken? Hvis ikke -> vend fra bunken.
-//
-//        Regel 2: Læg altid es eller toer op.
-//
-//        Regel 3: Hvis konge er flytbar:
-//
-//        Findes der tom plads?
-//
-//        Ryk derhen.
-//
-//        Kan der laves tom plads?
-//
-//        Hvis ja: Gør det.
-//
-//        Regel 4: Hvis der er et træk, der fører til vending, så tag det.
-//
-//        Regel 5: Hvis der er et træk, der fører til et træk, der fører til vending, så lav det.
-//
-//        Regel 6: Hvis ingen foregående regler kan bruges -> vend fra bunken.
-//
-//        Regel 7: Hvis bunken er kørt igennem uden regel 1-5 kan bruges -> begynd at vende igen, men udfør samtlige mulige træk (men prioriter stadig 1-5).
-
 /**
- * SKRIV NOGET HER EVT OGSÅ REGLERNE OVENFOR
+ * Strategy for finding the best possible move for a given game state of a game of Klondike. This strategy should be
+ * followed until it no longer leads to anything but drawing cards.
+ *
+ * The rules are described in detail here:
+ * https://dtudk.sharepoint.com/:b:/r/sites/F20CDIOGruppe14/Shared%20Documents/CDIO_Version2_7Kabale/Strategies.pdf
  *
  * @author Malte Brink Kristensen
  */
-
 public class DefaultStrategy implements MoveCalculationStrategy {
 
     protected GameSnapshot gameSnapshot;
@@ -135,7 +116,7 @@ public class DefaultStrategy implements MoveCalculationStrategy {
     protected Move findPotentialAceOrTwoMove() {
         Move move;
 
-        // Check if top card of draw pile is an ace.
+        // Check if top card of draw pile is an ace or a two.
         Card cardFromDrawPile = gameSnapshot.getCardFromDrawPile();
 
         if (cardFromDrawPile != null && (cardFromDrawPile.getValue() == 1 || cardFromDrawPile.getValue() == 2)) {

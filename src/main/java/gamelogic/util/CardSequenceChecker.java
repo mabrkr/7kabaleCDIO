@@ -2,6 +2,11 @@ package gamelogic.util;
 
 import model.Card;
 
+/**
+ * Utility class for checking whether two cards form a sequence.
+ *
+ * @author Malte Brink Kristensen
+ */
 public class CardSequenceChecker {
 
     public boolean isAlternatingColorSequence(Card highCard, Card lowCard) {

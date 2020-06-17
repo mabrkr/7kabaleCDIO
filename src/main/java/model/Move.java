@@ -1,7 +1,9 @@
 package model;
 
 /**
- * SKRIV NOGET HER
+ * Represents a possible move in a game of Klondike. The possible moves are: Move one card onto another card, move a
+ * card to a suit stack, draw a card from the draw pile, move a king to an empty build stack, and turn over a free
+ * face-down card.
  *
  * @author Malte Brink Kristensen
  */

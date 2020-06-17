@@ -5,7 +5,11 @@ import model.GameSnapshot;
 import model.Move;
 
 /**
- * SKRIV NOGET HER
+ * Strategy for finding the best possible move for a given game state of a game of Klondike. This strategy should be
+ * used after the default strategy no longer leads to anything but drawing cards.
+ *
+ * The rules are described in detail here:
+ * https://dtudk.sharepoint.com/:b:/r/sites/F20CDIOGruppe14/Shared%20Documents/CDIO_Version2_7Kabale/Strategies.pdf
  *
  * @author Malte Brink Kristensen
  */

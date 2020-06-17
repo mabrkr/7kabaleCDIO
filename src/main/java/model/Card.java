@@ -3,11 +3,9 @@ package model;
 import org.opencv.core.Point;
 import org.opencv.core.Rect;
 
-
-
-
 /**
- * SKRIV NOGET HER (DER STOD // Represent a face-up card.)
+ * Represents a face-up card.
+ * Also contains information relating to position in 2D space - used for image recognition purposes.
  *
  * @author Malte Brink Kristensen, Jeppe Kaare Larsen, Neal Patrick Norman, Mads Martin Dickmeiss Hemer
  */
@@ -18,21 +16,28 @@ public class Card {
 
     public Rect rectangle;
 
-    public void setValue(int value) {
-        this.value = value;
-    }
-
     private int value;
-
-    public void setSuit(Suit suit) {
-        this.suit = suit;
-    }
-
     private Suit suit;
 
     public Card(int value, Suit suit) {
         this.value = value;
         this.suit = suit;
+    }
+
+    public void setValue(int value) {
+        this.value = value;
+    }
+
+    public void setSuit(Suit suit) {
+        this.suit = suit;
+    }
+
+    public Point getPosition() {
+        return new Point(x, y);
+    }
+
+    public Point getOffset() {
+        return new Point(rectangle.width, rectangle.height);
     }
 
     public int getValue() {
@@ -110,14 +115,6 @@ public class Card {
         }
 
         return suit + value;
-    }
-
-    public Point getPosition() {
-        return new Point(x, y);
-    }
-
-    public Point getOffset() {
-        return new Point(rectangle.width, rectangle.height);
     }
 
     public enum Suit {

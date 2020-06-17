@@ -22,12 +22,13 @@ public class GameSnapshot {
     /**
      * @param isDrawPileEmpty Is the draw pile empty or not?
      * @param cardFromDrawPile The top card of the draw pile.
-     * @param buildStacks Multidimensional array of Card-objects. In case of empty stacks the length of the array is
+     * @param buildStacks Multidimensional array of Card-objects. In case of empty stacks, the length of the array is
      *                    simply < 7. It is expected that the first element in each stack is the bottom card.
      * @param topCardsOfSuitStacks The top cards of each suit stack. In case of empty stacks the length of the array is
      *                             simply < 4.
      * @param heightsOfFaceDownSequences The number of face-down cards in each build stack. Can be approximated
-     *                                   as unitless relative heights. After construction, the build stacks are sorted
+     *                                   as unitless relative heights. It is expected that a build stack with zero face-
+     *                                   down cards has a height of 0. After construction, the build stacks are sorted
      *                                   from highest to lowest number of face-down cards. This ensures that the stacks
      *                                   are traversed in prioritized order when looking for potential moves.
      */

@@ -6,7 +6,8 @@ import model.GameSnapshot;
 import model.Move;
 
 /**
- * This class serves as the Context in the Strategy design pattern.
+ * Calculates the best possible move for a given game state of a game of Klondike. The calculation is based on the
+ * chosen strategy.
  *
  * @author Malte Brink Kristensen
  */
