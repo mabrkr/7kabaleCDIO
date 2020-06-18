@@ -16,6 +16,8 @@ import org.opencv.imgproc.Imgproc;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.image.BufferedImage;
@@ -23,6 +25,7 @@ import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.Hashtable;
 import java.util.List;
 
 import static javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
@@ -42,6 +45,7 @@ public class GUI {
     private static String suggestionText;
     private static MoveCalculator moveCalculator;
     private static Mat snapshot;
+    private static int threshold = 190; //initial threhold value
 
     private GUI() {
     }
@@ -60,9 +64,21 @@ public class GUI {
         JPanel center = new JPanel();
         JPanel bottom = new JPanel();
 
-        JButton fileChooserButton = new JButton("Take photo to get suggestion");
+        JButton fileChooserButton = new JButton("Choose file to get suggestion");
+        JButton takePhotoButton = new JButton("Take photo to get suggestion");
         JButton strategyChooserButton = new JButton("Switch strategy");
         JLabel suggestionLabel = new JLabel("suggestion output here");
+        JLabel thresholdLabel = new JLabel("Adjust threshold:");
+        JSlider thresholdSlider = new JSlider(160, 220, threshold);
+
+        //Label table for tresholdslider
+        Hashtable labelTable = new Hashtable();
+        labelTable.put(160, new JLabel("160"));
+        labelTable.put(190, new JLabel("190"));
+        labelTable.put(220, new JLabel("220"));
+        thresholdSlider.setLabelTable(labelTable);
+
+        thresholdSlider.setPaintLabels(true);
 
         if (imageIcon != null) {
             JLabel image = new JLabel(imageIcon);
@@ -74,7 +90,10 @@ public class GUI {
         }
 
         center.add(fileChooserButton);
+        center.add(takePhotoButton);
         center.add(strategyChooserButton);
+        center.add(thresholdLabel);
+        center.add(thresholdSlider);
         bottom.add(suggestionLabel);
 
         jframe.add(top);
@@ -90,7 +109,9 @@ public class GUI {
         jframe.setVisible(true);
 
         fileChooserButton.addActionListener(new fileChooserActionListener());
+        takePhotoButton.addActionListener(new takePhotoActionListener());
         strategyChooserButton.addActionListener(new strategyChooserActionListener());
+        thresholdSlider.addChangeListener(new treshholdSliderChangeListener());
     }
 
     public static void updateGUI() {
@@ -121,10 +142,9 @@ public class GUI {
         }
     }
 
-    //TODO: Nyt navn!
-    public static void spilSpil() {
+    public static void processGameSnapshot() {
         CardProcessor cp = new CardProcessor();
-        List<Card> listOfCards = cp.detectCards(snapshot.clone(), 190);
+        List<Card> listOfCards = cp.detectCards(snapshot.clone(), threshold);
 
         System.out.println(listOfCards.size() + " cards found!");
 
@@ -138,26 +158,29 @@ public class GUI {
         suggestionText = suggestion;
         System.out.println(suggestion);
 
-//                setImage(snapshot);
         updateGUI(moveCalculator.getStrategy().toString());
     }
 
-    //ToDo: Skal hele programmets flow virkeligt køre i det følgende?
     static class fileChooserActionListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-//            JFileChooser fileChooser = new JFileChooser();
-//            fileChooser.setCurrentDirectory(new File("resources/test_images/1606Test1/"));
-//            int result = fileChooser.showOpenDialog(jframe);
-//            if (result == JFileChooser.APPROVE_OPTION) {
-//                File selectedFile = fileChooser.getSelectedFile();
-//                System.out.println("Selected file: " + selectedFile.getAbsolutePath());
-//
-//                SnapshotCapturer snapshotCapturer = new SnapshotCapturer();
-//                snapshot = snapshotCapturer.readFromFile(selectedFile.getPath());
-//
-//                spilSpil();
-//
-//            }
+            JFileChooser fileChooser = new JFileChooser();
+            fileChooser.setCurrentDirectory(new File("resources/test_images/1606Test1/"));
+            int result = fileChooser.showOpenDialog(jframe);
+            if (result == JFileChooser.APPROVE_OPTION) {
+                File selectedFile = fileChooser.getSelectedFile();
+                System.out.println("Selected file: " + selectedFile.getAbsolutePath());
+
+                SnapshotCapturer snapshotCapturer = new SnapshotCapturer();
+                snapshot = snapshotCapturer.readFromFile(selectedFile.getPath());
+
+                processGameSnapshot();
+
+            }
+        }
+    }
+
+    static class takePhotoActionListener implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
             SnapshotCapturer snapshotCapturer = new SnapshotCapturer();
             try {
                 snapshot = snapshotCapturer.captureSnapshot();
@@ -165,7 +188,7 @@ public class GUI {
                 ioException.printStackTrace();
             }
 
-            spilSpil();
+            processGameSnapshot();
         }
     }
 
@@ -178,8 +201,16 @@ public class GUI {
                 moveCalculator.setStrategy(new DefaultStrategy());
                 updateGUI("DefaultStrategy");
             }
-            spilSpil();
+            processGameSnapshot();
 
+        }
+    }
+
+    static class treshholdSliderChangeListener implements ChangeListener {
+        @Override
+        public void stateChanged(ChangeEvent e) {
+            JSlider jSlider = (JSlider) e.getSource();
+            threshold = jSlider.getValue();
         }
     }
 
