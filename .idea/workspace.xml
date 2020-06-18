@@ -23,10 +23,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="Ændret format m.m.">
+    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="GUI har fået flere komponenter.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MaltesMain.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +66,7 @@
     <setting file="jar://$MAVEN_REPOSITORY$/org/openpnp/opencv/3.4.2-2/opencv-3.4.2-2.jar!/org/opencv/core/Rect.class" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Integer.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/NullPointerException.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/ArrayIndexOutOfBoundsException.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/openpnp/opencv/3.4.2-2/opencv-3.4.2-2.jar!/org/opencv/imgproc/Imgproc.class" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsFlowSettings">
@@ -161,11 +161,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MaltesMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="view.MaltesMain" />
       <module name="7kabaleCDIO" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="CardProcessorTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -200,14 +198,15 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.CardProcessorTest" />
       <item itemvalue="JUnit.CardProcessorTest.identifyCard" />
       <item itemvalue="JUnit.DefaultStrategyTest" />
       <item itemvalue="JUnit.DetectorTest" />
+      <item itemvalue="Application.MaltesMain" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MaltesMain" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +276,7 @@
       <workItem from="1592223950092" duration="74000" />
       <workItem from="1592224160788" duration="2217000" />
       <workItem from="1592227825033" duration="1455000" />
-      <workItem from="1592463597699" duration="2160000" />
+      <workItem from="1592463597699" duration="4259000" />
     </task>
     <task id="LOCAL-00001" summary="imagecapture v 1.0">
       <created>1583954545433</created>
@@ -461,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592398312400</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="GUI har fået flere komponenter.">
+      <created>1592466070364</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1592466070364</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +509,8 @@
     <MESSAGE value="De to projekter er merged.&#10;&#10;Link til gammelt logik-repo:&#10;https://github.com/mabrkr/7kabalelogik.git" />
     <MESSAGE value="fixed line issue" />
     <MESSAGE value="Ændret format m.m." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ændret format m.m." />
+    <MESSAGE value="GUI har fået flere komponenter." />
+    <option name="LAST_COMMIT_MESSAGE" value="GUI har fået flere komponenter." />
   </component>
   <component name="WindowStateProjectService">
     <state x="626" y="240" width="657" height="629" key="#Main" timestamp="1592392920745" />
@@ -526,37 +533,41 @@
     <state x="604" y="358" width="302" height="189" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1592392920745" />
     <state x="604" y="358" width="302" height="189" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900@0.0.1440.900" timestamp="1592392920745" />
     <state x="805" y="446" width="300" height="218" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1592392920745" />
+    <state x="691" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592467228948">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="691" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592467228948" />
     <state x="590" y="23" key="CommitChangelistDialog2" timestamp="1592392920745" />
     <state x="590" y="23" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1592392920745" />
     <state x="590" y="23" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1592392920745" />
-    <state width="1878" height="316" key="GridCell.Tab.0.bottom" timestamp="1592465343692">
+    <state width="1878" height="349" key="GridCell.Tab.0.bottom" timestamp="1592467243670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="316" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592465343692" />
+    <state width="1878" height="349" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592467243670" />
     <state width="824" height="240" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1592392920745" />
     <state width="824" height="240" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1592392920745" />
-    <state width="1878" height="316" key="GridCell.Tab.0.center" timestamp="1592465343692">
+    <state width="1878" height="349" key="GridCell.Tab.0.center" timestamp="1592467243670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="316" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592465343692" />
+    <state width="1878" height="349" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592467243670" />
     <state width="824" height="240" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1592392920745" />
     <state width="824" height="240" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1592392920745" />
-    <state width="1878" height="316" key="GridCell.Tab.0.left" timestamp="1592465343692">
+    <state width="1878" height="349" key="GridCell.Tab.0.left" timestamp="1592467243670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="316" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592465343692" />
+    <state width="1878" height="349" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592467243670" />
     <state width="824" height="240" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1592392920745" />
     <state width="824" height="240" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1592392920745" />
-    <state width="1878" height="316" key="GridCell.Tab.0.right" timestamp="1592465343692">
+    <state width="1878" height="349" key="GridCell.Tab.0.right" timestamp="1592467243670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="316" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592465343692" />
+    <state width="1878" height="349" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592467243670" />
     <state width="824" height="240" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1592392920745" />
     <state width="824" height="240" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1592392920745" />
-    <state x="553" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592398314548">
+    <state x="553" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592468093663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="553" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592398314548" />
+    <state x="553" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592468093663" />
   </component>
   <component name="masterDetails">
     <states>
