@@ -148,7 +148,7 @@ public class CardProcessor {
 
 //        //TODO: Slet dette når alle test er færdige
 //        if (card.getValue() != -1 && card.getSuit() != null) {
-//            GUI.getInstance().showImg(cornerCropped, "" + card.getValue() + card.getSuit());
+//            GUI.getInstance().showPopup(cornerCropped, "" + card.getValue() + card.getSuit());
 //        }
     }
 

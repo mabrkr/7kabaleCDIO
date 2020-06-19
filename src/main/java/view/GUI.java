@@ -142,6 +142,31 @@ public class GUI {
         }
     }
 
+    public static void showPopup(Mat img, String title) {
+        Imgproc.resize(img, img, new Size(WIDTH, HEIGHT));
+        MatOfByte matOfByte = new MatOfByte();
+        Imgcodecs.imencode(".jpg", img, matOfByte);
+        byte[] byteArray = matOfByte.toArray();
+        BufferedImage bufImage = null;
+
+        try {
+            InputStream in = new ByteArrayInputStream(byteArray);
+            bufImage = ImageIO.read(in);
+            JLabel image = new JLabel(new ImageIcon(bufImage));
+            JFrame jFramePopUp = new JFrame();
+            jFramePopUp.add(image);
+            jFramePopUp.pack();
+            jFramePopUp.setTitle(title);
+            jFramePopUp.setVisible(true);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+
+
+    }
+
     public static void processGameSnapshot() {
         CardProcessor cp = new CardProcessor();
         List<Card> listOfCards = cp.detectCards(snapshot.clone(), threshold);

@@ -4,6 +4,9 @@
     <option name="SCOPE_TYPE" value="8" />
     <option name="CUSTOM_SCOPE_NAME" value="Module '7kabaleCDIO'" />
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -23,9 +26,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="GUI har fået flere komponenter.">
+    <list default="true" id="e55491e7-968d-499c-9a05-2409ef6bd9ae" name="Default Changelist" comment="MaltesMain.java slettet.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MaltesMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/image_recognition/CardProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/image_recognition/CardProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/view/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +82,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Users\Jeppe Kaare Larsen\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.5428.22\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="C:\Users\Jeppe Kaare Larsen\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\202.5792.28\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -198,10 +202,10 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.MaltesMain" />
       <item itemvalue="JUnit.CardProcessorTest.identifyCard" />
       <item itemvalue="JUnit.DefaultStrategyTest" />
       <item itemvalue="JUnit.DetectorTest" />
-      <item itemvalue="Application.MaltesMain" />
     </list>
     <recent_temporary>
       <list>
@@ -210,6 +214,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -276,7 +281,9 @@
       <workItem from="1592223950092" duration="74000" />
       <workItem from="1592224160788" duration="2217000" />
       <workItem from="1592227825033" duration="1455000" />
-      <workItem from="1592463597699" duration="4259000" />
+      <workItem from="1592463597699" duration="6538000" />
+      <workItem from="1592552806442" duration="1220000" />
+      <workItem from="1592560677219" duration="613000" />
     </task>
     <task id="LOCAL-00001" summary="imagecapture v 1.0">
       <created>1583954545433</created>
@@ -467,11 +474,18 @@
       <option name="project" value="LOCAL" />
       <updated>1592466070364</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="MaltesMain.java slettet.">
+      <created>1592468291507</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1592468291507</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -510,7 +524,8 @@
     <MESSAGE value="fixed line issue" />
     <MESSAGE value="Ændret format m.m." />
     <MESSAGE value="GUI har fået flere komponenter." />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI har fået flere komponenter." />
+    <MESSAGE value="MaltesMain.java slettet." />
+    <option name="LAST_COMMIT_MESSAGE" value="MaltesMain.java slettet." />
   </component>
   <component name="WindowStateProjectService">
     <state x="626" y="240" width="657" height="629" key="#Main" timestamp="1592392920745" />
@@ -540,34 +555,34 @@
     <state x="590" y="23" key="CommitChangelistDialog2" timestamp="1592392920745" />
     <state x="590" y="23" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1592392920745" />
     <state x="590" y="23" key="CommitChangelistDialog2/0.23.1440.826@0.23.1440.826" timestamp="1592392920745" />
-    <state width="1878" height="349" key="GridCell.Tab.0.bottom" timestamp="1592467243670">
+    <state width="1878" height="93" key="GridCell.Tab.0.bottom" timestamp="1592561003362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="349" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592467243670" />
+    <state width="1878" height="93" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592561003362" />
     <state width="824" height="240" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1592392920745" />
     <state width="824" height="240" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1592392920745" />
-    <state width="1878" height="349" key="GridCell.Tab.0.center" timestamp="1592467243670">
+    <state width="1878" height="93" key="GridCell.Tab.0.center" timestamp="1592561003362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="349" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592467243670" />
+    <state width="1878" height="93" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592561003362" />
     <state width="824" height="240" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1592392920745" />
     <state width="824" height="240" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1592392920745" />
-    <state width="1878" height="349" key="GridCell.Tab.0.left" timestamp="1592467243670">
+    <state width="1878" height="93" key="GridCell.Tab.0.left" timestamp="1592561003362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="349" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592467243670" />
+    <state width="1878" height="93" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592561003362" />
     <state width="824" height="240" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1592392920745" />
     <state width="824" height="240" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1592392920745" />
-    <state width="1878" height="349" key="GridCell.Tab.0.right" timestamp="1592467243670">
+    <state width="1878" height="93" key="GridCell.Tab.0.right" timestamp="1592561003362">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1878" height="349" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592467243670" />
+    <state width="1878" height="93" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592561003362" />
     <state width="824" height="240" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1592392920745" />
     <state width="824" height="240" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1592392920745" />
-    <state x="553" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592468093663">
+    <state x="553" y="253" key="Vcs.Push.Dialog.v2" timestamp="1592468293857">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="553" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592468093663" />
+    <state x="553" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1592468293857" />
   </component>
   <component name="masterDetails">
     <states>
