@@ -10,7 +10,7 @@ import java.util.Comparator;
 import java.util.List;
 
 /**
- * Method for detecting and identifying cards
+ * Class for detecting and identifying cards
  *
  * @author Jeppe Kaare Larsen & Mads Martin Dickmeiss Hemer
  */
@@ -60,7 +60,6 @@ public class CardProcessor {
             }
         }
 
-        //TODO: Slet dette når alle test er færdige
 //        GUI.getInstance().showResult(orgFrame);
         GUI.getInstance().setImage(frameThresh);
 
@@ -146,7 +145,7 @@ public class CardProcessor {
         }
 
 
-//        //TODO: Slet dette når alle test er færdige
+//        //Shows the recognised cards as pop-ups
 //        if (card.getValue() != -1 && card.getSuit() != null) {
 //            GUI.getInstance().showPopup(cornerCropped, "" + card.getValue() + card.getSuit());
 //        }

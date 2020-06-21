@@ -1,1 +1,7 @@
 unnamed package
+gamelogic
+gamelogic.strategies
+gamelogic.util
+image_recognition
+model
+view

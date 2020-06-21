@@ -7,7 +7,7 @@ import org.opencv.videoio.VideoCapture;
 import java.io.IOException;
 
 /**
- * Class to either insert a picture through a path, or taking a picture with the clients webcam
+ * Class to either insert a picture through a path or take a picture with the clients webcam
  *
  * @author Jeppe Kaare Larsen, Mads Martin Dickmeiss Hemer & Malte Brink Kristensen
  */
@@ -18,7 +18,7 @@ public class SnapshotCapturer {
     public Mat captureSnapshot() throws IOException {
 
 
-//        Argumentet angiver hvilket kamera (0 = standardkameraet)
+//        The index parameter is used for choosing a connected camera, try -1, 0 or 1.
         VideoCapture capture = new VideoCapture(1);
 
         Mat frame = new Mat();

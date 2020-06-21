@@ -225,7 +225,7 @@ jQuery.fn = jQuery.prototype = {
 };
 
 jQuery.extend = jQuery.fn.extend = function() {
-	var options, name, Logik, copy, copyIsArray, clone,
+	var options, name, src, copy, copyIsArray, clone,
 		target = arguments[ 0 ] || {},
 		i = 1,
 		length = arguments.length,
@@ -5355,7 +5355,7 @@ jQuery.removeEvent = function( elem, type, handle ) {
 	}
 };
 
-jQuery.Event = function( Logik, props ) {
+jQuery.Event = function( src, props ) {
 
 	// Allow instantiation without the 'new' keyword
 	if ( !( this instanceof jQuery.Event ) ) {
@@ -5632,7 +5632,7 @@ function restoreScript( elem ) {
 	return elem;
 }
 
-function cloneCopyEvent( Logik, dest ) {
+function cloneCopyEvent( src, dest ) {
 	var i, l, type, pdataOld, pdataCur, udataOld, udataCur, events;
 
 	if ( dest.nodeType !== 1 ) {
@@ -5667,7 +5667,7 @@ function cloneCopyEvent( Logik, dest ) {
 }
 
 // Fix IE bugs, see support tests
-function fixInput( Logik, dest ) {
+function fixInput( src, dest ) {
 	var nodeName = dest.nodeName.toLowerCase();
 
 	// Fails to persist the checked state of a cloned checkbox or radio button.
@@ -8626,7 +8626,7 @@ function inspectPrefiltersOrTransports( structure, options, originalOptions, jqX
 // A special extend for ajax options
 // that takes "flat" options (not to be deep extended)
 // Fixes #9887
-function ajaxExtend( target, Logik ) {
+function ajaxExtend( target, src ) {
 	var key, deep,
 		flatOptions = jQuery.ajaxSettings.flatOptions || {};
 

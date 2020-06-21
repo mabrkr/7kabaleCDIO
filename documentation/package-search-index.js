@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"gamelogic"},{"l":"gamelogic.strategies"},{"l":"gamelogic.util"},{"l":"image_recognition"},{"l":"model"},{"l":"view"}]
